@@ -1,0 +1,11 @@
+.dark .vodi-control-bar .videos-view-switcher .nav-item a svg path,
+.dark .vodi-control-bar .archive-view-switcher .nav-item a svg path {
+    fill: #b4bbc0;
+}
+
+.dark .vodi-control-bar .videos-view-switcher .nav-item a.active svg path,
+.dark .vodi-control-bar .archive-view-switcher .nav-item a.active svg path,
+.dark .vodi-control-bar .videos-view-switcher .nav-item a:hover svg path,
+.dark .vodi-control-bar .archive-view-switcher .nav-item a:hover svg path {
+    fill: #131722;
+}

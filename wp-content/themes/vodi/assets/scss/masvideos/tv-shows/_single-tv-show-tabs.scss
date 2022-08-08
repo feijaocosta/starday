@@ -1,0 +1,140 @@
+.tv_show__season-tabs-wrap {
+    padding: 46px 0 13px;
+    margin-bottom: 60px;
+
+    .masvideos-tabs {
+        @include make-container();
+        @include make-container-max-widths();
+        @media ( min-width: 1486px ) {
+            max-width: 1486px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-left: 38px;
+            padding-right: 38px;
+        }
+    }
+
+    .nav {
+        margin-bottom: 27px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        @include media-breakpoint-up(xl) {
+            overflow-x: initial;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            margin-bottom: 18px;
+
+            a {
+                font-size: 14px;
+                font-weight: $ms-semi-bold;
+                text-transform: uppercase;
+                padding: 3.5px 17.5px;
+                border-radius: 5px;
+
+                &.active {
+                    color: #1c212e;
+                }
+            }
+
+            &:not( :last-child ) {
+                margin-right: 18px;
+            }
+        }
+    }
+}
+
+.tv-show-tabs {
+    margin-bottom: 65px;
+    
+    .nav {
+        font-family: $ms;
+        justify-content: center;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        padding-top: 30px;
+        margin-bottom: 40px;
+
+        @include media-breakpoint-down(lg) {
+            overflow: auto;
+            flex-wrap: nowrap;
+        }
+
+        .nav-item {
+            font-size: 18px;
+            line-height: 1;
+            letter-spacing: -0.025em;
+            display: flex;
+            flex-shrink: 0;
+
+            & + .nav-item {
+                &:before {
+                    content: '/';
+                    margin: 0px 25px 0 30px;
+                }
+            }
+
+            a {
+                position: relative;
+                padding: 0px 6px 18px 6px;
+
+                &.active {
+                    font-weight: 500;
+
+                    &:after {
+                        content: ' ';
+                        border-bottom: 3px solid transparent;
+                        display: block;
+                        position: absolute;
+                        bottom: -1px;
+                        width: 100%;
+                        left: 0;
+                        border-bottom-color:red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tv-show__attributes {
+    @include media-breakpoint-up(md) {
+        margin-bottom: 40px;
+    }
+
+    th,
+    td {
+        border: none;
+    }
+
+    td {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    th {
+        color: #fff;
+        font-weight: $os-regular;
+        width: 30%;
+    }
+
+    td {
+        color: #b4bbc0;
+
+        a {
+            color: #b4bbc0;
+        }
+    }
+
+    tr {
+        & + tr {
+            border-top-style: solid;
+            border-top-width: 1px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.comingsoon-launch-section {
+    &__desc {
+        color: #000;
+    }
+
+    .email {
+        border-right: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+    }
+
+    .btn-subscribe {
+        white-space: nowrap;
+    }
+}

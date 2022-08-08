@@ -1,0 +1,24 @@
+.masvideos-MyAccount-content {
+    .edit-account {
+        @include make-row();
+
+        > * {
+            @include make-col-ready();
+        }
+
+        input[type="text"], 
+        select {
+            border-radius: 4px;
+        }
+
+        .password-fields {
+            margin-top: 25px;
+        }
+
+        @include media-breakpoint-up(md) {
+            .masvideos-form-row:not( .fieldset-current-pass ) {
+                @include make-col(6);
+            }
+        }
+    }
+}

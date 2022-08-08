@@ -1,0 +1,37 @@
+.site__footer--v1.dark {
+    background-color: $vodi-dark-footer-v1-bg;
+    color: #949cb0;
+}
+
+.dark {
+    .footer-widgets .widget-title,
+    .footer-widgets .widget-title .rsswidget {
+        color: $vodi-dark-footer-title-color;
+    }
+
+    .footer-widgets-inner.col-3 .footer-widget-3{
+        box-shadow: -7px -1px 0 -6px #2d323f;
+
+    }
+
+    .footer-bottom-bar {
+        color: #949cb0;
+        background-color: #06090f;
+
+        a {
+            color: #949cb0;
+
+            @include hover-focus() {
+                color: #949cb0;
+            }
+        }
+    }
+
+    &.site-footer .site-footer__logo svg .vodi-stream1 {
+        fill: #51C9F0;
+    }
+
+    &.site-footer .site-footer__logo svg .vodi-stream0 {
+        fill: #fff;
+    }
+}

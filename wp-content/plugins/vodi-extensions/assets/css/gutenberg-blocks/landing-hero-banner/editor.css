@@ -1,0 +1,12 @@
+/**
+ * Bootstrap variables override
+ */
+.vodi-landing-hero-banner {
+  margin-top: 0;
+  display: flex !important; }
+  .vodi-landing-hero-banner__btn-action {
+    color: #fff !important; }
+  .vodi-landing-hero-banner__caption--title {
+    color: #fff !important; }
+  .vodi-landing-hero-banner__caption--desc {
+    font-size: 26px !important; }

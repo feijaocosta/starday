@@ -1,0 +1,142 @@
+.masvideos-register,
+.masvideos-login {
+    @include media-breakpoint-up(md) {
+        @include make-col(6);
+    }
+
+    &__inner {
+        h2 {
+            font-size: 25px;
+            //font-weight: $ms-bold;
+            //text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+    }
+
+    .masvideos-Button {
+        @include make-button( 13.5px, 30px, 15px, 1, 5px, 2px );
+        text-transform: capitalize;
+    }
+
+    .form-row {
+        margin-bottom:26px;
+
+        label {
+            margin: 0;
+            font-size: 14px;
+            font-weight: $ms-semi-bold;
+        }
+
+
+        input {
+            border-radius: 0;
+            border-width: 0;
+            border-bottom-width: 2px;
+            padding: 5px 12px;
+            border-bottom-color: #e4e4e4;
+
+            &:focus {
+                border-bottom-width: 2px;
+            }
+        }
+
+        .masvideos-form__label-for-checkbox {
+            margin-bottom: 18px;
+
+            span {
+                margin-left: 6px;
+            }
+        }
+    }
+
+    .form-row  .masvideos-form__label-for-checkbox,
+    .masvideos-LostPassword a {
+        font-weight: $os-regular;
+        color: #2f3539;
+        font-size: 14px;
+    }
+}
+
+.masvideos-login__inner {
+    @include media-breakpoint-up(xl) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    p[class^="form-row"] {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .masvideos-Button {
+            order: 1;
+        }
+    }
+
+    .masvideos-LostPassword {
+        display: inline-flex;
+        margin-left: auto;
+    }
+}
+
+.masvideos-form-login {
+    display: flex;
+    flex-wrap: wrap;
+
+    p[class^="masvideos-form-row"] {
+        width: 100%;
+    }
+
+}
+
+.masvideos-register + .masvideos-login .masvideos-login__inner {
+    padding-right: 200px;
+}
+
+.masvideos-register__inner {
+    @include media-breakpoint-up(xl) {
+        padding-right: 60px;
+        padding-left: 200px;
+    }
+
+    &::after {
+        content: "";
+        width: 2px;
+        height: 260px;
+        display: block;
+        border-left: 1px solid #efefef;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.masvideos-register-login {
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-body {
+    .masvideos-register-login {
+        margin: 40px 20px 20px;
+
+        .masvideos-register__inner{
+            padding-right: 20px;
+            padding-left: 0;
+        }
+
+        .masvideos-login__inner {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .masvideos-register + .masvideos-login .masvideos-login__inner {
+        padding-left: 20px;
+    }
+}

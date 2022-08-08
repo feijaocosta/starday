@@ -1,0 +1,93 @@
+.home-section {
+    .home-section__header {
+        &.home-section__nav-header {
+            text-align: center;
+            margin-bottom: 20px;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 20px;
+            }
+
+            &::before {
+                content: none;
+            }
+
+            .home-section__title {
+                font-size: 25px;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 35px;
+                    margin-bottom: 14px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    font-size: 41px;
+                    font-weight: 600;
+                }
+
+
+                &::after {
+                    content: none;
+                }
+            }
+
+            .nav {
+                @include list-unstyled();
+                display: flex;
+                justify-content: center;
+
+                @include media-breakpoint-down(sm) {
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    flex-wrap: nowrap;
+                    justify-content: start;
+                }
+
+                &-item {
+                    @include media-breakpoint-down(sm) {
+                        display: flex;
+                        align-items: center;
+
+                        .nav-link {
+                            width: max-content;
+                        }
+                    }
+
+                    &+ .nav-item::before {
+                        content: '/';
+                        margin: 0 14px;
+                        color: #d9d9d9;
+                    }
+                }
+
+                &-link {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    color: #949494;
+
+                    &.active {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    &.dark {
+        .home-section__nav-header {
+            .nav {
+                &-item {
+                    &+ .nav-item::before {
+                        color: #949cb0;
+                    }
+                }
+
+                &-link {
+                    color: #949cb0;
+                }
+            }
+        }
+    }
+}

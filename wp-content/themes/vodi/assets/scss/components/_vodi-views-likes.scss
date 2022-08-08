@@ -1,0 +1,75 @@
+.vodi-views-likes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    > * {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .vodi-jetpack-views,
+    .wpulike .wp_ulike_general_class {
+        line-height: 1.5;
+        font-weight: $os-semi-bold;
+    }
+
+    .vodi-jetpack-views {
+        span::before {
+            font-size: 18px;
+            line-height: 1;
+            vertical-align: text-bottom;
+        }
+    }
+}
+
+.vodi-jetpack-views,
+.wpulike .wp_ulike_general_class {
+    font-size: 12px;
+    color: $pagination-color;
+    flex-shrink: 0;
+}
+
+.vodi-jetpack-views {
+    span::before {
+        content: '\f06e';
+        font-family: "Font Awesome 5 Free";
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+
+.wpulike {
+    .wp_ulike_btn {
+        background: none;
+        padding: 0;
+        line-height: 1;
+        margin-right: 5px;
+        vertical-align: text-bottom;
+
+        &::before {
+            content: '\f164';
+            font-family: "Font Awesome 5 Free";
+            font-size: 18px;
+            font-weight: 400;
+            display: inline-block;
+            color: $pagination-color;
+        }
+    }
+
+    .wp_ulike_is_liked {
+        .wp_ulike_btn::before {
+            font-weight: 600;
+        }
+    }
+
+    .wp_ulike_likers_wrapper {
+        display: none !important;
+    }
+}

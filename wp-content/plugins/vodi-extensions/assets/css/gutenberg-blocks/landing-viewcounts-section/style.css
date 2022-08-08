@@ -1,0 +1,37 @@
+/**
+ * Bootstrap variables override
+ */
+.landing-view-counts {
+  padding: 40px 0; }
+  @media (min-width: 768px) {
+    .landing-view-counts {
+      padding: 100px 0; } }
+  @media (min-width: 1200px) {
+    .landing-view-counts {
+      padding: 180px 0; } }
+  .landing-view-counts__content {
+    line-height: 1.10;
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .landing-view-counts .landing-view-counts__count {
+    font-size: 30px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .landing-view-counts .landing-view-counts__count {
+        font-size: 100px; } }
+    @media (min-width: 992px) {
+      .landing-view-counts .landing-view-counts__count {
+        font-size: 130px; } }
+    @media (min-width: 1200px) {
+      .landing-view-counts .landing-view-counts__count {
+        font-size: 170px; } }
+  .landing-view-counts__desc {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .landing-view-counts__desc {
+        font-size: 32px; } }

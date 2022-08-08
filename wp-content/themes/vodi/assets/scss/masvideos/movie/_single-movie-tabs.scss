@@ -1,0 +1,221 @@
+.single-movie {
+	.movie-tabs {
+		margin-bottom: 65px;
+		
+		.nav {
+			font-family: $ms;
+			justify-content: center;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			padding-top: 30px;
+			margin-bottom: 40px;
+
+			@include media-breakpoint-down(lg) {
+				overflow: auto;
+				flex-wrap: nowrap;
+			}
+
+			.nav-item {
+				font-size: 18px;
+			    line-height: 1;
+			    letter-spacing: -0.025em;
+			    display: flex;
+			    flex-shrink: 0;
+
+				& + .nav-item {
+					&:before {
+						content: '/';
+						margin: 0px 25px 0 30px;
+					}
+				}
+
+				a {
+			    	position: relative;
+			    	padding: 0px 6px 18px 6px;
+
+			    	&.active {
+				    	font-weight: 500;
+
+				    	&:after {
+				    		content: ' ';
+						    border-bottom: 3px solid transparent;
+						    display: block;
+						    position: absolute;
+						    bottom: -1px;
+						    width: 100%;
+						    left: 0;
+						    border-bottom-color:red;
+				    	}
+				    }
+			    }
+			}
+		}
+	}
+
+	.movie__description-tab {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+
+		@include media-breakpoint-up(lg) {
+			flex-direction: row;
+		}
+
+		.movie{
+			&__info--left,
+			&__body {
+				max-width: 100%;
+			}
+
+			&__info--left {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+
+				@include media-breakpoint-up(md) {
+					flex-direction: row;
+					@include make-auto-col();
+				}
+
+				.movie__poster .movie__link {
+					padding: 0;
+					height: auto;
+
+					.movie__poster--image,  
+					.masvideos-placeholder {
+						position: relative;
+					}
+				}
+			}
+
+			&__info--right {
+				margin-top: 20px;
+
+				@include media-breakpoint-up(lg) {
+					margin-top: 0;
+				}
+			}
+
+			&__poster {
+				@include media-breakpoint-up(md) {
+					margin-right: 40px;
+				    flex: 0 0 24.1%;
+				    max-width: 24.1%;
+				}
+			}
+
+			&_title {
+				font-size: 20px;
+				font-weight: $ms-semi-bold;
+				margin-bottom: 17px;
+
+				@include media-breakpoint-up(lg) {
+					font-size: 22px;
+				}
+			}
+
+			&__meta {
+				font-family: $ms;
+				font-size: 15px;
+				margin-bottom: 30px;
+				color: $white;
+
+				> * + * {
+		            &:before {
+		                content: '|';
+		                display: inline-block;
+		                margin: 0 15px;
+		                color: $pagination-color;
+		            }
+		        }
+			}
+
+			&__description {
+				font-size: 15px;
+				color: #b4bbc0;
+				line-height: 26px;
+				letter-spacing: -0.01em;
+			}
+
+			&__rating-with-playlist {
+				margin-bottom: 23px;
+
+				.avg-rating {
+					& + .movie-actions--link_add-to-playlist {
+						margin-left: 35px;
+					}
+				}
+
+				.movie-actions--link_add-to-playlist {
+					margin-left: 0;
+				}
+			}
+
+			&__attributes {
+				@include media-breakpoint-up(md) {
+					margin-bottom: 40px;
+				}
+
+				th,
+				td {
+					border: none;
+					padding: 6px;
+				}
+
+				td {
+					p {
+						margin-bottom: 0;
+					}
+				}
+
+				th {
+					color: #fff;
+					font-weight: $os-regular;
+					width: 30%;
+				}
+
+				td {
+					color: #b4bbc0;
+
+					a {
+						color: #b4bbc0;
+					}
+				}
+
+			}
+		}
+
+		.vodi-sharing {
+			margin-bottom: 40px;
+		}
+
+
+		.movie__info--left + .movie__info--right {
+			@include media-breakpoint-up(xl) {
+				flex: 0 0 42%;
+			    max-width: 42%;
+			    padding-left: 50px;
+			    margin-left: 30px;
+			}
+			@include media-breakpoint-up(xxl) {
+				flex: 0 0 36.9%;
+			    max-width: 36.9%;
+			    padding-left: 70px;
+			    margin-left: 30px;
+			}
+		}
+	}
+
+	&-v1 .movie__description-tab,
+    &-v1 .movie__description-tab .movie__info--left {
+        align-items: flex-start;
+    }
+
+	.masvideos-Reviews #review_form_wrapper {
+		margin-bottom: 60px;
+	}
+}
+
+.masvideos-Reviews .comment-respond .comment-reply-title small {
+	display: none;
+}

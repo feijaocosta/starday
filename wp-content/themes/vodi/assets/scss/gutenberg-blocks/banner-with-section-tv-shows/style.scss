@@ -1,0 +1,82 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.banner-with-section-tv-shows {
+    padding: 61px 0 38px;
+
+    &__content {
+        @include make-row(20px);
+
+        .banner,
+        .masvideos-tv-shows {
+            @include make-col-ready(20px);
+        }
+
+        .banner {
+            margin-bottom: 20px;
+
+            &__image {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .masvideos-tv-shows {
+            .tv-show {
+                margin-bottom: 20px;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            .banner {
+                @include make-col(6);
+            }
+
+            .masvideos-tv-shows {
+                @include make-col(6);
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .banner {
+                @include make-col(5);
+            }
+
+            .masvideos-tv-shows {
+                @include make-col(7);
+            }
+        }
+
+        @include media-breakpoint-up(xl) {
+            .banner {
+                @include make-col(3);
+            }
+
+            .masvideos-tv-shows {
+                @include make-col(9);
+            }
+        }
+
+        @include media-breakpoint-up(xxl) {
+            .banner {
+                @include make-col(2.4);
+            }
+
+            .masvideos-tv-shows {
+                @include make-col(9.6);
+            }
+        }
+    }
+
+    &.style-2 {
+        .home-section__footer-action {
+            border-top-width: 0;
+        }
+    }
+}

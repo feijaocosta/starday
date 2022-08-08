@@ -1,0 +1,39 @@
+@import "vendors/bootstrap/functions";
+@import "vendors/bootstrap/variables";
+
+$ms: 'Montserrat', 'Open Sans', sans-serif;
+$os: 'Open Sans', sans-serif;
+
+$os-regular: 400;
+$os-semi-bold: 600;
+$os-bold: 700;
+
+$ms-medium: 500;
+$ms-semi-bold: 600;
+$ms-bold: 700;
+
+$vod-text-color: #2c8fcb;
+$vodi-title-color: #121a21;
+$vodi-body-color: #19272e;
+
+/**
+ * Bootstrap variables override
+ */
+$pagination-bg: #f6f7f9;
+$pagination-border-width: 0;
+$pagination-color: #949cb0;
+$pagination-active-color: #fff;
+$input-border-radius: 4px;
+$input-border-color: #d0d0d2;
+$input-padding-x: 20px;
+$input-padding-y: 10px;
+$btn-padding-x: 20px;
+$btn-padding-y: 10px;
+$btn-border-radius: 4px;
+$btn-font-weight: $ms-bold;
+$font-size-base: 15px;
+$enable-shadows: false;
+$default-bg-color: #fcfcfc;
+$dark-bg-color: #1d212d;
+$dark-link-bg-color: #181d29;
+$light-bg-color: #F6F7F9;

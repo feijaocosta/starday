@@ -1,0 +1,120 @@
+.episode {
+    .nav {
+        font-family: $ms;
+
+        @include media-breakpoint-down(lg) {
+            overflow-x: auto;
+            overflow-y: hidden;
+            flex-wrap: nowrap;
+        }
+
+        .nav-item {
+            & + .nav-item {
+                &:before {
+                    content: '/';
+                }
+            }
+        }
+    }
+}
+
+.episode-seasons-tabs {
+    padding: 50px 0 18px;
+
+    .nav {
+        margin-bottom: 32px;
+
+        .nav-item {
+            font-size: 22px;
+            line-height: 1;
+            letter-spacing: -0.025em;
+            display: flex;
+            flex-shrink: 0;
+
+            a {
+                font-weight: normal;
+                display: inline-block;
+
+                &.active {
+                    font-weight: 500;
+                }
+            }
+
+            & + .nav-item {
+                &:before {
+                    margin: 0 12px 0 15px;
+                }
+            }
+        }
+    }
+}
+
+.episode-tabs {
+    .nav {
+        justify-content: center;
+
+        .nav-item {
+            font-size: 18px;
+            line-height: 1;
+            letter-spacing: -0.025em;
+            display: flex;
+            flex-shrink: 0;
+
+            a {
+                position: relative;
+                padding: 0 25px 18px 25px;
+
+                &.active {
+                    font-weight: 500;
+
+                    &:after {
+                        content: ' ';
+                        border-bottom: 3px solid transparent;
+                        display: block;
+                        position: absolute;
+                        bottom: -1px;
+                        width: 100%;
+                        left: 0;
+                        border-bottom-color:red;
+                    }
+                }
+            }
+
+            .nav-item {
+                & + .nav-item {
+                    &:before {
+                        margin: 0 0 0 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        @include stretch-full-width();
+        padding: 50px 0;
+
+        .tab-pane {
+            @include make-container();
+            @include make-container-max-widths();
+            @media ( min-width: 1486px ) {
+                max-width: 1486px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-left: 38px;
+                padding-right: 38px;
+            }
+        }
+    }
+}
+
+.dark {
+    .episode-tabs .tab-content .episode__description {
+        color: #fff;
+    }
+
+    .episode-tabs .tab-content .masvideos-Reviews .comment-form label {
+        color: #fff;
+    }
+}

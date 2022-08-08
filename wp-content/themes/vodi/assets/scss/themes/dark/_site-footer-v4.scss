@@ -1,0 +1,25 @@
+.site__footer--v4.dark {
+    background-color: $vodi-dark-footer-bg;
+    color: $vodi-dark-footer-text-color;
+
+    .footer-v4-menu a {
+        color: #949cb0;
+
+        &:hover {
+            color: #d1d1d1;
+        }
+    }
+
+    .footer-social-icon,
+    .footer-social-icon .fa-stack-2x {
+        color: $vodi-dark-social-icon;
+    }
+
+    .footer-v4-menu > li + li:before {
+        color: #394a52;
+    }
+
+    .social-icons .fa-inverse {
+        color: #000;
+    }
+}

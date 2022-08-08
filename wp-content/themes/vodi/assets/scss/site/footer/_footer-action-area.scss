@@ -1,0 +1,15 @@
+.footer-action {
+    &__title {
+        font-size: 26px;
+        font-family: $ms;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+}

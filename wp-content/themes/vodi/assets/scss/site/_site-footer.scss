@@ -1,0 +1,36 @@
+@import "footer/footer-credit";
+@import "footer/footer-quick-links";
+@import "footer/footer-menu";
+@import "footer/footer-social-icons";
+@import "footer/footer-widgets";
+@import "footer/footer-action-area";
+@import "footer/handheld-footer";
+@import "footer/footer-v2";
+@import "footer/footer-v3";
+@import "footer/footer-v4";
+
+.footer-bottom-bar {
+    @include stretch-full-width();
+    padding: 15px 0;
+
+    .footer-bottom-bar-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 0 26px;
+    align-items: center;
+    flex-direction: column;
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+    }
+}
+
+.site__footer--v1 .fa-stack i:first-child {
+    display: none; 
+}

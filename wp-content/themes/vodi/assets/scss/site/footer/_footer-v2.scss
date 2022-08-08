@@ -1,0 +1,116 @@
+.site__footer--v2 {
+    background-color: #141b4d;
+    color: #949cb0;
+
+
+    strong, h1, h2, h3, h4, h5, h6, a {
+        color: #FFF;
+
+        @include hover-focus {
+            color: #f5f5f5;
+        }
+    }
+
+    .vodi-gr {
+        fill: #FFF;
+    }
+
+    .site-footer__logo > a {
+        display: block;
+    }
+
+    .footer-bottom {
+        &__inner {
+            padding-bottom: 50px;
+            padding-top: 45px;
+
+            @include media-breakpoint-up(sm) {
+                display: flex;
+            }
+        }
+
+        &__left {
+
+            @include media-breakpoint-up(md) { 
+                @include make-col(8);
+            }
+        }
+
+        &__right {
+            padding-left: 35px;
+
+            @include media-breakpoint-up(md) { 
+                @include make-col(4);
+            }
+        }
+    }
+
+    .footer-logo {
+        margin-right: 64px;
+    }
+    
+    .site-info,
+    .sub-title,
+    .footer-tertiary-menu a {
+        color: #949cb0;
+    }
+
+    .footer-tertiary-menu a:hover {
+        color: #fff;
+    }
+
+    .site-info {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .footer-top-bar {
+        justify-content: flex-start;
+        padding: 0;
+
+        & + .site-footer__info {
+            margin-top: 13px;
+        }
+    }
+
+    .footer-social-icons.social-label .social-media-item > a {
+        font-size: 17px;
+    }
+
+    .footer-social-icons.social-label .social-media-item + .social-media-item {
+        margin-left: 40px;
+    }
+
+    .social-media-item {
+        margin-top: 4px;
+
+        > a {
+            color: #BEC0CD;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &__title {
+            display: none;
+        }
+    }
+
+    .footer-social-icon .fa-stack {
+        display: none;
+    }
+
+    .footer-primary-menu {
+        padding: 20px 120px 10px 120px;
+        justify-content: space-evenly;
+    }
+
+    .footer-secondary-menu a {
+        color: #c8ced1;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

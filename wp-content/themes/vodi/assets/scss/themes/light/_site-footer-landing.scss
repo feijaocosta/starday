@@ -1,0 +1,52 @@
+.site-footer-landing.light {
+    border-top-color: #b0b1b3;
+    background-color: #fff;
+
+    .site-footer {
+        .site-footer__logo {
+        .vodi-gr{fill:url(#vodi-gr-f);}
+        }
+
+        .landing-footer-menu {
+            a {
+                color: #2b2a2a;
+                
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        .footer-social-icon {
+
+            .fa-circle {
+                color: #2b2a2a;
+            }
+
+            .social-media-item__icon {
+                color: #fff;
+            }
+
+            &:hover {
+                .fa-circle {
+                    color: #000;
+                }
+            }
+        }
+
+        .site-footer__landing-menu {
+
+            .menu-item-has-children a:after {
+                color: #292929;
+            }
+
+            .landing-footer-menu > .menu-item-has-children > .sub-menu {
+                border-top: 3px solid #000;
+
+                &:before{
+                    border-bottom-color: #000;
+                }
+            }
+        }
+    }
+}

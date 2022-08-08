@@ -1,0 +1,45 @@
+# Copyright (C) 2022 MadrasThemes
+# This file is distributed under the same license as the Vodi Extensions package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Vodi Extensions 1.2.9\n"
+"Report-Msgid-Bugs-To: https://madrasthemes.freshdesk.com/\n"
+"POT-Creation-Date: 2022-06-02 07:24:33+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: POT <support@madrasthemes.freshdesk.com>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: includes/gutenberg/class-vodi-gutenberg-blocks.php:1941
+msgid "Vodi Blocks"
+msgstr ""
+
+#: vodi-extensions.php:143 vodi-extensions.php:152
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Vodi Extensions"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://madrasthemes.com/vodi"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This selection of extensions compliment our lean and mean theme for "
+"MasVideos, vodi. Please note: they don’t work with any WordPress theme, "
+"just vodi."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "MadrasThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://madrasthemes.com/"
+msgstr ""

@@ -1,0 +1,111 @@
+/**
+ * Bootstrap variables override
+ */
+.section-featured-tv-show__inner {
+  padding-top: 100px; }
+
+.section-featured-tv-show .featured-tv-show__header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px; }
+  @media (min-width: 992px) {
+    .section-featured-tv-show .featured-tv-show__header {
+      margin-bottom: 67px; } }
+  .section-featured-tv-show .featured-tv-show__header-pretitle {
+    font-size: 14px;
+    line-height: 1.625;
+    opacity: 0.21;
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      .section-featured-tv-show .featured-tv-show__header-pretitle {
+        font-size: 16px;
+        margin-bottom: 28px; } }
+  .section-featured-tv-show .featured-tv-show__header-title {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      .section-featured-tv-show .featured-tv-show__header-title {
+        font-size: 50px;
+        margin-bottom: 28px; } }
+    .section-featured-tv-show .featured-tv-show__header-title > a {
+      color: #fff; }
+  .section-featured-tv-show .featured-tv-show__header-subtitle {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.625;
+    color: #fff;
+    display: block;
+    margin: auto; }
+    @media (min-width: 992px) {
+      .section-featured-tv-show .featured-tv-show__header-subtitle {
+        font-size: 26px; } }
+    @media (min-width: 1200px) {
+      .section-featured-tv-show .featured-tv-show__header-subtitle {
+        width: 343px;
+        overflow: hidden;
+        height: 72px; } }
+
+.section-featured-tv-show .featured-tv-show__content .nav {
+  padding-right: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  align-items: baseline;
+  margin-bottom: 30px; }
+  .section-featured-tv-show .featured-tv-show__content .nav-item + .nav-item {
+    margin-right: 30px; }
+  .section-featured-tv-show .featured-tv-show__content .nav-link {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #fff; }
+    .section-featured-tv-show .featured-tv-show__content .nav-link.active {
+      font-size: 20px;
+      line-height: 1;
+      font-weight: 700; }
+  @media (min-width: 768px) {
+    .section-featured-tv-show .featured-tv-show__content .nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow-x: initial;
+      overflow-y: initial; } }
+  .section-featured-tv-show .featured-tv-show__content .nav .nav-item {
+    flex-shrink: 0; }
+
+.section-featured-tv-show .featured-tv-show__content .episodes__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px; }
+  .section-featured-tv-show .featured-tv-show__content .episodes__inner .episode {
+    position: relative;
+    width: 100%;
+    padding-left: 7.5px;
+    padding-right: 7.5px; }
+    @media (max-width: 1439.98px) {
+      .section-featured-tv-show .featured-tv-show__content .episodes__inner .episode:first-child {
+        flex: 0 0 100%;
+        max-width: 100%; } }
+    @media (min-width: 768px) {
+      .section-featured-tv-show .featured-tv-show__content .episodes__inner .episode {
+        flex: 0 0 50%;
+        max-width: 50%; } }
+    @media (min-width: 1200px) {
+      .section-featured-tv-show .featured-tv-show__content .episodes__inner .episode {
+        flex: 0 0 20%;
+        max-width: 20%; } }
+    .section-featured-tv-show .featured-tv-show__content .episodes__inner .episode__title {
+      font-size: 14px;
+      color: #fff; }
+
+.section-featured-tv-show.light .featured-tv-show__header-pretitle,
+.section-featured-tv-show.light .featured-tv-show__header-title > a, .section-featured-tv-show.light .featured-tv-show__header-subtitle,
+.section-featured-tv-show.light .featured-tv-show__content .nav-link,
+.section-featured-tv-show.light .featured-tv-show__content .episode__title {
+  color: #121a21; }

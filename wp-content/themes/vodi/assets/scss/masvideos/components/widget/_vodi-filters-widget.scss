@@ -1,0 +1,41 @@
+.sidebar-area.widget-area:not(.blog-sidebar) {
+	.widget_vodi_movies_filter,
+	.widget_vodi_videos_filter,
+	.widget_vodi_tv_shows_filter {
+		margin-bottom: 25px;
+
+		&>.widget-header {
+			.widget-title {
+				margin-bottom: 28px;
+			}
+		}
+
+		.widget .widget-title {
+			font-size: 18px;
+			padding-bottom: 8px;
+			margin-bottom: 21px;
+		}
+
+		.widget:last-child:not(.widget_vodi_movies_filter):not(.widget_vodi_videos_filter):not(.widget_vodi_tv_shows_filter) {
+			padding-bottom: 0;
+		}
+	}
+
+	.widget {
+		&:not(.widget_vodi_movies_filter):not(.widget_vodi_videos_filter):not(.widget_vodi_tv_shows_filter) {
+			margin-bottom: 0;
+		}
+
+		&:not(.widget_vodi_movies_filter):not(.widget_vodi_videos_filter):not(.widget_vodi_tv_shows_filter) {
+			&+.widget {
+				&:not(.widget_vodi_movies_filter):not(.widget_vodi_videos_filter):not(.widget_vodi_tv_shows_filter) {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+
+	.widget:last-child:not(.widget_vodi_movies_filter):not(.widget_vodi_videos_filter):not(.widget_vodi_tv_shows_filter) {
+		padding-bottom: 15px;
+	}
+}

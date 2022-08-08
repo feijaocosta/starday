@@ -1,0 +1,49 @@
+.single-video-v5 {
+	.single-video {
+		&__player-container {
+			padding-bottom: 0;
+			margin-bottom: 37px;
+		}
+
+		&__head {
+			margin: auto;
+			@include media-breakpoint-up(lg) {
+				max-width: 87.6%;
+			}
+			
+			iframe {
+				margin: auto;
+				display: block;
+			}
+		}
+
+		&__comments-wrap {
+			display: flex;
+			flex-direction: column;
+
+			@include media-breakpoint-up(lg) {
+				flex-direction: row;
+			}
+
+			.masvideos-Reviews {
+				@include make-auto-col();
+				order: 2;
+
+				@include media-breakpoint-up(lg) {
+		    		order: 0;
+		    	}
+
+				& + .single-video__sidebar--banner-image {
+					flex: 0 0 100%;
+			    	max-width: 100%;
+			    	
+					@include media-breakpoint-up(lg) {
+						flex: 0 0 24.5%;
+    					max-width: 24.5%;
+			    		margin-left: 45px;
+			    	}
+				}
+			}
+		}
+	}
+}

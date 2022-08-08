@@ -1,0 +1,66 @@
+.episode__head--info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	padding-top: 30px;
+	flex-direction: column;
+
+	@include media-breakpoint-up(md) {
+		flex-direction: row;
+	}
+
+	.episode {
+		&__poster {
+			@include media-breakpoint-up(md) {
+				flex: 0 0 14.11%;
+			    max-width: 14.11%;
+			    margin-right: 16px;
+			}
+
+			.episode__link {
+				height: 100%;
+				padding: 0;
+
+				.episode__poster--image,
+		        .masvideos-placeholder {
+					position: relative;
+				}
+			}
+		}
+
+		&__title {
+			font-size: 26px;
+			line-height: 1;
+		}
+
+		&__tv-show-name,
+		&__number {
+			margin-bottom: 8px;
+			display: none;
+		}
+
+		&__meta {
+			&--genres,
+	        &--genres a,
+	        &--release-year {
+	        	display: flex;
+	            font-size: 12px;
+	            line-height: 18px;
+	            letter-spacing: -0.01em;
+	            color: #949cb0;
+	            font-family: $os;
+	            font-weight: $os-regular;
+	            margin-bottom: 3px;
+	        }
+		}
+
+		&__description,
+		&__short-description {
+			margin-bottom: 26px;
+		}
+
+		&__short-description p{
+			margin-bottom: 0;
+		}
+	}
+}

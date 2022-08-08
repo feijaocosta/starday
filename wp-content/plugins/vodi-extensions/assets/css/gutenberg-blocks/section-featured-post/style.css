@@ -1,0 +1,65 @@
+/**
+ * Bootstrap variables override
+ */
+.section-featured-post {
+  display: flex;
+  align-items: flex-end;
+  min-height: 300px;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .section-featured-post {
+      min-height: 400px; } }
+  @media (min-width: 992px) {
+    .section-featured-post {
+      min-height: 500px; } }
+  .section-featured-post .featured-post {
+    margin: 20px 0 30px; }
+    @media (min-width: 992px) {
+      .section-featured-post .featured-post {
+        width: 60%;
+        margin: 40px 0 50px; } }
+    @media (min-width: 1200px) {
+      .section-featured-post .featured-post {
+        width: 50%; } }
+    .section-featured-post .featured-post .article__title {
+      font-size: 32px;
+      margin-left: -2px;
+      margin-bottom: 0;
+      font-weight: 700; }
+      @media (min-width: 992px) {
+        .section-featured-post .featured-post .article__title {
+          font-size: 44px; } }
+      .section-featured-post .featured-post .article__title a {
+        color: #fff; }
+    .section-featured-post .featured-post .article__meta {
+      margin-bottom: 11px;
+      color: #fff; }
+      .section-featured-post .featured-post .article__meta a {
+        color: #fff; }
+    .section-featured-post .featured-post .article__date {
+      display: none; }
+    .section-featured-post .featured-post__action {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: -0.01em;
+      font-family: "Montserrat", "Open Sans", sans-serif;
+      margin: 17px 0;
+      display: inline-block; }
+      @media (min-width: 768px) {
+        .section-featured-post .featured-post__action {
+          margin: 17px 0 28px; } }
+      .section-featured-post .featured-post__action a {
+        color: #fff;
+        display: flex;
+        align-items: center; }
+        .section-featured-post .featured-post__action a .play-trailer-txt {
+          font-size: 14px; }
+      .section-featured-post .featured-post__action i {
+        margin-right: 10px;
+        font-size: 16px; }
+
+@media (min-width: 1200px) {
+  .page__content .section-featured-post:first-child {
+    min-height: 600px; } }

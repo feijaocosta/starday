@@ -1,0 +1,129 @@
+.single-movie-v2 {
+	.content-area {
+		> .movie {
+			margin-bottom: 48px;
+		}
+	}
+
+	.single-movie {
+		&__player-container--inner {
+
+			.single-movie__row {
+				padding-bottom: 70px;
+			}
+
+			.single-movie__content {
+				flex: 0 0 100%;
+				max-width: 100%;
+
+				@include media-breakpoint-up(lg) {
+					flex: 0 0 60%;
+					max-width: 60%;
+				}
+
+				@include media-breakpoint-up(xl) {
+					flex: 0 0 65.5%;
+					max-width: 65.5%;
+				}
+
+				.movie__head {
+					margin-bottom: 0;
+				}
+			}
+
+			.single-movie__sidebar {
+				flex: 0 0 100%;
+				max-width: 100%;
+				margin-top: 20px;
+
+				@include media-breakpoint-up(lg) {
+					flex: 0 0 40%;
+					max-width: 40%;
+					margin-top: 0;
+				}
+
+				@include media-breakpoint-up(xl) {
+					flex: 0 0 31%;
+		    		max-width: 31%;
+		    		padding-left: 50px;
+		    	}
+
+		    	&--head-info {
+		    		display: flex;
+		    		align-items: center;
+		    		margin-bottom: 38px;
+
+		    		.movie {
+		    			&__poster {
+		    				flex: 0 0 17.6%;
+						    max-width: 17.6%;
+						    margin-right: 21px;
+						    margin-bottom: 0;
+		    			}
+
+		    			&__title {
+		    				font-family: $ms;
+		    				font-size: 24px;
+		    				font-weight: $ms-semi-bold;
+		    				line-height: 1.2;
+		    				height: 26px;
+		    				overflow: hidden;
+		    			}
+
+		    			&__body {
+		    				flex: 0 0 77.5%; 
+    						max-width: 77.5%; 
+
+		    			}
+
+		    			&__meta {
+		    				white-space: normal;
+		    				height: 18px;
+		    			}
+		    		}
+		    	}
+
+		    	.movie__rating-with-playlist {
+    				margin-bottom: 17px;
+
+					.avg-rating {
+						& + .movie-actions--link_add-to-playlist {
+							margin-left: 15px;
+
+							@include media-breakpoint-up(lg) {
+								margin-left: 20px;
+							}
+
+							@include media-breakpoint-up(xl) {
+								margin-left: 35px;
+							}
+						}
+					}
+
+					.movie-actions--link_add-to-playlist {
+						margin-left: 0;
+					}
+    			}
+
+    			.movie__description {
+    				font-size: 15px;
+				    color: #b4bbc0;
+				    line-height: 26px;
+				    margin-bottom: 35px;
+    			}
+
+    			.movie__info--head {
+    				display: none;
+    			}
+			}
+		}
+	}
+
+	.vodi-views-likes {
+        margin-top: 12px;
+    }
+
+    .movie__recommended {
+    	padding-top: 50px;
+    }
+}

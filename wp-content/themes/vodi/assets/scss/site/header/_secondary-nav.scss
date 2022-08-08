@@ -1,0 +1,22 @@
+.site_header__secondary-nav {
+	//padding: 0 45px;
+
+    .nav {
+        > li {
+            
+            &.current-menu-item {
+                font-weight: $ms-bold;
+            }
+            
+            > a {
+                padding: 21px 7px;
+                line-height: 18px;
+                color: #99d8ff;
+
+                @include media-breakpoint-up(xxl) {
+                    padding: 24.5px 20px;
+                }
+            }
+        }
+    }
+}

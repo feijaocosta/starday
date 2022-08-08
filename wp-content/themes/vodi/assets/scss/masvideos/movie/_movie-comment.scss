@@ -1,0 +1,62 @@
+.single-movie {
+	.masvideos-reviews__title {
+		font-size: 24px;
+		margin-bottom: 24px;
+	}
+	
+	#reviews .comment_container p:last-child {
+		margin-bottom: 0;
+	}
+
+	#reviews .masvideos-review__author {
+		font-weight: 600;
+	}
+
+	#reviews .comment_container img {
+		width: auto;
+		height: auto;
+	}
+
+	#reviews .commentlist {
+		margin-bottom: 60px;
+	}
+
+	#reviews .star-rating .star {
+		color: #949cb0;
+	}
+
+	.comment_container {
+		flex-direction: column;
+
+		&--inner {
+			display: flex;
+			align-items: center;
+
+			.description {
+				display: none;
+			}
+		}
+
+		.description {
+			margin-top: 20px;
+			color: #e3e3e3;
+		}
+	}
+
+	.masvideos-Reviews #comments{
+		ol.commentlist {
+			li.comment {
+				& + li {
+					padding-top: 20px;
+					border-top-width: 1px;
+					border-top-style: solid;
+					border-top-color: #333333;
+				}
+			}
+		}
+	}
+
+	#reviews .comment_container p {
+		line-height: 1.5;
+	}
+}

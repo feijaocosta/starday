@@ -1,0 +1,41 @@
+.movies_widget_rating_filter,
+.videos_widget_rating_filter,
+.tv_shows_widget_rating_filter {
+    ul {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 0;
+        }
+
+        li.masvideos-layered-nav-rating {
+            a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #949cb0;
+            }
+
+            .star-rating {
+                line-height: 1;
+                
+                .star {
+                    font-size: 17px;
+                    height: 17px;
+                }
+            }
+
+            + li.masvideos-layered-nav-rating {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.movie-sidebar.widget-area .movies_widget_rating_filter .widget-title  {
+    margin-bottom: 18px !important;
+}
+
+.movie-sidebar .movies_widget_rating_filter ul {
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 16px;
+    }
+}

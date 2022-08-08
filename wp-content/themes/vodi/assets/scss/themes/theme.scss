@@ -1,0 +1,45 @@
+@import "../mixins";
+@import "variables";
+@import "transparent";
+@import "dark";
+@import "light";
+
+.page-template-template-homepage-v6,
+.page-template-template-homepage-v7 {
+    .home-section {
+        width: 100%;
+        margin-left: 0;
+        
+        .container {
+            padding: 0;
+        }
+    }
+}
+
+.page-template-category-template,
+.page-template-category-tvshows-template,
+.page-template-category-video-template {
+    .dark {
+        background-color: #131722;
+    }
+}
+
+.page-template-category-template,
+.page-template-category-tvshows-template {
+    .site-content {
+        background-color: #131722;
+    }
+
+    .widget-area .widget_categories ul li a {
+        color: #b4bbc0;
+    }
+
+    .widget-area-inner {
+        background: #1c212e;
+    }
+
+    .widget-area .widget-title {
+        color: #fff;
+        border-bottom-color: #2f2f33;
+    }
+}

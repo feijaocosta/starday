@@ -1,0 +1,43 @@
+ul.page-numbers,
+.nav-links,
+.page-links-inner {
+    @include make-pagination();
+    flex-wrap: wrap;
+}
+
+ul.page-numbers,
+.nav-links {
+    justify-content: center;
+}
+
+ul.page-numbers > li > a,
+ul.page-numbers > li > span,
+.nav-links > .page-numbers,
+.page-links-inner > a,
+.page-links-inner > span {
+    @include make-page-link();
+
+}
+
+ul.page-numbers > li > a,
+ul.page-numbers > li > span,
+.nav-links > .page-numbers {
+	margin-bottom: 15px;
+
+    @include media-breakpoint-up(md) {
+    	 margin-bottom: 0;
+    }
+
+}
+
+.page-links-inner > span {
+    z-index: 1;
+    color: $pagination-active-color;
+    border-color: $pagination-active-border-color;
+    font-weight: $ms-bold;
+}
+
+.pagination {
+    font-family: $ms;
+    margin-bottom: 40px;
+}

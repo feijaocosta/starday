@@ -1,0 +1,139 @@
+.episode{
+	&__head {
+		position: relative;
+		margin-bottom: 36px;
+		display: flex;
+		width: 100%;
+		//justify-content: flex-end;
+		position: relative;
+		align-items: center;
+
+	}
+
+	&__player {
+		width: 100%;
+
+		&--next-episode,
+		&--prev-episode {
+			@include media-breakpoint-down(sm) {
+				position: absolute;
+				z-index: 1;
+				display: none;
+			}
+
+			max-width: 120px;
+			
+
+			a {
+				font-size: 13px;
+				line-height: 18px;
+				color: $white;
+				display: flex;
+				align-items: center;
+				transition: all .3s ease 0s;
+
+			}
+
+			&__label {
+				position: relative;
+				flex: 1;
+			}
+			
+		}
+
+		&--prev-episode {
+			left: 0;
+			@include media-breakpoint-up(lg) {
+				margin-right: 82px;
+			}
+
+			a {
+				@include media-breakpoint-up(lg) {
+					text-align: right;
+				}
+
+				&:before {
+					content: '';
+					width: 84px;
+					height: 121px;
+					display: inline-block;
+					background-repeat: no-repeat;
+			    	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84px" height="120px"><path fill-rule="evenodd" fill="rgb(113, 127, 140)" d="M61.988,118.579 L60.584,119.988 L0.012,59.210 L1.416,57.801 L1.713,58.098 L60.590,0.006 L61.982,1.426 L3.117,59.508 L61.988,118.579 Z"/></svg>');
+
+			    	[dir="rtl"] & {
+			    		background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px" height="121px"><path fill-rule="evenodd"  fill="rgb(113, 127, 140)" d="M62.707,59.707 L1.707,120.707 L0.293,119.293 L59.580,60.006 L0.299,1.713 L1.701,0.287 L60.994,58.592 L61.293,58.293 L62.707,59.707 Z"/></svg>');
+			    	}
+				}
+			}
+
+			&__label {
+				left: -20px;
+			}
+		}
+
+		&--next-episode {
+			right: 0;
+			text-align: right;
+
+			@include media-breakpoint-up(md) {
+				display: flex;
+				justify-content: flex-end;
+			}
+			
+			@include media-breakpoint-up(lg) {
+				margin-left: 82px;
+			}
+
+			a {
+
+				&:after {
+					content: '';
+					width: 77px;
+					height: 121px;
+					display: inline-block;
+			    	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px" height="121px"><path fill-rule="evenodd"  fill="rgb(113, 127, 140)" d="M62.707,59.707 L1.707,120.707 L0.293,119.293 L59.580,60.006 L0.299,1.713 L1.701,0.287 L60.994,58.592 L61.293,58.293 L62.707,59.707 Z"/></svg>');
+			    	background-repeat: no-repeat;
+
+			    	[dir="rtl"] & {
+			    		background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84px" height="120px"><path fill-rule="evenodd" fill="rgb(113, 127, 140)" d="M61.988,118.579 L60.584,119.988 L0.012,59.210 L1.416,57.801 L1.713,58.098 L60.590,0.006 L61.982,1.426 L3.117,59.508 L61.988,118.579 Z"/></svg>');
+			    	}
+
+			    	@include media-breakpoint-down(sm) {
+			    		width: 63px;
+			    	}
+				}
+			}
+
+			&__label {
+				right: -12px;
+			}
+		}
+
+		iframe {
+			margin-bottom: 0;
+			border: none;
+		}
+	}
+}
+
+.single-episode-v1,
+.single-episode-v2 {
+	.episode__player {
+		@include media-breakpoint-up(lg) {
+			max-width: 74.5%;
+		}
+		
+		&:first-child {
+			@include media-breakpoint-up(lg) {
+				margin-left: auto;
+			}
+		}
+
+		&:last-child {
+			@include media-breakpoint-up(lg) {
+				margin-right: auto;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,114 @@
+.vodi-categories-widget {
+
+    .categories {
+        @include list-unstyled();
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .category {
+    	background-color: #181d29;
+		margin: 0 3.5px 3.5px 0;
+		letter-spacing: -0.05em;
+        cursor: pointer;
+        width: 52px;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include hover-focus() {
+            a,
+            span {
+                color: #131722;
+            }
+        }
+
+    	a {
+    		font-size: 21px;
+			line-height: 1.25;
+			font-weight: $os-semi-bold;
+            display: block;
+    	}
+
+    	.count {
+    		font-size: 12px;
+    		line-height: 14px;
+    		color: #6b7590;
+            display: block;
+    	}
+    }
+}
+
+.movie-sidebar,
+.video-sidebar,
+.tv-show-sidebar {
+    &.widget-area {
+        .widget {
+            margin-bottom: 28px;
+        }
+
+        .widget-title {
+            font-size: 22px;
+            letter-spacing: -0.025em;
+            font-weight: $ms-medium;
+            padding-bottom: 13px;
+            border-bottom-style: solid;
+            border-width: 1px;
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+
+    ul {
+        @include list-unstyled();
+    }
+}
+
+.movie-sidebar {
+    &.widget-area {
+        .widget-title {
+            font-size: 22px !important;
+            padding-bottom: 13px !important;
+            margin-bottom: 15px !important;
+
+            @include media-breakpoint-up(xl) {
+                margin-bottom: 30px !important;
+            }
+        }
+    }
+
+    ul {
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 26px;
+        }
+    }
+}
+
+.page-template-category-template,
+.page-template-category-tvshows-template {
+    .widget-area-inner {
+        padding: 25px 20px;
+    }
+
+    .site-content {
+        padding-top: 75px;
+    }
+
+    .section_header {
+        padding-top: 20px;
+    }
+}
+
+.movie-sidebar .masvideos-movies-filter-widget ul {
+    margin-bottom: 30px;
+}
+
+.tv-show-sidebar .widget_vodi_tv_shows_filter {
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 0 !important;
+    }
+}

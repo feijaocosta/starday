@@ -1,0 +1,74 @@
+.episodes__inner {
+    @include make-row(18px);
+}
+
+.episodes__inner > .episode {
+    @include make-col-ready(18px);
+}
+
+.columns-1 > .episode {
+    @include make-col(6);
+    @include media-breakpoint-up(md) {
+        @include make-col(12);
+    }
+}
+
+.columns-2 .episodes__inner > .episode {
+    @include make-col(6);
+}
+
+
+.columns-3 .episodes__inner > .episode {
+    @include make-col(6);
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+}
+
+.columns-4 .episodes__inner > .episode {
+    @include make-col(6);
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(3);
+    }
+}
+
+.columns-5 .episodes__inner > .episode {
+    @include make-col(6);
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(2.4);
+    }
+}
+
+
+.columns-6 .episodes__inner > .episode {
+    @include make-col(6);
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(2);
+    }
+}
+
+.columns-7 .episodes__inner > .episode {
+    @include make-col(6);
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(1.71428571429);
+    }
+}
+
+

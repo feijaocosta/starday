@@ -1,0 +1,65 @@
+.single-video-v3 ,
+.single-video-v4 {
+ 
+    .single-video__sidebar {
+
+    	&--banner-image {
+    		img {
+    			height: 194px;
+    			object-fit: cover;
+    		}
+    	}
+    	.single-video{
+
+    		&__related-playlist-videos,
+            &__prev-next-videos {
+    			&--content {
+		    		max-height: 542px;
+				    padding: 24px 13px;
+				    border-radius: 5px;
+				}
+
+				&--flex-header {
+					margin-bottom: 13px;
+				}
+
+				.videos__inner {
+					flex-direction: row;
+
+					.video {
+						flex: 0 0 50%;
+						max-width: 50%;
+						flex-direction: column;
+						align-items: flex-start;
+						margin-bottom: 15px;
+
+						&__container {
+						    max-width: 100%;
+						    margin-right: 0;
+						    margin-bottom: 8px;
+						}
+
+						&__title {
+							height: 35px;
+							overflow: hidden;
+						}
+					}
+				}
+			}
+    	}
+    }
+}
+
+.single-video-v3 {
+	.single-video__sidebar .single-video__related-playlist-videos--content,
+    .single-video__sidebar .single-video__prev-next-videos--content {
+		background: #f6f7f9;
+	}
+}
+
+.single-video-v4 {
+	.single-video__sidebar .single-video__related-playlist-videos--content,
+    .single-video__sidebar .single-video__prev-next-videos--content {
+		background: #1c212e;
+	}
+}

@@ -1,0 +1,159 @@
+/**
+ * Bootstrap variables override
+ */
+.section-featured-movie {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .section-featured-movie__inner {
+    align-items: center;
+    padding: 94px 0;
+    display: flex; }
+  .section-featured-movie .featured-movie__content {
+    padding-top: 20px;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    @media (min-width: 768px) {
+      .section-featured-movie .featured-movie__content {
+        flex: 0 0 58.3333333333%;
+        max-width: 58.3333333333%;
+        order: inherit;
+        padding-top: 0; } }
+    @media (min-width: 992px) {
+      .section-featured-movie .featured-movie__content {
+        flex: 0 0 50%;
+        max-width: 50%; } }
+    @media (min-width: 1200px) {
+      .section-featured-movie .featured-movie__content {
+        flex: 0 0 40%;
+        max-width: 40%; } }
+    .section-featured-movie .featured-movie__content-image {
+      width: 187px;
+      height: 59px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      margin-bottom: 61px; }
+    .section-featured-movie .featured-movie__content .movies .movie {
+      flex: 0 0 100%;
+      max-width: 100%; }
+      .section-featured-movie .featured-movie__content .movies .movie__short-description {
+        display: block; }
+      .section-featured-movie .featured-movie__content .movies .movie__poster, .section-featured-movie .featured-movie__content .movies .movie__meta, .section-featured-movie .featured-movie__content .movies .movie__badge {
+        display: none; }
+      .section-featured-movie .featured-movie__content .movies .movie__title {
+        font-size: 30px;
+        font-family: "Montserrat", "Open Sans", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 27px;
+        line-height: 1;
+        white-space: normal; }
+        @media (min-width: 992px) {
+          .section-featured-movie .featured-movie__content .movies .movie__title {
+            font-size: 50px; } }
+      .section-featured-movie .featured-movie__content .movies .movie__short-description {
+        display: block;
+        font-family: "Montserrat", "Open Sans", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        margin-bottom: 50px; }
+      .section-featured-movie .featured-movie__content .movies .movie__actions {
+        display: flex;
+        flex-wrap: wrap; }
+        .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch,
+        .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a {
+          display: inline-block;
+          font-weight: 700;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          -webkit-user-select: none;
+                  user-select: none;
+          border: 2px solid transparent;
+          text-transform: uppercase;
+          padding: 22px 38px;
+          font-size: 0.875rem;
+          line-height: 1;
+          border-radius: 5px;
+          transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+          color: #fff;
+          font-family: "Montserrat", "Open Sans", sans-serif; }
+          @media (prefers-reduced-motion: reduce) {
+            .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch,
+            .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a {
+              transition: none; } }
+          .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch:hover, .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch:focus,
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a:hover,
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a:focus {
+            text-decoration: none; }
+          .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch:focus, .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch.focus,
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a:focus,
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a.focus {
+            outline: 0; }
+          .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch.disabled, .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch:disabled,
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a.disabled,
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a:disabled {
+            opacity: 0.65; }
+          .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch:not(:disabled):not(.disabled),
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a:not(:disabled):not(.disabled) {
+            cursor: pointer; }
+          .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch:not(:disabled):not(.disabled):active, .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch:not(:disabled):not(.disabled).active,
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a:not(:disabled):not(.disabled):active,
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a:not(:disabled):not(.disabled).active {
+            background-image: none; }
+          @media (max-width: 767.98px) {
+            .section-featured-movie .featured-movie__content .movies .movie__actions a.movie-actions--link_watch,
+            .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist > a {
+              width: 100%;
+              margin-bottom: 1em; } }
+        @media (max-width: 767.98px) {
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist {
+            width: 100%; } }
+        @media (min-width: 768px) {
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist {
+            margin-right: 20px; } }
+        .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist a.dropdown-toggle {
+          color: #fff;
+          border-radius: 5px;
+          border-style: solid;
+          border-width: 2px;
+          border-color: #b0b3b5; }
+          .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist a.dropdown-toggle:hover, .section-featured-movie .featured-movie__content .movies .movie__actions .movie-actions--link_add-to-playlist a.dropdown-toggle:focus {
+            background-color: #fff;
+            color: #000;
+            border-color: #fff; }
+  .section-featured-movie .featured-movie__action {
+    display: none; }
+    @media (min-width: 768px) {
+      .section-featured-movie .featured-movie__action {
+        flex: 0 0 41.6666666667%;
+        max-width: 41.6666666667%;
+        display: block; } }
+    @media (min-width: 992px) {
+      .section-featured-movie .featured-movie__action {
+        flex: 0 0 50%;
+        max-width: 50%; } }
+    @media (min-width: 1200px) {
+      .section-featured-movie .featured-movie__action {
+        flex: 0 0 60%;
+        max-width: 60%; } }
+    .section-featured-movie .featured-movie__action-icon {
+      font-size: 84px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      margin: auto;
+      width: 182px;
+      height: 182px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.5;
+      text-decoration: none; }
+      .section-featured-movie .featured-movie__action-icon:hover {
+        opacity: 1; }
+  .section-featured-movie h2.featured-video__content-title {
+    font-size: 50px; }
+  .section-featured-movie .movies .movie__title {
+    margin-bottom: 27px; }

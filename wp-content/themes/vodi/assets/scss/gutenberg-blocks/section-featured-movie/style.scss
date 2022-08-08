@@ -1,0 +1,171 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.section-featured-movie {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__inner {
+        align-items: center;
+        padding: 94px 0;
+        display: flex;
+    }
+
+    .featured-movie {
+        &__content {
+            padding-top: 20px;
+            @include make-col(12);
+
+            @include media-breakpoint-up(md) {
+                @include make-col(7);
+                order: inherit;
+                padding-top: 0;
+            }
+
+            @include media-breakpoint-up(lg) {
+                @include make-col(6);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include make-col(4.8);
+            }
+
+            &-image {
+                width: 187px;
+                height: 59px;
+                object-fit: cover;
+                margin-bottom: 61px;
+            }
+
+            .movies .movie {
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                &__short-description {
+                    display: block;
+                }
+
+                &__poster,
+                &__meta,
+                &__badge {
+                    display: none;
+                }
+
+                &__title {
+                    font-size: 30px;
+                    font-family: $ms;
+                    font-weight: $ms-bold;
+                    color: #fff;
+                    margin-bottom: 27px;
+                    line-height: 1;
+                    white-space: normal;
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 50px;
+                    }
+                }
+
+                &__short-description {
+                    display: block;
+                    font-family: $ms;
+                    font-weight: $ms-medium;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #fff;
+                    margin-bottom: 50px;
+                }
+
+                &__actions {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    a.movie-actions--link_watch,
+                    .movie-actions--link_add-to-playlist > a {
+                        @include make-button( 22px, 38px, 14px, 1, 5px, 2px );
+                        color: #fff;
+                        font-family: $ms;
+
+                        @include media-breakpoint-down(sm) {
+                            width: 100%;
+                            margin-bottom: 1em;
+                        }
+                    }
+
+                    .movie-actions--link_add-to-playlist {
+                        @include media-breakpoint-down(sm) {
+                            width: 100%;
+                        }
+
+                        @include media-breakpoint-up(md) {
+                            margin-left: 20px;
+                        }
+
+                        a.dropdown-toggle {
+                            color: #fff;
+                            border-radius: 5px;
+                            border-style: solid;
+                            border-width: 2px;
+                            border-color: #b0b3b5;
+
+                            @include hover-focus {
+                                background-color: #fff;
+                                color: #000;
+                                border-color: #fff;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+
+        &__action {
+            display: none;
+
+            @include media-breakpoint-up(md) {
+                @include make-col(5);
+                display: block;
+            }
+
+            @include media-breakpoint-up(lg) {
+                @include make-col(6);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include make-col(7.2);
+            }
+
+            &-icon {
+                font-size: 84px;
+                border: 2px solid $white;
+                border-radius: 50%;
+                margin: auto;
+                width: 182px;
+                height: 182px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0.5;
+                text-decoration: none;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    h2.featured-video__content-title {
+        font-size: 50px;
+    }
+
+    .movies .movie__title {
+        margin-bottom: 27px;
+    }
+}

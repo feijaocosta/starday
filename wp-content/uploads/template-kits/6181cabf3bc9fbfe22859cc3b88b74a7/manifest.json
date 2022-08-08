@@ -1,0 +1,1027 @@
+{
+    "manifest_version": "1.0.21",
+    "title": "Netric \u2013 Proxy & VPN Services Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/home\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About",
+            "screenshot": "screenshots\/about.jpg",
+            "source": "templates\/about.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/about\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Services",
+            "screenshot": "screenshots\/services.jpg",
+            "source": "templates\/services.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/services\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Pricing",
+            "screenshot": "screenshots\/pricing.jpg",
+            "source": "templates\/pricing.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/pricing\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Team",
+            "screenshot": "screenshots\/team.jpg",
+            "source": "templates\/team.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/team\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/blog\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/single-post\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-post",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Metform Contact",
+            "screenshot": "screenshots\/metform-contact.jpg",
+            "source": "templates\/metform-contact.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/metform-contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact",
+            "screenshot": "screenshots\/contact.jpg",
+            "source": "templates\/contact.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/header\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/footer\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Offcanvas",
+            "screenshot": "screenshots\/offcanvas.jpg",
+            "source": "templates\/offcanvas.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/netric\/template-kit\/offcanvas\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Jeg Elementor Kit",
+            "version": "2.1.0",
+            "file": "jeg-elementor-kit\/jeg-elementor-kit.php",
+            "author": "Jegstudio"
+        },
+        {
+            "name": "MetForm",
+            "version": "1.5.4",
+            "file": "metform\/metform.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.4.4",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "BG-freepik2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/BG-freepik2-800x433.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/contact.json",
+                    "name": "Contact"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 51507,
+            "dimensions": [
+                1920,
+                1040
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.freepik.com\/free-vector\/effective-advertising-technology-landing-page_5480408.htm"
+        },
+        {
+            "filename": "Phone2-46DFLRX.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/Phone2-46DFLRX-800x698.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 98142,
+            "dimensions": [
+                1000,
+                873
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-46DFLRX"
+        },
+        {
+            "filename": "logoo-9VAKXU.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/logoo-9VAKXU-800x292.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 54457,
+            "dimensions": [
+                983,
+                359
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-9VAKXU"
+        },
+        {
+            "filename": "logo-GR7E54.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/logo-GR7E54-800x321.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 29214,
+            "dimensions": [
+                891,
+                358
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-GR7E54"
+        },
+        {
+            "filename": "logoo-JQLHGD.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/logoo-JQLHGD-800x307.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 24709,
+            "dimensions": [
+                933,
+                358
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-JQLHGD"
+        },
+        {
+            "filename": "logo-Y7FDGX.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/logo-Y7FDGX-800x300.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 67712,
+            "dimensions": [
+                954,
+                358
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-Y7FDGX"
+        },
+        {
+            "filename": "asset-freepik2.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/asset-freepik2-800x546.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 232355,
+            "dimensions": [
+                969,
+                661
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.freepik.com\/free-vector\/vpn-virtual-private-network-isometric-landing-page_7058965.htm"
+        },
+        {
+            "filename": "BG2.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/BG2-800x433.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 26795,
+            "dimensions": [
+                1920,
+                1040
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.freepik.com\/free-vector\/effective-advertising-technology-landing-page_5480408.htm"
+        },
+        {
+            "filename": "finger-touch-smartphone-screen-with-privacy-protection-e1636969520943.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/finger-touch-smartphone-screen-with-privacy-protection-800x534.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 120451,
+            "dimensions": [
+                1440,
+                961
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PETDM47"
+        },
+        {
+            "filename": "flag-1-ET8X2YB.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/flag-1-ET8X2YB.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 200531,
+            "dimensions": [
+                768,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-ET8X2YB"
+        },
+        {
+            "filename": "flag-2.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/flag-2.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 198563,
+            "dimensions": [
+                768,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-ET8X2YB"
+        },
+        {
+            "filename": "flag-3.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/flag-3.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 208053,
+            "dimensions": [
+                768,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-ET8X2YB"
+        },
+        {
+            "filename": "flag-4.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/flag-4.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 208666,
+            "dimensions": [
+                768,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-ET8X2YB"
+        },
+        {
+            "filename": "flag-5.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/flag-5.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 199206,
+            "dimensions": [
+                768,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-ET8X2YB"
+        },
+        {
+            "filename": "flag-6.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/flag-6.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 199610,
+            "dimensions": [
+                768,
+                1024
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-ET8X2YB"
+        },
+        {
+            "filename": "map-9Z4Y5GV-e1636969510782.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/map-9Z4Y5GV-800x432.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                }
+            ],
+            "filesize": 80789,
+            "dimensions": [
+                1000,
+                540
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-9Z4Y5GV"
+        },
+        {
+            "filename": "happy-lovely-caucasian-lady-has-appealing-look-ex-A57NRC5.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/happy-lovely-caucasian-lady-has-appealing-look-ex-A57NRC5-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 159778,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-A57NRC5"
+        },
+        {
+            "filename": "handsome-young-bearded-man-in-t-shirt-showing-ok-s-HVS5RAU.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/handsome-young-bearded-man-in-t-shirt-showing-ok-s-HVS5RAU-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 118960,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-HVS5RAU"
+        },
+        {
+            "filename": "timid-beautiful-european-woman-with-satisfied-expr-5FCUXK8.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/timid-beautiful-european-woman-with-satisfied-expr-5FCUXK8-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 165136,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-5FCUXK8"
+        },
+        {
+            "filename": "handsome-black-millennial-man-crossing-hands-posin-CMD74H4.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/handsome-black-millennial-man-crossing-hands-posin-CMD74H4-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 115851,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-CMD74H4"
+        },
+        {
+            "filename": "concept-of-online-shopping-internet-payment-e-commerce--e1636969494294.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/concept-of-online-shopping-internet-payment-e-commerce--800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 331693,
+            "dimensions": [
+                1920,
+                1280
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-29NWS4F"
+        },
+        {
+            "filename": "Asset2-Freepik-e1636969374618.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/Asset2-Freepik-800x617.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                }
+            ],
+            "filesize": 240800,
+            "dimensions": [
+                1000,
+                771
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.freepik.com\/free-vector\/data-protection-landing-page-concept_8069158.htm"
+        },
+        {
+            "filename": "BG-L36UUQ.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/BG-L36UUQ-800x433.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 215127,
+            "dimensions": [
+                1920,
+                1040
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-L36UUQ"
+        },
+        {
+            "filename": "google-play-badge-e1630982322931-1.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/google-play-badge-e1630982322931-1.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 15158,
+            "dimensions": [
+                584,
+                179
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/play.google.com\/intl\/en_us\/badges\/"
+        },
+        {
+            "filename": "app-store1-1.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/app-store1-1.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 9449,
+            "dimensions": [
+                501,
+                168
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/developer.apple.com\/app-store\/marketing\/guidelines\/"
+        },
+        {
+            "filename": "Phone3-46DFLRX.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/Phone3-46DFLRX-800x878.png",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/pricing.json",
+                    "name": "Pricing"
+                }
+            ],
+            "filesize": 116304,
+            "dimensions": [
+                1000,
+                1098
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-46DFLRX"
+        },
+        {
+            "filename": "young-african-american-man-smiling-PXCKH6R-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/young-african-american-man-smiling-PXCKH6R-1-800x960.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 244026,
+            "dimensions": [
+                1000,
+                1200
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PXCKH6R"
+        },
+        {
+            "filename": "portrait-of-cheerful-pretty-redhead-young-woman-wi-SJC3EFY-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/portrait-of-cheerful-pretty-redhead-young-woman-wi-SJC3EFY-1-800x960.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 176982,
+            "dimensions": [
+                1000,
+                1200
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-SJC3EFY"
+        },
+        {
+            "filename": "handsome-bearded-man-with-dark-skin-feels-happy-we-8CXZ2VV-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/handsome-bearded-man-with-dark-skin-feels-happy-we-8CXZ2VV-1-800x960.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about.json",
+                    "name": "About"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 164101,
+            "dimensions": [
+                1000,
+                1200
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-8CXZ2VV"
+        },
+        {
+            "filename": "Phone4-46DFLRX.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/Phone4-46DFLRX-800x770.png",
+            "templates": [
+                {
+                    "source": "templates\/services.json",
+                    "name": "Services"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 127690,
+            "dimensions": [
+                1000,
+                963
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-46DFLRX"
+        },
+        {
+            "filename": "portrait-of-handsome-young-man-against-gray-backgr-4BV5JBH-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/portrait-of-handsome-young-man-against-gray-backgr-4BV5JBH-1-800x960.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 76963,
+            "dimensions": [
+                1000,
+                1200
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-4BV5JBH"
+        },
+        {
+            "filename": "cool-young-man-smiling-against-gray-wall-UBDTJCM-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/cool-young-man-smiling-against-gray-wall-UBDTJCM-1-800x960.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 157113,
+            "dimensions": [
+                1000,
+                1200
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-UBDTJCM"
+        },
+        {
+            "filename": "beautiful-blond-woman-smiling-PAEGR7C-1.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/beautiful-blond-woman-smiling-PAEGR7C-1-800x960.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 191374,
+            "dimensions": [
+                1000,
+                1200
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-PAEGR7C"
+        },
+        {
+            "filename": "the-text-inscription-vpn-is-written-on-a-semitransparent-field-surrounded-by-a-set-of-abstract-e1636969354639.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/the-text-inscription-vpn-is-written-on-a-semitransparent-field-surrounded-by-a-set-of-abstract-800x530.jpg",
+            "templates": [
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 144758,
+            "dimensions": [
+                1440,
+                954
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-L85P4LR"
+        },
+        {
+            "filename": "logo-netric-AMZMDE-e1636969389725.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/netric\/wp-content\/uploads\/sites\/207\/2021\/11\/logo-netric-AMZMDE-800x223.png",
+            "templates": [
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                },
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                },
+                {
+                    "source": "templates\/offcanvas.json",
+                    "name": "Offcanvas"
+                }
+            ],
+            "filesize": 42322,
+            "dimensions": [
+                1000,
+                279
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/image-AMZMDE"
+        }
+    ]
+}

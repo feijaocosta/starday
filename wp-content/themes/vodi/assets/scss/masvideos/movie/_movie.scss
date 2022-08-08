@@ -1,0 +1,296 @@
+.movie {
+    position: relative;
+    margin-bottom: 23px;
+
+    &__link {
+        display: block;
+    }
+
+    &__badge {
+        position: absolute;
+        font-size: 12px;
+        line-height: 21px;
+        color: $white;
+        padding: 0 12px;
+        border-radius: 4px;
+        top: -10.5px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    &__poster {
+        margin-bottom: 8px;
+        position: relative;
+    }
+
+    &__title {
+        font-family: $os;
+        font-weight: $os-bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000;
+    }
+
+    &__meta {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 4px;
+        color: #949cb0;
+
+        > span + span:before {
+            content: ', ';
+        }
+
+        span a {
+            color: #949cb0;
+        }
+    }
+
+    &__ratings {
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 32px;
+        background-color: #19272ecc;
+        padding: 0 7px;
+        display: none;
+
+        &--by {
+            background-color: #fec02c;
+            color: #000;
+            font-weight: $os-bold;
+            font-size: 13px;
+            line-height: 18px;
+            padding: 0 8px;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        &--rating {
+            font-family: "Montserrat";
+            font-size: 13px;
+            color: #a3acb0;
+            line-height: 18px;
+            height: 18px;
+            font-weight: $ms-semi-bold;
+            margin-right: 7px;
+
+            .rating {
+                font-size: 14px;
+                color: $white;
+                font-weight: $ms-bold;
+            }
+
+            .out-of {
+                font-size: 10px;
+                line-height: 18px;
+            }
+        }
+
+        .star {
+            line-height: 18px;
+            height: 18px;
+
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__title,
+    &__meta {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__short-description {
+       
+        p,div {
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: -0.01em;
+            color: #b4bbc0;
+        }
+
+        div {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__actions {
+         a {
+            font-size: 12px;
+            line-height: 1.25;
+            font-family:$ms;
+            font-weight: $ms-bold;
+            color: #fff;
+            text-transform: uppercase;
+            display: inline-block;
+            border: 2px solid transparent;
+            padding: 12.5px 18.7px;
+        }
+
+        .movie-actions--link_add-to-playlist {
+            color: #303544;
+        }
+    }
+
+    .movie-actions--link_watch {
+        border-radius: 5px;
+        background-color: #303544;
+        
+    }
+
+    &__actions,
+    &__review-info,
+    &__short-description {
+        display: none;
+    }
+
+    &__review-info {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        color: #949cb0;
+
+        .avg-rating-number {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100%;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+
+    .avg-rating {
+        position: relative;
+        order: 2;
+        display: block;
+        margin-bottom: 10px;
+
+        .rating-with-count {
+            position: relative;
+        }
+
+        .vodi-svg {
+            fill: #303544;
+        }
+    }
+
+    .count,
+    .avg-rating {
+        font-size: 14px;
+        color: #949cb0;
+    }
+
+    .avg-rating-number {
+        font-weight: $os-bold;
+    }
+
+    .rating-number-with-text {
+        .avg-rating-number {
+            display: none;
+        }
+    }
+}
+
+.archive {
+    .movies__jumbotron--top {
+        .home-section {
+            width: auto;
+            margin-left: 0;
+
+            .container {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.dark {
+    .movie__title {
+        color: $white;
+    }
+
+    .movie__actions .movie-actions--link_add-to-playlist {
+        color: #fff;
+    }
+}
+
+.movies-with-ratings {
+    .movie__ratings {
+        display: flex;
+    }
+}
+
+.style-2 {
+    .movie {
+        &__link {
+            position: relative;
+        }
+
+        &__meta {
+            margin-bottom: 2px;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        &__info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0 15px 13px;
+            z-index: 1;
+            right: 0;
+        }
+
+        &__title {
+            font-size: 15px;
+        }
+
+        .movie__poster {
+            &:before {
+                background: linear-gradient(to bottom, rgba(240, 47, 23, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+                content: " ";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .columns-10 {
+         .movie {
+            &__meta {
+                font-size: 12px;
+            }
+
+            &__title {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.post-type-archive-movie .masvideos_movies_widget .masvideos-movies {
+    .movies__inner > .movie {
+        @include make-col(12);
+
+        .movie__title {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,347 @@
+.tv-show {
+    margin-bottom: 30px;
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.45;
+        letter-spacing: -0.01em;
+        font-family: $os;
+        font-weight: $os-bold;
+
+        @include hover-focus() {
+            transition: all .2s ease 0s;
+        }
+    }
+
+    &__title,
+    &__short-description p,
+    .tv-show-actions--link_add-to-playlist {
+        color: #000;
+    }
+
+    &__seasons {
+        color: #949cb0;
+    }
+
+    &__title,
+    &__meta,
+    &__episode {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__actions {
+        display: flex;
+
+        @include media-breakpoint-up(xl) {
+            display: none;
+        }
+    }
+
+    &__episode,
+    &__short-description {
+        display: none;
+    }
+
+    &__review-info {
+        display: none;
+    }
+
+    &__badge {
+        position: absolute;
+        font-size: 12px;
+        line-height: 21px;
+        color: $white;
+        padding: 0 12px;
+        border-radius: 4px;
+        top: -10.5px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    &__meta {
+        margin-top: 4px;
+
+        > span + span:before {
+            content: ', ';
+        }
+
+        &--genre,
+        &--genre a,
+        &--release-year {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.01em;
+            color: #949cb0;
+            font-family: $os;
+            font-weight: $os-regular;
+        }
+    }
+
+    &__episode {
+        font-size: 12px;
+    }
+
+    &__info--head {
+
+        > .tv-show__link:first-child .tv-show__title {
+            margin-top: 10px;
+        }
+    }
+
+    &__short-description {
+        overflow: hidden;
+
+        p,div {
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: -0.01em;
+            margin-bottom: 0;
+        }
+    }
+
+    &__actions {
+        display: none;
+        
+        .tv-show-actions--link_watch,
+        .tv-show-actions--link_add-to-playlist > a{
+            font-size: 12px;
+            line-height: 1.25;
+            font-family:$ms;
+            font-weight: $ms-bold;
+            color: #fff;
+            text-transform: uppercase;
+            display: inline-block;
+            border: 2px solid transparent;
+            padding: 12.5px 17.7px;
+            white-space: nowrap;
+        }
+    }
+
+    &__review-info {
+        padding-left: 10px;
+        line-height: 18px;
+
+        .avg-rating-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            line-height: 1.5;
+            text-align: center;
+        }
+    }
+
+    .avg-rating {
+        position: relative;
+        order: 2;
+        display: block;
+        margin-bottom: 10px;
+
+        .rating-with-count {
+            position: relative;
+            display: block;
+        }
+
+        .vodi-svg {
+            fill: #303544;
+        }
+    }
+
+    .count,
+    .avg-rating {
+        font-size: 14px;
+        color: #949cb0;
+    }
+
+    .avg-rating-number {
+        font-weight: $os-bold;
+    }
+
+    .avg-rating-text {
+        font-size: 12px;
+        display: flex;
+        line-height: 16px;
+        letter-spacing: -0.05em;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6px;
+    }
+
+    .rating-number-with-text {
+        .avg-rating-number {
+            display: none;
+        }
+    }
+
+    .viewers-count {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 13px;
+        font-weight: $os-regular;
+        color: #949cb0;
+    }
+
+    &:hover .avg-rating-number {
+        color: #131722;
+    }
+
+    &__seasons {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            position: relative;
+            & + a {
+                &:before {
+                    content: ", ";
+                    color: #949cb0;
+
+                }
+            }
+        }
+    }
+
+    &__hover-area {
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 8px;
+        position: absolute;
+        width: 482px;
+        padding: 16px 12px;
+        z-index: 9999;
+        display: none;
+        background-color: #f5f5f5;
+        border-color: #e0dfdf;
+        top: 100%;
+        transform: translateY(-32%);
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -9px;
+            left: 10%;
+            width: 15px;
+            height: 15px;
+            background-color: #f5f5f5;
+            transform: rotate(44deg);
+            border-left: 2px solid #e0dfdf;
+            border-top: 2px solid #e0dfdf;
+        }
+
+        .tv-show__seasons,
+        .tv-show__episode {
+            font-size: 13px;
+            line-height: 1.50;
+        }
+
+        &--inner {
+            display: flex;
+            align-items: center;
+        }
+
+        .avg-rating-text {
+            padding-left: 6px;
+        }
+
+        &--poster {
+            margin-right: 18px;
+            flex: 0 0 45%;
+            max-width: 45%;
+        }
+
+        &--body {
+            flex-grow: 1;
+        }
+
+        .avg-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .tv-show__title {
+            margin-bottom: 0;
+        }
+
+        .tv-show__review-info {
+            .avg-rating-number {
+                top: 27%;
+                left: 10%;
+                color: #fff;
+                width: auto;
+            }
+        }
+
+        .tv-show__season-info {
+            padding-bottom: 9px;
+            margin-bottom: 15px;
+
+            a {
+                padding-left: 4px;
+            }
+        }
+    }
+}
+
+.vodi-archive-wrapper .tv-shows {
+    width: 100%;
+} 
+
+.section-tv-shows-carousel__custom-arrows button {
+    margin-bottom: 37px;
+}
+
+.style-2 {
+    .tv-show {
+        margin-bottom: 20px;
+
+        &__link {
+            position: relative;
+        }
+
+        &__body {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0 25px 5px;
+            z-index: 1;
+        }
+
+        .tv-show__poster {
+            position: relative;
+            margin-bottom: 0;
+
+            &:before {
+                background: linear-gradient(to bottom, rgba(240, 47, 23, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+                content: " ";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
+            img {
+                height: auto;
+            }
+        }
+
+        &__title  {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        &__meta a,
+        &__meta span {
+            font-size: 13px;
+            color: #fff;
+        }
+    }
+}

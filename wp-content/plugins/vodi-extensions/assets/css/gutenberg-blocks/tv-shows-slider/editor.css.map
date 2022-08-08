@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "editor.css",
+	"sources": [
+		"../../../../../../themes/vodi/assets/scss/gutenberg-blocks/tv-shows-slider/editor.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AACI,iBADa,CACb,cAAc,AAAA,UAAW,CAAA,GAAG,EAAE;EAC1B,OAAO,EAAE,IAAI,GAChB"
+}

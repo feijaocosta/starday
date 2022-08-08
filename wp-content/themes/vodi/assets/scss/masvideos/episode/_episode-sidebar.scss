@@ -1,0 +1,143 @@
+.single-episode__sidebar {
+	.vodi-single-episode__sidebar--seasons-episode {
+		&__season-title {
+			font-size: 20px;
+			font-weight: $ms-medium;
+			padding-bottom: 9px;
+		    margin-bottom: 18px;
+		    border-bottom-width: 1px;
+		    border-bottom-style: solid;
+
+		    @include media-breakpoint-up(xl) {
+		    	font-size: 24px;
+		    }
+		}
+
+		.masvideos-tabs {
+			.nav {
+				flex-direction: column;
+				margin-bottom: 35px;
+
+				.nav-item {
+					& + .nav-item {
+						margin-top: 2px;
+
+						&:before {
+							content: none;
+						}
+					}
+
+					a {
+						font-size: 14px;
+						font-weight: $os-regular;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						.season-title {
+							font-size: 14px;
+							font-weight: $os-regular;
+						}
+
+						.episodes-count {
+							&::before {
+                               content: "(";
+	                        }
+
+	                        &::after {
+	                           content: ")";
+	                        }
+						}
+
+						&.active,
+						&:hover {
+							.season-title {
+								font-weight:$os-bold ;
+							}
+						}
+					}
+				}
+			}
+
+			.tab-content {
+				.episodes__inner {
+					margin: 0;
+					flex-direction: column;
+
+					.episode {
+						margin: 0;
+						padding: 0;
+						flex: 0 0 100%;
+						max-width: 100%;
+						margin-bottom: 8px;
+
+						&__tv-show-name,
+						&__number {
+							font-size: 14px;
+
+							& + .episode__title {
+								margin-left: 7px;
+							}
+						}
+
+						&__title {
+							margin-bottom: 0;
+							color: #949cb0;
+							font-weight: $os-regular;
+						}
+
+						&__link {
+							display: flex;
+							width: 100%;
+
+							&:hover {
+								.episode__tv-show-name,
+								.episode__number,
+								.episode__title {
+									font-weight: $os-bold;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.vodi-single-episode__sidebar--tv-show {
+		display: flex;
+		margin-bottom: 40px;
+
+		.tv-show {
+			&__poster {
+				flex: 0 0 40.5%;
+			    max-width: 40.5%;
+			    margin-right: 15px;
+
+			    .tv-show__link {
+			    	height: 100%;
+			    	padding: 0;
+			    }
+
+			    &--image {
+			    	margin: 0;
+			    }
+			}
+
+			&__meta {
+				margin-top: -5px;
+				white-space: normal;
+			}
+
+			&__title {
+				font-size: 19px;
+				line-height: 1;
+				margin-bottom: 18px;
+			}
+
+			&__short-description {
+				display: block;
+			}
+		}
+	}
+}

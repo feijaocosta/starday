@@ -1,0 +1,59 @@
+[08-Jul-2022 07:19:07 UTC] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Elementor\TemplateLibrary\Source_Local::on_save_post() must be an instance of WP_Post, null given, called in /home2/starda45/public_html/wp-includes/class-wp-hook.php on line 309 and defined in /home2/starda45/public_html/wp-content/plugins/elementor/includes/template-library/sources/local.php:1053
+Stack trace:
+#0 /home2/starda45/public_html/wp-includes/class-wp-hook.php(309): Elementor\TemplateLibrary\Source_Local->on_save_post(632, NULL)
+#1 /home2/starda45/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/starda45/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home2/starda45/public_html/wp-includes/post.php(4673): do_action('save_post', 632, NULL, true)
+#4 /home2/starda45/public_html/wp-includes/post.php(4775): wp_insert_post(Array, false, true)
+#5 /home2/starda45/public_html/wp-content/plugins/elementor/includes/db.php(235): wp_update_post(Array)
+#6 /home2/starda45/public_html/wp-content/plugins/ele in /home2/starda45/public_html/wp-content/plugins/elementor/includes/template-library/sources/local.php on line 1053
+[08-Jul-2022 19:41:57 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta SELECT 
+	`key`, `value`
+FROM wpqw_aioseo_cache
+WHERE 1 = 1 AND
+	( `expiration` IS NULL OR `expiration` > '2022-07-08 19:41:57' )
+	AND `key` = 'activation_redirect'
+/* 1 = 1 */ feita por do_action('wp_ajax_ocdi_install_plugin'), WP_Hook->do_action, WP_Hook->apply_filters, OCDI\PluginInstaller->install_plugin_callback, OCDI\PluginInstaller->activate_plugin, activate_plugin, do_action('activate_all-in-one-seo-pack/all_in_one_seo_pack.php'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Main\Activate->activate, AIOSEO\Plugin\Common\Utils\Cache->clear, AIOSEO\Plugin\Common\Utils\Cache->get, AIOSEO\Plugin\Common\Utils\Database->run
+[08-Jul-2022 19:41:57 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta TRUNCATE TABLE wpqw_aioseo_cache
+/* 1 = 1 */ feita por do_action('wp_ajax_ocdi_install_plugin'), WP_Hook->do_action, WP_Hook->apply_filters, OCDI\PluginInstaller->install_plugin_callback, OCDI\PluginInstaller->activate_plugin, activate_plugin, do_action('activate_all-in-one-seo-pack/all_in_one_seo_pack.php'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Main\Activate->activate, AIOSEO\Plugin\Common\Utils\Cache->clear, AIOSEO\Plugin\Common\Utils\Database->run
+[08-Jul-2022 19:41:57 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta INSERT INTO wpqw_aioseo_cache
+SET `key` = 'activation_redirect', `value` = 'b:1;', `expiration` = '2022-07-08 19:42:27', `created` = '2022-07-08 19:41:57', `updated` = '2022-07-08 19:41:57'
+ON DUPLICATE KEY UPDATE `value` = 'b:1;', `expiration` = '2022-07-08 19:42:27', `updated` = '2022-07-08 19:41:57'
+/* 1 = 1 */ feita por do_action('wp_ajax_ocdi_install_plugin'), WP_Hook->do_action, WP_Hook->apply_filters, OCDI\PluginInstaller->install_plugin_callback, OCDI\PluginInstaller->activate_plugin, activate_plugin, do_action('activate_all-in-one-seo-pack/all_in_one_seo_pack.php'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Main\Activate->activate, AIOSEO\Plugin\Common\Main\Activate->maybeRunSetupWizard, AIOSEO\Plugin\Common\Utils\Cache->update, AIOSEO\Plugin\Common\Utils\Database->run
+[08-Jul-2022 19:41:57 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta SELECT 
+	`key`, `value`
+FROM wpqw_aioseo_cache
+WHERE 1 = 1 AND
+	( `expiration` IS NULL OR `expiration` > '2022-07-08 19:41:57' )
+	AND `key` = 'admin_notifications_update'
+/* 1 = 1 */ feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Admin\Notices\Notices->init, AIOSEO\Plugin\Common\Admin\Notices\Notices->maybeUpdate, AIOSEO\Plugin\Common\Utils\Cache->get, AIOSEO\Plugin\Common\Utils\Database->run
+[08-Jul-2022 19:41:58 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta INSERT INTO wpqw_aioseo_cache
+SET `key` = 'admin_notifications_update', `value` = 'i:1657395718;', `expiration` = '2022-07-09 19:41:58', `created` = '2022-07-08 19:41:58', `updated` = '2022-07-08 19:41:58'
+ON DUPLICATE KEY UPDATE `value` = 'i:1657395718;', `expiration` = '2022-07-09 19:41:58', `updated` = '2022-07-08 19:41:58'
+/* 1 = 1 */ feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Admin\Notices\Notices->init, AIOSEO\Plugin\Common\Admin\Notices\Notices->maybeUpdate, AIOSEO\Plugin\Common\Utils\Cache->update, AIOSEO\Plugin\Common\Utils\Database->run
+[08-Jul-2022 19:41:58 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta SELECT 
+	`key`, `value`
+FROM wpqw_aioseo_cache
+WHERE 1 = 1 AND
+	( `expiration` IS NULL OR `expiration` > '2022-07-08 19:41:58' )
+	AND `key` = 'pro_just_deactivated_lite'
+/* 1 = 1 */ feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Main\Activate->init, AIOSEO\Plugin\Common\Utils\Cache->get, AIOSEO\Plugin\Common\Utils\Database->run
+[08-Jul-2022 19:42:00 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta SELECT 
+	`key`, `value`
+FROM wpqw_aioseo_cache
+WHERE 1 = 1 AND
+	( `expiration` IS NULL OR `expiration` > '2022-07-08 19:42:00' )
+	AND `key` = 'admin_notifications_update'
+/* 1 = 1 */ feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Admin\Notices\Notices->init, AIOSEO\Plugin\Common\Admin\Notices\Notices->maybeUpdate, AIOSEO\Plugin\Common\Utils\Cache->get, AIOSEO\Plugin\Common\Utils\Database->run
+[08-Jul-2022 19:42:00 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta INSERT INTO wpqw_aioseo_cache
+SET `key` = 'admin_notifications_update', `value` = 'i:1657395720;', `expiration` = '2022-07-09 19:42:00', `created` = '2022-07-08 19:42:00', `updated` = '2022-07-08 19:42:00'
+ON DUPLICATE KEY UPDATE `value` = 'i:1657395720;', `expiration` = '2022-07-09 19:42:00', `updated` = '2022-07-08 19:42:00'
+/* 1 = 1 */ feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Admin\Notices\Notices->init, AIOSEO\Plugin\Common\Admin\Notices\Notices->maybeUpdate, AIOSEO\Plugin\Common\Utils\Cache->update, AIOSEO\Plugin\Common\Utils\Database->run
+[08-Jul-2022 19:42:00 UTC] Erro de banco de dados do WordPress Table 'starda45_wp847.wpqw_aioseo_cache' doesn't exist para a consulta SELECT 
+	`key`, `value`
+FROM wpqw_aioseo_cache
+WHERE 1 = 1 AND
+	( `expiration` IS NULL OR `expiration` > '2022-07-08 19:42:00' )
+	AND `key` = 'pro_just_deactivated_lite'
+/* 1 = 1 */ feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, AIOSEO\Plugin\Common\Main\Activate->init, AIOSEO\Plugin\Common\Utils\Cache->get, AIOSEO\Plugin\Common\Utils\Database->run
+[12-Jul-2022 00:09:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home2/starda45/public_html/wp-content/plugins/masvideos/includes/class-masvideos-ajax.php on line 594

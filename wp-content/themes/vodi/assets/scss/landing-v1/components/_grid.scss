@@ -1,0 +1,28 @@
+.container-fluid,
+.container {
+    @include make-container();
+    @include make-container-max-widths();
+
+    @include media-breakpoint-up(xl) {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    @media ( min-width: 1486px ) {
+        max-width: 1486px;
+    }
+}
+
+.vodi-landing-featured-section__inner,
+.tab-content__features,
+.unsubscribe {
+    @include make-row();
+}
+
+.vodi-landing-featured-section__caption,
+.vodi-landing-featured-section__featured-image,
+.feature,
+.unsubscribe__content,
+.unsubscribe__thumbnail {
+    @include make-col-ready();
+}

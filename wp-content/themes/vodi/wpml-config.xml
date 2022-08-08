@@ -1,0 +1,29 @@
+<wpml-config>
+    <admin-texts>
+        <key name="vodi_options">
+            <key name="related_posts_title" />
+            <key name="related_posts_number" />
+            <key name="separate_footer_logo" />
+            <key name="footer_widget_columns" />
+            <key name="footer_copyright_text" />
+            <key name="footer_action_title" />
+            <key name="footer_action_subtitle" />
+            <key name="footer_action_content" />
+            <key name="header_static_content_id" />
+            <key name="back_option_label" />
+            <key name="back_option_text" />
+            <key name="back_option_url" />
+            <key name="movies_control_bar_tag_filter_slugs" />
+            <key name="movies_jumbotron_top_id" />
+            <key name="movie_banner_content" />
+            <key name="tv_shows_control_bar_tag_filter_slugs" />
+            <key name="tv_shows_jumbotron_top_id" />
+            <key name="videos_jumbotron_top_id" />
+            <key name="video_banner_content" />
+            <key name="img_0_src" />
+            <key name="ins_0_detail" />
+            <key name="img_1_src" />
+            <key name="ins_1_detail" />
+        </key>
+    </admin-texts>
+</wpml-config>

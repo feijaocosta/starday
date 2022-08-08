@@ -1,0 +1,121 @@
+.single-movie-v6,
+.single-movie-v7 {
+    .crew-casts-title {
+        font-size: 26px;
+        font-family: $os;
+        font-weight: $os-regular;
+        margin-bottom: 15px;
+    }
+
+    .movie-cast-crew-tabs {
+        margin-bottom: 50px;
+
+        ul.nav {
+            margin-bottom: 25px;
+            overflow: auto;
+            flex-wrap: nowrap;
+
+            @include media-breakpoint-up(md) {
+                overflow: initial;
+                //flex-wrap: wrap;
+            }
+
+            li {
+                @include media-breakpoint-down(sm) {
+                    flex-shrink: 0;
+                }
+
+                a {
+                    font-size: 14px;
+                    font-weight: $ms-semi-bold;
+                    border-radius: 5px;
+                    padding: 6.5px 30.5px;
+                    background: #323846;
+                    line-height: 18px;
+                    font-family: $ms;
+
+                    &.active {
+                        color: #1c212e;
+                    }
+                }
+
+                & + li {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .tab-content {
+            .movie-crews-category-title {
+                display: none;
+            }
+
+            .movie-casts,
+            .movie-crews {
+                & + .movie-casts,
+                & + .movie-crews {
+                    border-top-width: 1px;
+                    border-top-style: solid; 
+                }
+            }
+
+            .movie-cast,
+            .movie-crew {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                .person-image {
+                    max-width: 4.4%;
+                    flex: 0 0 4.4%;
+                    margin-right: 27px;
+
+                    img {
+                        height: 65px;
+                        object-fit: cover;
+                    }
+                }
+
+                .person-name-link {
+                    flex: 0 0 50%;
+                    max-width: 45%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .person-name {
+                    font-family: $os;
+                    font-size: 15px;
+                    margin-bottom: 0;
+                }
+
+                .person-role {
+                    color: #e3e3e3;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-grow: 1;
+
+                    &:before {
+                        content: "...";
+                        display: inline-block;
+                        color: #fff;
+                    }
+                }
+
+                & + .movie-cast,
+                & + .movie-crew {
+                    border-top-width: 1px;
+                    border-top-style: solid; 
+                }
+
+                .movie-cast__person-info,
+                .movie-crew__person-info {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

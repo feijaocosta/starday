@@ -1,0 +1,154 @@
+.contact-page {
+
+	form.wpcf7-form {
+		@include make-row();
+
+		p {
+			@include make-col-ready();
+            @include make-col(12);
+            @include media-breakpoint-up(md) {
+				&:nth-child(-n+3) {
+					@include make-col(6);
+				}
+			}
+
+			input[type="text"], input[type="email"],
+			textarea {
+				border-radius: 0;
+			    width: 100%;
+			    max-width: 100%;
+			    margin-bottom: 0;
+
+			    &:focus {
+			    	border-color: #979797;
+				    border-width: 1px;
+				    box-shadow: 0 0 0 1px #979797;
+			    }
+			}
+
+			input[type="submit"] {
+				text-transform: none;
+				font-size: 14px;
+			}
+
+			label {
+				color: #121a21;
+				font-weight: 500;
+			}
+		}
+	}
+
+	.vodi-faq-section {
+		padding-top: 5px;
+		margin-bottom: 40px;
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: 62px;
+		}
+
+		.faq-section {
+			&__faq-header {
+				h5 {
+					font-size: 14px;
+					margin-bottom: 15px;
+				}
+
+				&--link {
+					display: block;
+	        		cursor: pointer;
+
+					&:not(.collapsed):before {
+			            display: inline-block;
+			            content: "-";
+			        }
+
+			        &:before {
+		                content: "+";
+		            }
+
+			        &.collapsed {
+
+			            &:before {
+			                content: "+";
+			            }
+			        }
+				}
+			}
+
+			&__faq-body {
+				padding: 0 20px 17px;
+			}
+		}
+	}
+
+
+	.contact-form {
+		&.has-2-columns {
+			margin: 30px -15px;
+
+			@include media-breakpoint-up(md) {
+				.wp-block-column {
+					@include make-col(6);
+				}
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin: 35px -15px 73px;
+				> .wp-block-column {
+					@include make-col(7);
+					padding-right: 50px;
+
+					& + .wp-block-column {
+						@include make-col(5);
+					}
+				}
+			}
+		}
+	}
+		
+	address,
+	.working-hours {
+		font-size: 13px;
+		color: #949cb0;
+		letter-spacing: -0.025em;
+		line-height: 20px;
+	}
+
+	.working-hours {
+		span {
+			display: block;
+		}
+	}
+
+	iframe {
+        width: 100%;
+        border: none;
+	    -webkit-filter: grayscale(100%);
+	    filter: grayscale(100%);
+	    margin-bottom: 0;
+
+	    &:hover {
+	        -webkit-filter: grayscale(0%);
+	        filter: grayscale(0%);
+	    }
+    }
+
+	.lead {
+		font-size: 24px;
+		text-align: center;
+		padding: 73px 0;
+		margin-bottom: 0;
+		color: #121a21;
+	    letter-spacing: -0.025em;
+	    font-weight: 400;
+	}
+}
+
+.page__content {
+	.contact-page__title {
+		font-weight: $ms-medium;
+		color: #121a21;
+		font-size: 18px;
+		margin-bottom: 23px;
+	}
+}

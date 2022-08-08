@@ -1,0 +1,185 @@
+.light {
+    .section-title, .comments-title, .comment-respond .comment-reply-title {
+        color: #121a21;
+
+        &:after {
+            background: #e8e8e8;
+        }
+    }
+
+    .site-title {
+        color: #2b79bb;
+    }
+
+    .movie__title,
+    .movie__actions .movie-actions--link_add-to-playlist a,
+    .video__actions .movie-actions--link_add-to-playlist a,
+    .tv_show__actions .movie-actions--link_add-to-playlist a {
+        color: #000;
+    }
+
+    .home-section.style-2 {
+        .movie__title {
+            color: #fff;
+        }
+    }
+
+    .tv-show__actions .tv-show-actions--link_add-to-playlist > a {
+        color: #000;
+    }
+
+    .widget-area .widget-title {
+        color: #121a21;
+        border-bottom-color: #d0d0d2;
+    }
+
+    .vodi-control-bar select,
+    .masvideos-persons-control-bar select,
+    .form-vodi-wc-ppp select,
+    .page-control-bar-bottom select,
+    .vodi-control-bar .videos-type li a,
+    .page-control-bar-bottom .masvideos-result-count,
+    .masvideos-persons-page-control-bar .masvideos-result-count {
+        color: #707070;
+    }
+
+    .page-control-bar-bottom,
+    .masvideos-persons-page-control-bar {
+        border-top: 1px solid #e8e8e8;
+    }
+
+    .style-2 .section_title {
+        color: $vodi-light-title-color;
+        border-bottom: 1px solid #d0d0d2;
+    }
+
+    .comingsoon-launch-section__title,
+    .comingsoon-launch-section__desc {
+        color: #000;
+    }
+
+    .comingsoon-launch-section .email {
+        background-color: #eee;
+        color: #a0a0a0;
+    }
+
+    .comingsoon-launch-section .btn-subscribe {
+        color: #ffffff;
+    }
+
+    .comingsoon-form-timer {
+        .textDiv {
+            &_Days,
+            &_Hours,
+            &_Minutes,
+            &_Seconds {
+                > span {
+                    color: #3a3838;
+                }
+            }
+        }
+    }
+
+    .vodi-archive-wrapper[data-view="list-small"],
+    .vodi-archive-wrapper[data-view="list-large"] {
+        .tv-show {
+            + .tv-show {
+                @include media-breakpoint-up(md) {
+                    border-top: 1px solid #e8e8e8;                
+                }
+            }
+
+            @include hover-focus() {
+                background-color: #fbfbfb;
+            }
+        }
+    }
+
+    .vodi-archive-wrapper[data-view="list-large"],
+    .vodi-archive-wrapper[data-view="list-small"],
+    .vodi-archive-wrapper[data-view="list"] {
+        .movie, .video {
+            + .movie,
+            + .video {
+                border-top-color: #e8e8e8;
+            }
+        }
+    }
+
+    .tv-show__hover-area .tv-show__season-info {
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .vodi-control-bar .masvideos-widget-movies-layered-nav-list,
+    .vodi-control-bar .masvideos-widget-tv-shows-layered-nav-list,
+    .vodi-control-bar .masvideos-widget-videos-layered-nav-list {
+        a {
+            color: #949cb0;
+        }
+    }
+
+    .vodi-archive-wrapper[data-view="list"] .movie:nth-child(odd) .movie__body,
+    .vodi-archive-wrapper[data-view="list"] .movie:nth-child(odd) .video__body,
+    .vodi-archive-wrapper[data-view="list"] .video:nth-child(odd) .movie__body,
+    .vodi-archive-wrapper[data-view="list"] .video:nth-child(odd) .video__body {
+        @include media-breakpoint-up(md) {
+            border-right-color: #e8e8e8;
+        }
+    }
+
+    .movie .avg-rating-number,
+    .tv-show .avg-rating-number {
+        color: #fff;
+    }
+
+    .movie-sidebar .masvideos-movies-filter-widget .masvideos-widget-movies-layered-nav-list__item a,
+    .video-sidebar .masvideos-videos-filter-widget .masvideos-widget-videos-layered-nav-list__item a,
+    .movie-sidebar .widget_movies_genres .movies-genres li a,
+    .video-sidebar .widget_videos_genres .videos-genres li a {
+        color: #000;
+    }
+
+    .movies_widget_rating_filter,
+    .videos_widget_rating_filter,
+    .tv_shows_widget_rating_filter{
+        ul li.masvideos-layered-nav-rating a {
+            color: #000;
+        }
+    }
+
+    &.home-archive .sidebar-area .masvideos-tv-shows-filter-widget .masvideos-widget-tv-shows-layered-nav-list__item a {
+        color: #303030;
+    }
+
+    .masvideos-videos-pagination {
+        border-top-color: #e8e8e8;
+    }
+
+    &.page-template-template-videos-archive,
+    &.page-template-template-tv-shows-archive {
+        div:not(.vodi-control-bar) .handheld-sidebar-toggle {
+            span {
+                color: #707070;
+            }
+        }
+    }
+
+    .badge-sticky-post {
+        color: #fff;
+    }
+
+    .masvideos-tabs table tbody tr + tr {
+        border-top-color: #e8e8e8;
+    }
+
+    .masvideos-tabs table,
+    .masvideos-tabs table a {
+        color: #121a21;
+    }
+
+    .masvideos-tabs table tbody tr:hover,
+    .masvideos-tabs table tbody tr:focus {
+        background: #f5f5f5;
+    }
+
+}

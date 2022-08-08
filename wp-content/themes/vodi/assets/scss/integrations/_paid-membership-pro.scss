@@ -1,0 +1,68 @@
+input[type="checkbox"] + label {
+    display: inline;
+}
+
+.pmpro_btn {
+    @include make-button;
+}
+
+.pmpro-login {
+    &.logged-in {
+        .pmpro_logged_in_welcome_wrap {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .pmpro_member_log_out {
+            margin-bottom: .5rem;
+
+            > a {
+                @include make-button( $btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm );
+            }
+        }
+    }
+}
+
+#pmpro_account {
+    .pmpro_box {
+        h3 {
+            margin-bottom: .5rem;
+        }
+
+        > ul {
+            @include list-unstyled;
+        }
+    }
+}
+
+.pmpro_confirmation_wrap {
+    > ul {
+        @include list-unstyled;
+    }
+}
+
+.pmpro_billing_wrap {
+    > p:first-child {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        > strong {
+            margin-left: 5px;
+        }
+
+        > small {
+            margin-left: auto;
+
+            > a {
+                @include make-button( $btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm );
+            }
+        }
+    }
+
+    > ul {
+        @include list-unstyled;
+    }
+}

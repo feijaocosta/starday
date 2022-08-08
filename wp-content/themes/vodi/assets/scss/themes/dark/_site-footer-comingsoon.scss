@@ -1,0 +1,27 @@
+.site-footer-comingsoon.dark {
+    background-color: #131722;
+
+    .site-footer__info {
+        color: #949cb0;
+    }
+
+    .site-footer {
+
+        .footer-social-icon {
+
+            .fa-circle {
+                color: #cccbcb;
+            }
+
+            .social-media-item__icon {
+                color: #000;
+            }
+
+            &:hover {
+                .fa-circle {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

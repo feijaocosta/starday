@@ -1,0 +1,160 @@
+.light {
+    &.single-movie .single-movie__sidebar .widget {
+        background-color: #f6f7f9;
+    }
+
+    &.single-movie .movie-tabs .nav,
+    .tv-show-tabs .nav {
+        border-bottom-color: #e8e8e8;
+    }
+
+    &.single-movie .single-movie__sidebar .widgettitle {
+        color: #303030;
+        border-bottom-color: #d0d0d2;
+    }
+
+    &.single-movie .movie-tabs .nav .nav-item a,
+    .tv-show-tabs .nav .nav-item a {
+        color: #949cb0;
+    }
+
+    &.single-movie .movie_title {
+        color: #19272e;
+    }
+
+    &.single-movie .movie__short-description p,
+    &.single-movie .movie__description p {
+        color: #19272e;
+    }
+
+    &.single-movie .movie-tabs .nav .nav-item + .nav-item:before,
+    .tv-show-tabs .nav .nav-item + .nav-item:before {
+        color: #949494;
+    }
+
+    &.single-movie-v6.single-movie .movie-actions--link_add-to-playlist > a, 
+    &.single-movie-v7.single-movie .movie-actions--link_add-to-playlist > a {
+        color: #949cb0;
+    }
+
+    &.single-movie-v6 .movie .summary .movie__meta--genre a,
+    &.single-movie-v7 .movie .summary .movie__meta--genre a {
+        color: #949cb0;
+    }
+
+    &.single-movie-v6 .movie .summary, 
+    &.single-movie-v7 .movie .summary {
+        border-bottom-color: #e8e8e8;
+    }
+
+    .single-movie-casts--title, 
+    .movie__related-video--title {
+        color: #19272e;
+    }
+
+    &.single-movie-v6 .single-movie-casts .movie-cast .person-name {
+        color: #000;
+    }
+
+    &.single-movie-v6 .single-movie-details--title,
+    &.single-movie-v6 .single-movie-details--attributes table.movie__attributes th, 
+    &.single-movie-v6 .single-movie-details--attributes table.movie__attributes td,
+    &.single-movie .comment_container .description {
+        color: #19272e;
+    }
+
+    &.single-movie .masvideos-Reviews #comments ol.commentlist li.comment + li {
+        border-top-color: #e8e8e8;
+
+    }
+
+    &.single-person .person .single-person__personal-info {
+        background: #f6f7f9;
+    }
+
+    &.single-person .person .single-person__sidebar-title {
+        color: #303030;
+        border-bottom-color: #d0d0d2;
+    }
+
+    &.single-person .person .single-person__short-description, 
+    &.single-person .person .single-person__description {
+        color: #19272e;
+    }
+
+    .person-credits-tabs .tab-content .person-movies-credits > div {
+        border-bottom: 1px solid #d0d0d2;
+    }
+
+    .person-tabs ul,
+    .person-credits-tabs ul {
+        border-bottom-color: #e8e8e8;
+    }
+
+    h2.single-movie-casts--title,
+    h2.movie__related-video--title,
+    &.single-movie-v6.single-movie h2.masvideos-reviews__title,
+    &.single-movie-v7.single-movie h2.masvideos-reviews__title,
+    &.single-movie-v6 h2.masvideos-movie-gallery__title,
+    &.single-movie-v6 h2.single-movie-highlighted-comment--title, 
+    &.single-movie-v7 h2.single-movie-highlighted-comment--title,
+    &.single-movie-v6 h2.single-movie-details--attributes__title, 
+    &.single-movie-v7 h2.single-movie-details--attributes__title,
+    &.single-movie-v6 h2.single-movie-details--description__title, 
+    &.single-movie-v7 h2.single-movie-details--description__title  {
+        color: #19272e;
+    }
+
+    &.single-movie-v5 .movie__related-video,
+    .movie__streaming-medias {
+        background: #f5f5f5;
+    }
+
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-cast .person-name-link, 
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-crew .person-name-link,
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-cast .person-role, 
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-crew .person-role,
+    &.single-movie-v5 .movie-cast-crew-tabs ul.nav li a.active,
+    &.single-movie-v6 .movie-featured-crew .movie-crew a, 
+    &.single-movie-v7 .movie-featured-crew .movie-crew a,
+    &.single-movie-v6 .movie-featured-crew .movie-crew .person-role, 
+    &.single-movie-v7 .movie-featured-crew .movie-crew .person-role,
+    &.single-movie .movie_related__by-person--title,
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-cast .person-role, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crew .person-role,
+    &.single-movie-v6 .single-movie-details--attributes table.movie__attributes th, 
+    &.single-movie-v6 .single-movie-details--attributes table.movie__attributes td, 
+    &.single-movie-v7 .single-movie-details--attributes table.movie__attributes th, 
+    &.single-movie-v7 .single-movie-details--attributes table.movie__attributes td,
+    &.single-movie-v7.single-movie .movie__related--title,
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-cast h3.person-name, 
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-crew h3.person-name,
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-cast, 
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-crew,
+    &.single-movie-v5 .movie__info--body .movie__sharing-with-tags .movie__tags {
+        color: #19272e;
+    }
+
+    &.single-movie-v6.single-movie .masvideos-reviews__title:after, 
+    &.single-movie-v7.single-movie .masvideos-reviews__title:after,
+    &.single-movie-v6 h2.single-movie-details--description__title:after, 
+    &.single-movie-v7 h2.single-movie-details--description__title:after {
+        background: #f5f5f5;
+    }
+
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-cast + .movie-cast, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-cast + .movie-crew, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crew + .movie-cast, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crew + .movie-crew,
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-casts + .movie-casts, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-casts + .movie-crews, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crews + .movie-casts, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crews + .movie-crews {
+        border-top-color: #e8e8e8;
+    }
+
+    .movie__streaming-medias li a + a {
+        border-top-color: #e8e8e8;
+    }
+    
+}

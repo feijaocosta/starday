@@ -1,0 +1,12 @@
+.landing-features-list .features,
+.lp-v2-section-plans__inner,
+.landing-features-list__inner {
+	@include make-row();
+}
+
+.landing-features-list__caption,
+.landing-features-list__content,
+.landing-features-list .feature,
+.lp-v2-section-plans__plan-box {
+	@include make-col-ready();
+}

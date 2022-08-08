@@ -1,0 +1,74 @@
+.home-tv-show-section .tv-shows__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px; }
+  .home-tv-show-section .tv-shows__inner > .tv-show {
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px; }
+
+.home-tv-show-section .tv-show__badge {
+  display: inline-block; }
+
+.home-tv-show-section .tv-show__poster .tv-show__link {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  overflow: hidden; }
+
+.home-tv-show-section .tv-show__poster--image,
+.home-tv-show-section .tv-show__poster .masvideos-placeholder {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+@media (max-width: 767.98px) {
+  .editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (min-width: 768px) {
+  .editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] {
+    max-width: none;
+    margin-left: -44px;
+    margin-right: -44px;
+    width: auto; }
+    .editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] .container {
+      padding-left: 44px;
+      padding-right: 44px; }
+    .editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] .editor-block-list__block-edit {
+      margin-left: -44px;
+      margin-right: -44px; } }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] .editor-block-contextual-toolbar {
+  left: 60px; }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] > .editor-block-mover {
+  left: 20px;
+  top: -64px; }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"]::before,
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] .editor-block-list__block-edit::before {
+  left: 0;
+  right: 0; }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] .editor-block-drop-zone,
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] .editor-block-contextual-toolbar {
+  margin-left: 0;
+  margin-right: 0; }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/tv-show-section"] .editor-block-list__breadcrumb {
+  right: 0; }

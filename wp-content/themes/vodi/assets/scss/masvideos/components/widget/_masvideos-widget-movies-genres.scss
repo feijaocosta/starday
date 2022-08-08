@@ -1,0 +1,14 @@
+.movie-sidebar {
+	.widget_movies_genres {
+		.movies-genres {
+			@include list-unstyled();
+
+			li {
+				a {
+					padding: 3px 0;
+                    position: relative;
+				}
+			}
+		}
+	}
+}

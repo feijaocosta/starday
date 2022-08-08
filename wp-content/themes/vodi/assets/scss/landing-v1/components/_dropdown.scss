@@ -1,0 +1,50 @@
+/**
+ * Dropdown styles
+ */
+.menu-item-has-children {
+    position: relative;
+    
+    > a {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.site-header,
+.site-footer {
+    .menu-item-has-children {
+        @include hover-focus() {
+            
+            > .sub-menu  {
+                display: block;
+            }
+        }
+    }
+}
+
+.sub-menu {
+    @include make-dropdown();
+
+    > .menu-item > a {
+        @include make-dropdown-item();  
+        padding: 0.5rem 1.5rem;  
+
+        &:active {
+            background-color: #f8f9fa;
+            color: $vodi-body-color;
+        }    
+    }
+
+    .menu-item-has-children {
+        > a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .sub-menu {
+        left: 100%;
+        top: -8px;
+    }
+}

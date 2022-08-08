@@ -1,0 +1,52 @@
+.masvideos-widget_movies_year_filter {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -5px;
+
+        li {
+            padding: 0 5px 5px 0px;
+            @include make-col(2.4);
+
+            a {
+                padding: 7px 9px 6px;
+                background-color: #181d29;
+                letter-spacing: -1px;
+                display: block;
+
+                &:hover {
+                    color: #1c212e;
+                }
+            }
+
+            &.chosen a {
+                color: #1c212e;
+            }
+        }
+    }
+}
+
+.movie-sidebar.widget-area .widget.masvideos-widget_movies_year_filter {
+    margin-bottom: 40px;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 20px;
+    }
+
+    .widget-title {
+        padding-bottom: 9px !important;
+        margin-bottom: 21px !important;
+    }
+
+    ul {        
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 43px;
+        }
+    }
+}
+
+.light .masvideos-widget_movies_year_filter {
+    ul li a {
+        background-color: #eff0f2;
+    }
+}

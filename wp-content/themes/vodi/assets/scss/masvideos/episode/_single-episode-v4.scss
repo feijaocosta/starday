@@ -1,0 +1,99 @@
+.single-episode-v4 {
+	.episode__description > div {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.episode__head {
+		justify-content: center;
+		flex-direction: column;
+
+		.episode__player {
+			margin-bottom: 22px;
+		}
+	}
+
+	.episode__player--arrows {
+		justify-content: center;
+	}
+
+	.episode__avg-rating {
+		margin-bottom: 48px;
+		justify-content: flex-start;
+	}
+
+	.episode__summary {
+		margin-bottom: 45px;
+	}
+
+	.vodi-single-episode__sidebar--seasons-episode {
+
+		> .vodi-single-episode__sidebar--seasons-episode__season-title {
+			display: none;
+		}
+
+		.masvideos-tabs {
+			.nav {
+				display: none;
+			}
+
+			.tab-content > .tab-pane {
+				display: block;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode__season-title {
+		font-size: 20px;
+		padding-bottom: 8px;
+
+		@include media-breakpoint-up(xl) {
+			font-size: 22px;
+		}
+	}
+
+	.masvideos-breadcrumb {
+        @include make-col-ready();
+        @include make-col(12);
+        margin-bottom: 0;
+        padding-bottom: 18px;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: calc(-50vw + 50% - 8px);
+            top: 100%;
+            width: 100%;
+            height: 242px;
+            background: radial-gradient(farthest-corner at 46% 0%, #31394b 2%, rgba(33, 38, 53, 0.57) 37%, rgba(160, 162, 168, 0) 72%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+
+    .episode__head--views-likes-download {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 15px;
+
+        > *:not( :last-child ) {
+            margin-right: 40px;
+        }
+
+        .vodi-views-likes {
+            margin-bottom: 0;
+        }
+
+        .episode-download-btn {
+            display: flex;
+            font-size: 12px;
+            font-weight: 600;
+
+            > i {
+                font-size: 18px;
+            }
+        }
+    }
+}

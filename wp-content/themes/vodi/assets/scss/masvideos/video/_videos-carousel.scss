@@ -1,0 +1,45 @@
+.videos {
+    .slick-list {
+        margin: 0 -9px;
+        width: calc( 100% + 18px );
+        padding-top: 11px;
+        margin-top: -11px;
+    }
+
+    .slick-slide {
+        margin: 0 9px;
+    }
+
+    &-carousel__inner {
+        .video {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.section-videos-carousel__custom-arrows button {
+    margin-bottom: 37px;
+}
+
+.brand-video-channel-carousel {
+    padding-bottom: 50px;
+
+    &__inner {
+        .thumbnail {
+            flex: 0 0 14%;
+            max-width: 14%;
+
+            img {
+                filter: grayscale(100%);
+                opacity: .5;
+            }
+
+            &:hover {
+                img {
+                    filter: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

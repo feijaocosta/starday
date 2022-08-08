@@ -1,0 +1,173 @@
+.dark {
+    &.single-movie .summary .movie__meta {
+        color: #fff;
+    }
+
+    &.single-movie .movie__related {
+        background: #1c212e;
+    }
+
+    &.single-movie .movie-tabs .nav,
+    .tv-show-tabs .nav {
+        border-bottom-color: #283643;
+    }
+
+    &.single-movie .movie__description-tab .movie__tags,
+    &.single-movie .tab-content .masvideos-Reviews .comment-form label {
+        color: #fff;
+    }
+    
+    &.single-movie p.stars a:before {
+        color: #949cb0;
+    }
+
+    .single-movie-popup {
+        background-color: #131722;
+    }
+
+    &.single-movie .single-movie__sidebar .widget {
+        background-color: #1c212e;
+    }
+    
+    &.single-movie .single-movie__sidebar .widgettitle {
+        color: #fff;
+        border-bottom-color: #2f2f33;
+    }
+
+    &.single-movie .movie-tabs .nav .nav-item a,
+    .tv-show-tabs .nav .nav-item a {
+        color: #949cb0;
+    }
+
+    &.single-movie .movie_title {
+        color: #fff;
+    }
+
+    &.single-movie-v5 .summary .movie__meta,
+    &.single-movie-v5 .summary .movie__meta--genre a {
+        color: #808b90;
+    }
+
+    &.single-movie .movie__short-description p,
+    &.single-movie .movie__description p {
+        color: #b4bbc0;
+    }
+
+    &.single-movie-v5 .movie__short-description p,
+    &.single-movie-v5 .movie__description p,
+    &.single-movie-v5 .movie__description div,
+    &.single-movie-v6 .movie__short-description p,
+    &.single-movie-v6 .movie__description p,
+    &.single-movie-v6 .movie__description div,
+    &.single-movie-v7 .movie__short-description p,
+    &.single-movie-v7 .movie__description p,
+    &.single-movie-v7 .movie__description div  {
+        color: #e3e3e3;
+    }
+
+    &.single-movie-v5 .movie__info--body .movie__sharing-with-tags .movie__tags {
+        color: #fff;
+    }
+
+    &.single-movie .movie-tabs .nav .nav-item + .nav-item:before,
+    .tv-show-tabs .nav .nav-item + .nav-item:before {
+        color: #949494;
+    }
+
+    &.single-movie-v6 .movie .summary, 
+    &.single-movie-v7 .movie .summary {
+        border-bottom-color: #333333;
+    }
+
+    &.single-movie-v6.single-movie .movie-actions--link_add-to-playlist > a, 
+    &.single-movie-v7.single-movie .movie-actions--link_add-to-playlist > a {
+        color: #e3e3e3;
+    }
+
+    &.single-movie-v6 .movie .summary .movie__meta--genre a,
+    &.single-movie-v7 .movie .summary .movie__meta--genre a {
+        color: #fff;
+    }
+
+    &.single-movie-v6 .movie-actions--link_add-to-playlist > a,
+    &.single-movie-v7 .movie-actions--link_add-to-playlist > a {
+
+        &:before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="29px"><path fill-rule="evenodd" opacity="0.82" fill="rgb(255, 255, 255)" d="M8.653,0.252 C11.501,0.192 14.629,1.524 15.666,3.158 C15.738,3.098 15.672,3.164 15.732,3.091 C16.108,2.846 16.366,2.428 16.724,2.167 C17.797,1.385 19.024,0.769 20.495,0.384 C21.728,0.061 23.793,0.282 24.796,0.648 C27.738,1.723 29.471,3.571 30.551,6.526 C30.938,7.583 31.190,9.648 30.816,11.017 C29.903,14.360 28.243,16.709 26.450,19.140 C26.011,19.734 25.448,20.252 24.994,20.857 C24.796,21.034 24.597,21.210 24.399,21.386 C23.508,22.571 22.211,23.933 21.025,24.820 C19.536,25.934 18.454,27.854 16.394,28.386 C15.535,28.608 14.629,28.281 14.078,27.990 C12.990,27.417 12.252,26.523 11.300,25.811 C11.035,25.524 10.770,25.238 10.506,24.952 C9.901,24.499 9.444,23.959 8.918,23.433 C8.230,22.746 7.523,22.106 6.933,21.320 C6.441,20.663 5.706,20.133 5.213,19.471 C3.726,17.470 2.360,15.612 1.310,13.130 C0.690,11.666 0.008,9.297 0.582,7.252 C1.378,4.422 3.031,2.136 5.544,1.044 C6.205,0.756 6.933,0.571 7.661,0.384 C7.979,0.302 8.413,0.410 8.653,0.252 ZM8.587,2.629 C8.382,2.761 8.065,2.683 7.793,2.761 C7.396,2.894 6.999,3.025 6.602,3.158 C4.938,3.883 3.618,5.386 3.030,7.186 C2.307,9.403 3.206,11.382 3.890,12.932 C5.631,16.877 8.630,19.799 11.498,22.641 C12.289,23.423 13.043,24.212 13.946,24.886 C14.568,25.350 14.839,26.061 15.931,26.075 C16.166,25.879 16.481,25.793 16.724,25.613 C17.010,25.401 17.234,25.032 17.518,24.820 C18.669,23.961 19.625,22.920 20.628,21.914 C23.361,19.173 26.189,16.192 27.839,12.404 C28.059,11.743 28.280,11.083 28.501,10.422 C29.404,7.082 26.854,4.048 24.796,3.158 C22.076,1.982 19.611,2.968 17.849,4.281 C16.815,5.050 16.890,6.405 15.004,5.998 C13.727,4.011 11.880,2.633 8.587,2.629 Z"/></svg>');
+        }
+    }
+
+    &.single-person .person .single-person__personal-info {
+        background: #1c212e;
+    }
+
+    .person-tabs ul,
+    .person-credits-tabs ul {
+        border-bottom-color: #283643;
+    }
+
+    h2.single-movie-casts--title,
+    h2.movie__related-video--title,
+    &.single-movie-v6.single-movie h2.masvideos-reviews__title,
+    &.single-movie-v7.single-movie h2.masvideos-reviews__title,
+    &.single-movie-v6 h2.masvideos-movie-gallery__title,
+    &.single-movie-v6 h2.single-movie-highlighted-comment--title, 
+    &.single-movie-v7 h2.single-movie-highlighted-comment--title,
+    &.single-movie-v6 h2.single-movie-details--attributes__title, 
+    &.single-movie-v7 h2.single-movie-details--attributes__title,
+    &.single-movie-v6 h2.single-movie-details--description__title, 
+    &.single-movie-v7 h2.single-movie-details--description__title {
+        color: #e3e3e3;
+    }
+
+    &.single-movie-v5 .movie__related-video {
+        background: #1c212e;
+    }
+
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-cast .person-name-link, 
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-crew .person-name-link,
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-cast .person-role, 
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-crew .person-role,
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-cast h3.person-name, 
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-crew h3.person-name,
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-cast, 
+    &.single-movie-v5 .movie-cast-crew-tabs .tab-content .movie-crew {
+        color: #e3e3e3;
+    }
+
+    &.single-movie-v5 .movie-cast-crew-tabs ul.nav li a.active {
+        color: #fff;
+    }
+
+    &.single-movie-v6.single-movie .masvideos-reviews__title:after, 
+    &.single-movie-v7.single-movie .masvideos-reviews__title:after,
+    &.single-movie-v6 h2.single-movie-details--description__title:after, 
+    &.single-movie-v7 h2.single-movie-details--description__title:after {
+        background: #323846;
+    }
+
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-cast + .movie-cast, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-cast + .movie-crew, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crew + .movie-cast, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crew + .movie-crew,
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-casts + .movie-casts, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-casts + .movie-crews, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crews + .movie-casts, 
+    &.single-movie-v7 .movie-cast-crew-tabs .tab-content .movie-crews + .movie-crews {
+        border-top-color: #333333;
+    }
+
+    &.single-movie-v5 .movie__info--body .movie__sharing-with-tags .movie__tags {
+        color: #fff;
+    }
+
+    &.single-movie-v5 .summary .movie__meta,
+    &.single-movie-v5 .movie__meta span a {
+        color: #949cb0;
+    }
+
+    &.single-movie-v5 .movie .summary .movie__meta > * + *:before {
+        color: #949cb0;
+    }
+
+}

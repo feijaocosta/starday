@@ -1,0 +1,94 @@
+.single-movie {
+	.movie__recommended {
+
+		&--title {
+			font-size: 22px;
+			margin-bottom: 24px;
+
+			@include media-breakpoint-up(lg) {
+				font-size: 24px;
+			}
+		}
+
+		.movie {
+
+			&__poster {
+				&:before {
+					background: linear-gradient(to bottom,rgba(240,47,23,0) 50%,rgba(0,0,0,.7) 100%);
+				    content: " ";
+				    height: 100%;
+				    position: absolute;
+				    bottom: 0;
+				    right: 0;
+				    left: 0;
+				    z-index: 1;
+				}
+			}
+
+			&__body {
+				@include media-breakpoint-up(lg) {
+		            position: absolute;
+		            text-align: center;
+		            width: 100%;
+		            padding: 0 25px 20px;
+		            bottom: 0;
+		            right: 0;
+		            left: 0;
+		            z-index: 2;
+
+		            .movie__title {
+		            	font-size: 32px;
+		            	height: 44px;
+		            	overflow: hidden;
+		            	line-height: 1.5;
+		            }
+		        }
+	        }
+
+	        &__short-description {
+	        	@include media-breakpoint-down(md) {
+	        		display: none;
+	        	}
+
+	            font-size: 13px;
+	            line-height: 22px;
+	            color: #fff;
+	            font-weight: 400;
+	            margin-bottom: 20px;
+	            display: block;
+
+	            p,div {
+	                max-height: 42px;
+	                overflow: hidden;
+	                color: #fff;
+	            }
+	        }
+
+	        &__meta {
+	            display: none;
+	        }
+
+	        .movie-actions--link_watch {
+	            @include make-button(12px, 10.5px, 14px, $btn-line-height, 5px, 2px);
+	            @include button-variant( transparent, #fff, #fff, #fff);
+	            display: block;
+	            width: 100%;
+	            font-weight: $ms-bold;
+	            font-family: $ms;
+	            color: #fff;
+	        }
+
+	        &__actions {
+	        	display: none;
+
+	        	.movie-actions--link_add-to-playlist {
+	        		display: none;
+	        	}
+
+	        	@include media-breakpoint-up(lg) {
+	        		display: block;
+	        	}
+	        }
+	    }
+    }
+}

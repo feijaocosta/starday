@@ -1,0 +1,263 @@
+.persons__inner {
+    @include make-row(14px);
+    margin-top: 15px;
+}
+
+.persons__inner > .person {
+    @include make-col-ready(14px);
+}
+
+.columns-5 .persons__inner > .person,
+.columns-7 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(2.4);
+
+        .person__meta {
+            font-size: 10px;
+        }
+
+        .person__title {
+            font-size: 12px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .person__meta {
+            font-size: 12px;
+        }
+
+        .person__title {
+            font-size: 14px;
+        }
+    }
+}
+
+.columns-7 .persons__inner > .person {
+    @include media-breakpoint-up(xl) {
+        @include make-col(1.71428571429);
+    }
+}
+
+.columns-8 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(1.5);
+    }
+}
+
+.columns-9 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(1.3333);
+    }
+}
+
+.columns-10 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(1.2);
+    }
+}
+
+.columns-1 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(xxl) {
+        @include make-col(12);
+    }
+}
+
+.columns-1 > .person {
+    @include make-col(12);
+}
+
+.columns-2 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(xxl) {
+        @include make-col(6);
+    }
+}
+
+.columns-2 > .person {
+    @include media-breakpoint-up(md) {
+        @include make-col(6);
+    }
+}
+
+.columns-3 > .person,
+.columns-3 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+}
+
+.columns-4 > .person,
+.columns-4 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+    
+    @include media-breakpoint-up(xl) {
+        @include make-col(3);
+    }
+}
+
+.columns-5 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        @include make-col(2.4);
+    }
+}
+
+.columns-5 > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(2.4);
+    }
+}
+
+.columns-6 > .person,
+.columns-6 .persons__inner > .person {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(2);
+    }
+}
+
+// .vodi-archive-wrapper[data-view="grid"],
+// .vodi-archive-wrapper[data-view="grid-extended"] {
+//     .columns-2,
+//     .columns-3,
+//     .columns-4,
+//     .columns-5,
+//     .columns-6,
+//     .columns-7 {
+//         .persons__inner > .person {
+//             @include media-breakpoint-down(sm) {
+//                 @include make-col(4);
+//             }
+//         }
+//     }
+// }
+
+// .vodi-archive-wrapper[data-view="list-small"],
+// .vodi-archive-wrapper[data-view="list-large"] {
+//     .columns-2,
+//     .columns-3,
+//     .columns-4,
+//     .columns-5,
+//     .columns-6,
+//     .columns-7 {
+//         .persons__inner > .person {
+//             @include make-col(4);
+
+//             @include media-breakpoint-up(md) {
+//                 @include make-col(12);
+//             }
+//         }
+//     }
+// }
+
+// .vodi-archive-wrapper[data-view="list"] {
+//     .columns-2,
+//     .columns-3,
+//     .columns-4,
+//     .columns-5,
+//     .columns-6,
+//     .columns-7 {
+//         .persons__inner > .person {
+//             @include make-col(4);
+
+//             @include media-breakpoint-up(md) {
+//                 @include make-col(12);
+//             }
+
+//             @include media-breakpoint-up(lg) {
+//                 @include make-col(6);
+//             }
+//         }
+//     }
+// }
+
+// .vodi-archive-wrapper[data-view="list"],
+// .vodi-archive-wrapper[data-view="list-small"],
+// .vodi-archive-wrapper[data-view="list-large"],
+// .vodi-archive-wrapper[data-view="grid"],
+// .vodi-archive-wrapper[data-view="grid-extended"] {
+//     .columns-2,
+//     .columns-3,
+//     .columns-4,
+//     .columns-5,
+//     .columns-6,
+//     .columns-7 {
+//         .persons__inner > .person {
+//             @include media-breakpoint-down(sm) {
+//                 @include make-col(4);
+//             }
+//         }
+//     }
+// }
+
+// .vodi-archive-wrapper[data-view="grid"] {
+//     .columns-2,
+//     .columns-3,
+//     .columns-4,
+//     .columns-5,
+//     .columns-6,
+//     .columns-7 {
+//         .persons__inner > .person {
+//             @include media-breakpoint-only(md) {
+//                 @include make-col(3);
+//             }
+
+//             @include media-breakpoint-only(lg) {
+//                 @include make-col(2.4);
+//             }
+//         }
+//     }
+// }

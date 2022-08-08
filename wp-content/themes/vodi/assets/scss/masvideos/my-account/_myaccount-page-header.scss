@@ -1,0 +1,87 @@
+.my-account-page__header {
+	background: #f6f7f9;
+
+	.user-info {
+		padding-top: 41px;
+		padding-bottom: 21px;
+		display: flex;
+		align-items: center;
+
+		.avatar-link {
+			margin-right: 24px;
+		}
+
+		.author-name {
+			font-size: 22px;
+			color: #121a21;
+			font-weight: $ms-semi-bold;
+			font-family: $ms;
+			margin-bottom: 0;
+		}
+
+		.author-mail {
+			color: #808b90;
+			font-family: #os;
+			font-size: 12px;
+		}
+	}
+
+	.masvideos-MyAccount-navigation {
+		@include make-col(12);
+
+		ul {
+			display: flex;
+			align-items: center;
+			overflow: auto;
+			flex-wrap: nowrap;
+			overflow-y: hidden;
+
+			@include media-breakpoint-up(lg) { 
+				overflow: initial;
+				flex-wrap: wrap;
+			}
+
+
+			li {
+				flex-shrink:0;
+
+				& + li {
+					margin-left: 28px;
+				}
+
+				a {
+					padding: 16px 12px;
+					display: block;
+					position: relative;
+
+					&:hover {
+						color: #000;
+					}
+				}
+
+				&.is-active {
+					a {
+						&:after {
+							content: ' ';
+						    border-bottom: 3px solid transparent;
+						    display: block;
+						    position: absolute;
+						    bottom: -1px;
+						    width: 100%;
+						    left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	& + .site-content__inner {
+
+		.masvideos-MyAccount-content {
+			padding-top: 40px;
+			@include make-col(12);
+		}
+	}
+}
+

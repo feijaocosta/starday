@@ -1,0 +1,46 @@
+.light {
+	.episode-tabs .nav .nav-item a,
+	.episode .nav .nav-item + .nav-item:before,
+	.episode-seasons-tabs .nav .nav-item a {
+		color: #949494;
+	}
+
+	.episode-tabs .tab-content {
+		background: #fcfcfc;
+	}
+
+	&.single-episode .episode__meta {
+		color: #949494;
+	}
+
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode .masvideos-tabs .nav .nav-item a,
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode .masvideos-tabs .nav .nav-item a .season-title {
+		color: #949cb0;
+	}
+
+	&.single-episode .episode__avg-rating .avg-rating__text {
+		color: #949cb0;
+	}
+
+	&.single-episode .episode__season-tabs-wrap {
+		background: #fcfcfc;
+	}
+
+	&.single-episode .episode_title {
+		color: #19272e;
+	}
+
+	&.single-episode .episode__short-description p, .single-episode .episode__description > div {
+		color: #19272e;
+	}
+
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode__season-title {
+		border-bottom-color: #e8e8e8;
+	}
+
+	&.single-episode-v4 .single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode__season-title,
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode__season-title {
+		color: #121a21;
+	}
+
+}

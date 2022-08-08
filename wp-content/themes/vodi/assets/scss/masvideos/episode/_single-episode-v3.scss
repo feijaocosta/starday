@@ -1,0 +1,271 @@
+.single-episode-v3 {
+	.episode__head {
+		justify-content: flex-start;
+	}
+
+	.masvideos-breadcrumb {
+		padding-left: 15px;
+		padding-right: 15px;
+		z-index: 1;
+	}
+
+	.single-episode-bg-image {
+		position: absolute;
+		width: 100vw;
+		height: 100%;
+		top: -81px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		left: calc(-50vw + 50% - 8px);
+
+		@media (min-width: 992px) {
+			left: calc(-50vw + 930px / 2 - 8px);
+		}
+
+		@media (min-width: 1200px) {
+			left: calc(-50vw + 1094px / 2 - 8px);
+		}
+
+		@media (min-width: 1440px) {
+			left: calc(-50vw + 1364px / 2 - 8px);
+		}
+
+		@media (min-width: 1486px) {
+			left: calc(-50vw + 1410px / 2 - 8px);
+		}
+	}
+
+	.episode__title-with-nav {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+		flex-direction: column;
+
+		@include media-breakpoint-up(xl) {
+			flex-direction: row;
+		}
+
+		.episode_title {
+			@include media-breakpoint-down(lg) {
+				order: 2;
+			}
+		}
+
+		.episode__player--arrows {
+			@include media-breakpoint-down(lg) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.vodi-sharing {
+		div.sharedaddy {
+			.sd-sharing {
+				align-items: flex-start;
+				flex-direction: column;
+			}
+
+			h3.sd-title {
+				margin-right: 0;
+				margin-bottom: 11px;
+			}
+		}
+	}
+
+}
+
+.single-episode-v3,
+.single-episode-v4 {
+	.episode {
+
+		.single-episode__content {
+			flex: 0 0 100%;
+			max-width: 100%;
+
+			@include media-breakpoint-up(lg) {
+				flex: 0 0 74%;
+				max-width: 74%;
+				padding-right: 30px;
+			}
+		}
+
+		.single-episode__sidebar {
+			flex: 0 0 100%;
+			max-width: 100%;
+			margin-top: 30px;
+
+			@include media-breakpoint-up(lg) {
+				flex: 0 0 26%;
+				max-width: 26%;
+				margin-top: 0;
+			}
+		}
+
+		&_title {
+			margin-top: 6px;
+			margin-bottom: 0px;
+		}
+
+		&__player {
+
+			&--arrows {
+				display: flex;
+				align-items: center;
+				font-size: 14px;
+				line-height: 1;
+
+				> * + * {
+					&:before {
+						content: '|';
+						display: flex;
+						align-items: center;
+						margin: 0 8px;
+					}
+				}
+
+				@include media-breakpoint-down(md) {
+					display: block;
+					width: 100%;
+
+					> * + * {
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+
+			&--prev-episode,
+			&--next-episode {
+				max-width: none;
+				font-size: 14px;
+				line-height: 1;
+
+				a {
+					font-size: inherit;
+
+					&:hover {
+						&:after,
+						&:before {
+							border-color: #9f9fa4;
+						}
+					}
+				}
+
+				&__label {
+					left: auto;
+					right: auto;
+				}
+
+				@include media-breakpoint-down(md) {
+					position: relative;
+					display: block;
+					margin-bottom: 15px;
+					padding-bottom: 15px;
+					border-bottom: 1px solid  #949cb0;
+				}
+			}
+
+			@include media-breakpoint-down(md) {
+				&--prev-episode:before,
+				&--next-episode:after {
+					width: 30px;
+					height: 30px;
+				}
+			}
+
+			&--next-episode {
+				margin-left: 0;
+
+				a {
+					&:after {
+						content: '';
+						width: 43px;
+						height: 43px;
+						display: inline-block;
+						margin-left: 12px;
+						background-repeat: no-repeat;
+						background-position: center center;
+						border: 1px solid #4e5567;
+						border-radius: 50%;
+						background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="14px"><path fill-rule="evenodd"  fill="rgb(100, 106, 123)" d="M7.993,7.104 L1.210,13.989 L0.207,13.147 L6.113,7.151 L0.369,0.876 L1.331,0.008 L7.272,6.499 L7.993,7.104 Z"/></svg>');
+
+						[dir="rtl"] & {
+							background-image: url( 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="14px"><path fill-rule="evenodd"  fill="rgb(100, 106, 123)" d="M7.793,13.147 L6.790,13.989 L0.007,7.104 L0.728,6.499 L6.669,0.008 L7.631,0.876 L1.887,7.151 L7.793,13.147 Z"/></svg>' );
+						}
+					}
+
+					&:hover:after {
+						background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"><path d="M8 7.1L1.2 14 0.2 13.1 6.1 7.2 0.4 0.9 1.3 0 7.3 6.5 8 7.1Z" fill="rgb(129, 129, 133)" /></svg>');
+
+						[dir="rtl"] & {
+							background-image: url( 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"><path d="M7.8 13.1L6.8 14 0 7.1 0.7 6.5 6.7 0 7.6 0.9 1.9 7.2 7.8 13.1Z" fill="rgb(129, 129, 133)"/></svg>' );
+						}
+					}
+				}
+			}
+
+			&--prev-episode {
+				margin-right: 0;
+
+				a {
+					&:before {
+						content: '';
+						width: 43px;
+						height: 43px;
+						background-repeat: no-repeat;
+						background-position: center center;
+						border: 1px solid #4e5567;
+						border-radius: 50%;
+						margin-right: 12px;
+						background-image: url( 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="14px"><path fill-rule="evenodd"  fill="rgb(100, 106, 123)" d="M7.793,13.147 L6.790,13.989 L0.007,7.104 L0.728,6.499 L6.669,0.008 L7.631,0.876 L1.887,7.151 L7.793,13.147 Z"/></svg>' );
+
+						[dir="rtl"] & {
+							background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="14px"><path fill-rule="evenodd"  fill="rgb(100, 106, 123)" d="M7.993,7.104 L1.210,13.989 L0.207,13.147 L6.113,7.151 L0.369,0.876 L1.331,0.008 L7.272,6.499 L7.993,7.104 Z"/></svg>');
+						}
+					}
+
+					&:hover:before {
+						background-image: url( 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"><path d="M7.8 13.1L6.8 14 0 7.1 0.7 6.5 6.7 0 7.6 0.9 1.9 7.2 7.8 13.1Z" fill="rgb(129, 129, 133)"/></svg>' );
+
+						[dir="rtl"] & {
+							background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"><path d="M8 7.1L1.2 14 0.2 13.1 6.1 7.2 0.4 0.9 1.3 0 7.3 6.5 8 7.1Z" fill="rgb(129, 129, 133)" /></svg>');
+						}
+					}
+				}
+			}
+		}
+
+		&__rating-with-sharing {
+			.episode__avg-rating {
+				margin-bottom: 0;
+			}
+
+			.episode__sharing {
+				display: none;
+			}
+		}
+
+		&__short-description {
+			margin-bottom: 25px;
+		}
+	}
+
+	.episode-tabs .tab-content {
+		margin-left: 0;
+		width: auto;
+	}
+}
+
+
+.single-episode-v2,
+.single-episode-v3 {
+	#reviews .masvideos-review__published-date {
+		font-size: 12px;
+	}
+
+	#reviews .comment-text .description {
+		font-size: 13px;
+	}
+	
+}

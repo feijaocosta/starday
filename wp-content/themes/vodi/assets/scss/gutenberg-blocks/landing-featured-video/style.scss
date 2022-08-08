@@ -1,0 +1,86 @@
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.landing-featured-video {	
+    overflow: hidden;
+    font-family: $ms;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:after {
+        position: absolute;
+        content: '';
+        background-position: top;
+        background-repeat: no-repeat;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to bottom, rgba(19,23,34,1) 0%, rgba(19,23,34,0.24) 65%, rgba(19,23,34,0.24) 100%);
+    }
+
+    &__header {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__image {
+        position: relative;
+
+        @include media-breakpoint-up(xl) {
+            margin-top: -70px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 1.10;
+        letter-spacing: -0.01em;
+        font-weight: $ms-semi-bold;
+
+        @include media-breakpoint-up(md) {
+            font-size: 40px;
+        }
+
+         @include media-breakpoint-up(lg) {
+            font-size: 72px;
+         }
+    }
+
+    &__subtitle {
+        font-size: 20px !important;
+        line-height: 1.25;
+        font-weight: $ms-medium;
+        color: #ffffff;
+        padding-top: 4px;
+
+        @include media-breakpoint-up(md) { 
+            font-size: 26px !important;
+        }
+    }
+}

@@ -1,0 +1,269 @@
+.single-person {
+	.person {
+		@include make-row();
+		margin-bottom: 40px;
+
+		.single-person{
+			&__content-sidebar,
+			&__content-body {
+				@include make-col-ready();
+			}
+
+			&__content-sidebar {
+				@include make-col(12);
+
+				@include media-breakpoint-up(md) { 
+					@include make-col(4);
+				}
+
+	            @include media-breakpoint-up(lg) { 
+	                @include make-col(4.2);
+	            }
+
+	            @include media-breakpoint-up(xl) { 
+	                @include make-col(3.2);
+	            }
+
+	            .single-person___title,
+				.single-person__short-description {
+					display: block;
+
+					@include media-breakpoint-up(md) {
+						display: none;
+					}
+				}
+			}
+
+			&__content-body {
+				@include make-col(12);
+
+				@include media-breakpoint-up(md) { 
+					@include make-col(8);
+				}
+
+	            @include media-breakpoint-up(lg) { 
+	                @include make-col(7.8);
+	            }
+
+	            @include media-breakpoint-up(xl) { 
+	                @include make-col(8.8);
+	            }
+
+	            .single-person___title,
+				.single-person__short-description {
+					display: none;
+
+					@include media-breakpoint-up(md) {
+						display: block;
+					}
+				}
+			}
+
+			&__personal-info {
+				padding: 30px 20px 18px !important;
+
+				> div {
+					padding-bottom: 30px;
+
+					&:last-child {
+						padding-bottom: 10px;
+					}
+				}
+			}
+
+			&__poster {
+				margin-bottom: 30px;
+			}
+
+			&__sidebar-title{
+				font-size: 22px;
+			    letter-spacing: -0.025em;
+			    padding-bottom: 13px;
+			    border-bottom-style: solid;
+			    border-width: 1px;
+			    display: block;
+			    margin-bottom: 15px;
+			    font-weight: 500;
+			    color: #fff;
+    			border-bottom-color: #2f2f33;
+    			font-family: $ms;
+			}
+
+			&___title {
+				margin-bottom: 20px;
+			    font-size: 36px;
+			    font-weight: 700;
+			}
+
+			&__short-description,
+			&__description {
+			    color: #b4bbc0;
+			    line-height: 26px;
+			    letter-spacing: -0.01em;
+			    margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+.person-tabs,
+.person-credits-tabs {
+	margin-bottom: 20px;
+
+	ul {
+		font-family: "Montserrat", "Open Sans", sans-serif;
+	    -webkit-box-pack: center;
+	    -webkit-justify-content: center;
+	    justify-content: center;
+	    border-bottom-width: 1px;
+	    border-bottom-style: solid;
+	    padding-top: 30px;
+	    margin-bottom: 30px;
+
+		li {
+			font-size: 18px;
+		    line-height: 1;
+		    letter-spacing: -0.025em;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-flex-shrink: 0;
+		    flex-shrink: 0;
+			a {
+				display: block;
+				position: relative;
+    			padding: 0px 6px 18px 6px;
+
+    			&.active {
+    				font-weight: 500;
+
+    				&:after {
+    					content: ' ';
+					    border-bottom: 3px solid transparent;
+					    display: block;
+					    position: absolute;
+					    bottom: -1px;
+					    width: 100%;
+					    left: 0;
+    				}
+    			}
+			}
+
+			& + li {
+				&:before {
+					content: '/';
+    				margin: 0px 25px 0 30px;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+	    font-family: "Open Sans", sans-serif;
+
+	    .movie-cast-title,
+	    .person-crews-movies-category-title,
+	    .movie-name,
+	    .person-crews-tv-shows-category-title,
+	    .tv-show-name,
+	    .tv-show-cast-title {
+	    	font-size: 18px;
+	    	font-weight: 700;
+	    	margin-bottom: 0; 
+	    	font-family: $os;
+	    }
+
+	    .movie-cast-title,
+	    .person-crews-movies-category-title,
+	    .person-crews-tv-shows-category-title,
+	    .tv-show-cast-title {
+	     	margin-bottom: 10px;
+	    } 
+
+	    .person-cast-movie,
+	    .person-crew-movie,
+	    .person-crew-tv-show,
+	    .person-cast-tv-show {
+	    	display: flex;
+	    	align-items: center;
+	    	width: 100%;
+	    	flex-wrap: wrap;
+	    } 
+
+	    .movie-release-year,
+	    .tv-show-release-year {
+	    	margin-right: 15px;
+
+	    	@include media-breakpoint-up(lg) {
+			    flex: 0 0 10%;
+			    max-width: 10%;
+			}
+		}
+
+		.person-role {
+			font-size: 14px;
+		    font-weight: 600;
+		    color: #e3e3e3;
+
+		    &:before {
+		    	content: "/";
+			    margin: 5px 0 0 5px;
+			    display: inline-block;
+		    }
+		}
+
+		.person-role-separator {
+			display: none;
+		}
+
+		.person-movies-credits,
+		.person-tv-shows-credits {
+			> div {
+				border-bottom: 1px solid #333333;
+				padding: 8px 0;
+
+				&:last-child {
+					border: none;
+				}
+			} 
+		}                                                                                 
+	}
+}
+
+.person__attributes {
+    @include media-breakpoint-up(md) {
+        margin-bottom: 40px;
+    }
+
+    th,
+    td {
+        border: none;
+    }
+
+    td {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    th {
+        color: #fff;
+        font-weight: $os-regular;
+        width: 30%;
+    }
+
+    td {
+        color: #b4bbc0;
+
+        a {
+            color: #b4bbc0;
+        }
+    }
+
+    tr {
+        & + tr {
+            border-top-style: solid;
+            border-top-width: 1px;
+        }
+    }
+}

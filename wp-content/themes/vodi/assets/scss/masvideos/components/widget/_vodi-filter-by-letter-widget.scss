@@ -1,0 +1,44 @@
+.vodi-widget_movies_letter_filter,
+.vodi-widget_tv_shows_letter_filter {
+    padding-bottom: 19px !important;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -5px;
+        margin-bottom: 0;
+    }
+
+    .vodi-layered-nav-movies-letter,
+    .vodi-layered-nav-tv-shows-letter {
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding: 0 5px 5px 0px;
+        margin-bottom: 0;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+
+            span:first-child {
+                font-size: 21px;
+                line-height: 1;
+                letter-spacing: -0.05em;
+                font-family: $os;
+                font-weight: $os-semi-bold;
+                display: block;
+            }
+
+            .count {
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: -0.05em;
+                font-family: $os;
+                font-weight: $os-regular;
+                display: block;
+            }
+        }
+    }
+}

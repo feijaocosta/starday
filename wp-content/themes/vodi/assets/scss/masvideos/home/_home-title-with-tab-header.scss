@@ -1,0 +1,84 @@
+.home-section {
+    .home-section {
+        &__flex-header {
+            margin-bottom: 29px;
+            width: 100%;
+
+            @include media-breakpoint-up(md) {
+                display: flex ;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .section-title {
+                @include media-breakpoint-up(md) {
+                    flex: 1;
+                    margin: 0;
+                    min-width: 15%;
+                }
+
+                &:after {
+                    margin-left: 25px;
+                }
+            }
+
+            .nav {
+                flex-wrap: nowrap;
+                align-items: center;
+                overflow-x: auto;
+                overflow-y: hidden;
+
+                @include media-breakpoint-up(md) {
+                    padding-left: 15px;
+                    flex-wrap: wrap;
+                    overflow-x: initial;
+                    overflow-y: initial;
+                }
+
+                li {
+                    margin-right: 33px;
+                    
+                    a {
+                        display: block;
+                        font-size: 14px;
+                        color: #949494;
+                        line-height: 18px;
+                        font-family: $ms;
+                        font-weight: $ms-medium;
+
+                        @include media-breakpoint-down(md) {
+                            white-space: nowrap;
+                        }
+
+                        &.active {
+                            font-weight: $ms-bold;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .header-aside a {
+                font-size: 14px;
+                line-height: 18px;
+                color: #949494;
+                font-weight: $ms-medium;
+
+                @include media-breakpoint-up(md) {
+                   padding-left: 12px;
+                }
+            }
+        }
+    }
+
+    &.dark {
+        .home-section__flex-header {
+            .nav-link:not(.active) {
+                color: #949cb0;
+            }
+        }
+    }
+}

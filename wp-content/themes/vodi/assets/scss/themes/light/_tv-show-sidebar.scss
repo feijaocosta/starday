@@ -1,0 +1,95 @@
+.light {
+    .vodi-widget_movies_letter_filter,
+    .vodi-widget_tv_shows_letter_filter {
+        .vodi-layered-nav-movies-letter,
+        .vodi-layered-nav-tv-shows-letter {
+            a {
+                background-color: #e8e8e8;
+
+                .count {
+                    color: #6b7590;
+                }
+
+                &:hover {
+
+                    span:first-child {
+                        color: #181d29;
+                    }
+
+                    .count {
+                        color: #2a2d33;
+                    }
+                }
+            }
+
+            &.chosen a {
+                span:first-child {
+                    color: #181d29;
+                }
+
+                .count {
+                    color: #2a2d33;
+                }
+            }
+        }
+    }
+
+    #secondary.widget-area {
+        @include media-breakpoint-down(lg) {
+            background: #F6F7F9;
+        }
+    }
+
+    .sidebar-area.widget-area {
+        .masvideos-movies-tags-filter-widget,
+        .widget_vodi_tv_shows_filter .masvideos-tv-shows-tags-filter-widget,
+        .widget_vodi_videos_filter .masvideos-videos-tags-filter-widget {
+            .masvideos-widget-movies-layered-nav-list,
+            .masvideos-widget-tv-shows-layered-nav-list,
+            .masvideos-widget-videos-layered-nav-list {
+                &__item {
+                    background: #e8e8e8;
+
+                    &:hover {
+                        a {
+                            color: #1c212e;
+                        }
+                    }
+                }
+
+                li + li {
+                    border-left: 5px solid #F6F7F9;
+                }
+            }
+        }
+    }
+}
+
+.light .sidebar-area.widget-area .masvideos-videos-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item a,
+.light .sidebar-area.widget-area .masvideos-tv-shows-tags-filter-widget .masvideos-widget-tv-shows-layered-nav-list__item a  {
+    color: #000;
+}
+
+.dark .sidebar-area.widget-area .masvideos-videos-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item a,
+.dark .sidebar-area.widget-area .masvideos-tv-shows-tags-filter-widget .masvideos-widget-tv-shows-layered-nav-list__item a {
+    color: #b4bbc0;
+}
+
+.light .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-videos-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item a ,
+.light .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-videos-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item a:hover,
+.light .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-videos-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item.chosen a,
+.light .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-tv-shows-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item a ,
+.light .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-tv-shows-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item a:hover,
+.light .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-tv-shows-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item.chosen a {
+    color: #949cb0;
+}
+
+.dark .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-videos-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item:hover a,
+.dark .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-videos-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item a:hover,
+.dark .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-videos-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item.chosen a,
+.dark .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-tv-shows-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item:hover a,
+.dark .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-tv-shows-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item a:hover,
+.dark .sidebar-area.widget-area .widget_vodi_videos_filter > .masvideos-tv-shows-tags-filter-widget .masvideos-widget-videos-layered-nav-list__item.chosen a {
+    color: #1c212e;
+}
+

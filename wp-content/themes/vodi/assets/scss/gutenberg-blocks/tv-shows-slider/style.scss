@@ -1,0 +1,169 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.tv-shows-sliders {
+    .single-featured-tv_show__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(6);
+            padding-left: 12px;
+        }
+    }
+    .container ,
+    .single-featured-tv_show,
+    .single-featured-tv_show__inner{
+        height: 100%;
+    }
+
+    a {
+        @include hover-focus {
+            outline: none;
+        }
+    }
+
+    .tv-show{
+        &__badge {
+            font-size: 13px;
+            font-family: $ms;
+            font-weight: $ms-bold;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #262626;
+            display: inline-block;
+            border-radius: 3px;
+            padding: 4px 12px;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        &__link {
+            h3 {
+                font-size: 30px;
+                font-weight: $ms-semi-bold;
+                line-height: 1.3;
+                margin-bottom: 0;
+                color: #c33637;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 40px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    font-size: 60px;
+                }
+            }
+        }
+
+        &__meta {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #262626;
+            font-family: $ms;
+
+            a {
+                color: #262626;
+            }
+
+            span {
+                + span:before {
+                    content: '|';
+                    padding: 0 10px;
+                }
+            }
+
+            &--release-year {
+                color: #262626;
+            }
+        }
+
+        &__actions {
+            display: flex;
+
+            .tv-show-actions--link_add-to-playlist > a,
+            .tv-show-actions--link_watch {
+                @include make-button();
+                @include button-size(12px, 30px, 14px, $btn-line-height, 5px);
+                font-family: $ms;
+                border-width: 2px;
+                display: block;
+
+                @include media-breakpoint-up(sm) {
+                    padding: 13.5px 38px;
+                    display: inline-block;
+                }
+            }
+
+            a:first-child {
+                margin-bottom: 20px;
+
+                @include media-breakpoint-up(sm) {
+                    margin-bottom: 0;
+                }
+            }
+
+            .tv-show-actions--link_add-to-playlist {
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+
+                margin-left: 20px;
+
+                 > a {
+                    border-width: 2px;
+                    border-color: #fff;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #000;
+                        border-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &.light {
+        .tv-show{
+            &__badge {
+                color: #262626;
+                background-color: #fff;
+            }
+
+            &__link {
+                h3 {
+                    color: #fff;
+                }
+            }
+
+            &__meta {
+                color: #fff;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        padding: 4px 0;
+    }
+}
+
+.light .tv-shows-sliders .tv-show__actions .tv-show-actions--link_add-to-playlist > a {
+    color: #fff;
+}
+
+.light .tv-shows-sliders .tv-show__actions .tv-show-actions--link_add-to-playlist > a:hover {
+    color: #000;
+}

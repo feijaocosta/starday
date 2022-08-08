@@ -1,0 +1,54 @@
+.site-footer-comingsoon.transparent {
+    .site-footer__info {
+        color: #464d5f;
+    }
+
+    .site-footer {
+
+        .footer-social-icon {
+
+            .fa-circle {
+                color: #fff;
+            }
+
+            .social-media-item__icon {
+                color: #fff;
+            }
+
+            &:hover {
+                .fa-circle {
+                    color: #cccbcb;
+                }
+            }
+        }
+    }
+}
+
+.transparent {
+    .comingsoon-launch-section__title,
+    .comingsoon-launch-section__desc {
+        color: #fff;
+    }
+
+    .comingsoon-launch-section .email {
+        background-color: #fff;
+        color: #a0a0a0;
+    }
+
+    .comingsoon-launch-section .btn-subscribe {
+        color: #ffffff;
+    }
+
+    .comingsoon-form-timer {
+        .textDiv {
+            &_Days,
+            &_Hours,
+            &_Minutes,
+            &_Seconds {
+                > span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

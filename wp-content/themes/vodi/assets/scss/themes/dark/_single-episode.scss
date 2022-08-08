@@ -1,0 +1,95 @@
+.dark {
+	&.single-episode .episode__avg-rating .avg-rating__text {
+		color: #949cb0;
+	}
+
+	&.single-episode .episode__tags {
+		color: #fff;
+	}
+
+	.episode-tabs .tab-content {
+		background: #1c212e;
+	}
+
+	.episode .nav .nav-item + .nav-item:before {
+		 color: #2c3c4a;
+	}
+
+	&.single-episode:not(.single-episode-v3):not(.single-episode-v4) {
+		.episode__player--next-episode a:hover:after {
+			background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px" height="121px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M62.707,59.707 L1.707,120.707 L0.293,119.293 L59.580,60.006 L0.299,1.713 L1.701,0.287 L60.994,58.592 L61.293,58.293 L62.707,59.707 Z"/></svg>');
+
+			[dir="rtl"] & {
+				background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84px" height="120px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M61.988,118.579 L60.584,119.988 L0.012,59.210 L1.416,57.801 L1.713,58.099 L60.590,0.006 L61.982,1.426 L3.117,59.508 L61.988,118.579 Z"/></svg>');
+			}
+		}
+
+		.episode__player--prev-episode a:hover:before {
+			background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84px" height="120px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M61.988,118.579 L60.584,119.988 L0.012,59.210 L1.416,57.801 L1.713,58.099 L60.590,0.006 L61.982,1.426 L3.117,59.508 L61.988,118.579 Z"/></svg>');
+
+			[dir="rtl"] & {
+				background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px" height="121px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M62.707,59.707 L1.707,120.707 L0.293,119.293 L59.580,60.006 L0.299,1.713 L1.701,0.287 L60.994,58.592 L61.293,58.293 L62.707,59.707 Z"/></svg>');
+			}
+		}
+	}
+
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode__season-title {
+		border-bottom-color: #434957;
+	}
+
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode .masvideos-tabs .tab-content .episodes__inner .episode__link:hover .episode__number,
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode .masvideos-tabs .tab-content .episodes__inner .episode__link:hover .episode__title {
+		color: #fff;
+	}
+
+	&.single-episode-v2 #reviews .masvideos-review__author,
+	&.single-episode-v3 #reviews .masvideos-review__author,
+	&.single-episode-v4 #reviews .masvideos-review__author
+	 {
+		color: #fff;
+	}
+
+	&.single-episode .star-rating .star {
+		color: #949cb0;
+	}
+
+	.vodi-single-episode__sidebar--tv-show .tv-show__short-description p {
+		color: #b4bbc0;
+	}
+
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode .masvideos-tabs .nav .nav-item a,
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode .masvideos-tabs .nav .nav-item a .season-title {
+		color: #949cb0;
+	}
+
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode .masvideos-tabs .nav .nav-item a:hover .season-title,
+	.single-episode__sidebar .vodi-single-episode__sidebar--seasons-episode .masvideos-tabs .nav .nav-item a.active .season-title {
+		color: #fff;
+	}
+
+
+	&.single-episode-v3 .episode__player--prev-episode a,
+	&.single-episode-v4 .episode__player--next-episode a,
+	&.single-episode-v3 .episode__player--next-episode a,
+	&.single-episode-v4 .episode__player--prev-episode a {
+		color: #fff;
+	}
+
+	&.single-episode .episode__season-tabs-wrap {
+		background: #1c212e;
+	}
+ 
+	&.single-episode .episode__short-description p, .single-episode .episode__description > div {
+		color: #b4bbc0;
+	}
+
+	&.single-episode p.stars a:before {
+		color: #949cb0;
+	}
+
+	&.single-episode-v3 .episode-tabs .tab-content form.comment-form label,
+	&.single-episode-v4 .episode-tabs .tab-content form.comment-form label,
+	.episode-tabs .tab-content .masvideos-Reviews .comment-form label {
+		color: #fff;
+	}
+}

@@ -1,0 +1,71 @@
+.masvideos-archive,
+.page-template-template-videos-archive,
+.page-template-template-tv-shows-archive,
+.post-type-archive-person {
+    .page-title {
+        font-size: 22px;
+        line-height: 1.25;
+        letter-spacing: -0.025em;
+        font-weight: 500;
+        padding-bottom: 12px;
+        padding-top: 25px;
+        margin: 0;
+        color: #121a21;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    &.dark {
+        .page-title {
+            border-bottom: 1px solid #2a2e3c;
+            color: #fff;
+        }
+    }
+}
+
+.home-archive {
+    .content-area {
+        @include media-breakpoint-down(lg) {
+            padding-top: 30px;
+        }
+    }
+
+    .page-title {
+        padding-top: 0;
+    }
+}
+
+.page-template-template-videos-archive,
+.page-template-template-tv-shows-archive {
+    div:not(.vodi-control-bar) .handheld-sidebar-toggle {
+        padding: 8px 0;
+        margin-bottom: 0;
+    }
+}
+
+.post-type-archive-video,
+.post-type-archive-movie ,
+.post-type-archive-tv_show {
+    .site-content__inner {
+        margin-bottom: 50px;
+    }
+
+    .video__badge,
+    .movie__badge,
+    .tv-show__badge {
+        display: none;
+    }
+}
+
+.vodi-archive-wrapper[data-view="list"],
+.vodi-archive-wrapper[data-view="list-small"],
+.vodi-archive-wrapper[data-view="list-large"] {
+    .tv-show,
+    .movie {
+        &__short-description p,
+        &__short-description div {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}

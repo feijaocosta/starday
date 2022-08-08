@@ -1,0 +1,621 @@
+.masvideos-tv-show-control-bar {
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 24px;
+    }
+}
+
+.tv-shows__inner {
+    @include make-row(16px);
+}
+
+.tv-shows__inner > .tv-show {
+    @include make-col-ready(16px);
+}
+
+.columns-1 > .tv-show,
+.columns-1 .tv-shows__inner > .tv-show {
+    @include make-col(12);
+}
+
+.columns-2 > .tv-show,
+.columns-2 .tv-shows__inner > .tv-show {
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(6);
+    }
+}
+
+.columns-3 > .tv-show,
+.columns-3 .tv-shows__inner > .tv-show {
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+}
+
+.columns-4 > .tv-show,
+.columns-4 .tv-shows__inner > .tv-show {
+    @include make-col(6);
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(3);
+    }
+}
+
+.columns-5 > .tv-show,
+.columns-5 .tv-shows__inner > .tv-show  {
+    @include make-col(6);
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(2.4);
+    }
+}
+
+.columns-6 > .tv-show,
+.columns-6 .tv-shows__inner > .tv-show {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(3);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(2);
+    }
+}
+
+.columns-7 > .tv-show,
+.columns-7 .tv-shows__inner > .tv-show {
+    @include make-col(6);
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(3);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(2.4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(1.71428571429);
+    }
+}
+
+.vodi-archive-wrapper[data-view="list-small"],
+.vodi-archive-wrapper[data-view="list-large"] {
+    .tv-show  {
+        display: flex;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &__actions {
+            margin-top: 12px;
+        }
+
+        &__body {
+            display: flex;
+        }
+    }
+}
+
+.vodi-archive-wrapper[data-view="list-small"],
+.vodi-archive-wrapper[data-view="list-large"] {
+    .tv-show {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+        align-items: center;
+
+        @include media-breakpoint-up(md) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            align-items: flex-start;
+        }
+
+        &:first-child {
+            @include media-breakpoint-up(md) {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+.vodi-archive-wrapper[data-view="grid"],
+.vodi-archive-wrapper[data-view="grid-extended"] {
+    .tv-show {
+        margin-bottom: 15px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 20px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+
+            @include media-breakpoint-up(xl) {
+                margin-bottom: 28px;
+            }
+        }
+
+        &__meta {
+            margin-top: 0;
+        }
+
+        &__poster {
+            @include media-breakpoint-up(md) {
+                margin-bottom: 4px;
+            }
+        }
+
+        &__actions {
+            margin-top: 10px;
+        }
+
+        &:hover {
+            .tv-show__hover-area {
+
+                .tv-show__episode,
+                .tv-show__short-description,
+                .tv-show__review-info {
+                    @include media-breakpoint-up(xl) {
+                        display: block;
+                    }
+                }
+
+                .tv-show__actions {
+                    display: flex;
+                }
+
+                .tv-show__title {
+                    @include media-breakpoint-up(xl) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+
+.vodi-archive-wrapper[data-view="list-large"] {
+    .tv-show{    
+        
+        &__title {
+            margin-bottom: 11px;
+        }
+
+        &__poster {
+            @include media-breakpoint-up(md) {
+                flex: 0 0 40%;
+                max-width: 40%;
+                padding-right: 29px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                flex: 0 0 35%;
+                max-width: 35%;
+            }
+
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 30.5%;
+                max-width: 30.5%;
+            }
+        }
+
+        &__body {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            @include media-breakpoint-up(md) {
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                flex: 0 0 65%;
+                max-width: 65%;
+            }
+
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 69.5%;
+                max-width: 69.5%;
+            }
+        }
+
+        &__info {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 90%;
+                max-width: 90%;
+            }
+        }
+
+        &__episode,
+        &__short-description {
+            display: block;
+        }
+        
+        &__short-description,
+        &__short-description p {
+
+            @include media-breakpoint-up(xl) {
+                height: 21px;
+            }
+        }
+        
+        &__episode {
+            margin-bottom: 6px;
+        }
+
+        &__review-info {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+
+            @include media-breakpoint-up(md) {
+                display: flex;
+            }
+
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 10%;
+                max-width: 10%;
+            }
+        }
+
+        .avg-rating .rating-with-count { 
+             margin-bottom: 14px;
+        }
+
+        &:hover {
+            .tv-show__actions {
+                transition: all .3s ease 0s;
+                @include media-breakpoint-up(xl) {
+                    display: flex;
+                }
+            }
+
+            .tv-show__short-description,
+            .tv-show__short-description p {
+                transition: all .3s ease 0s;
+
+                @include media-breakpoint-up(xl) {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.vodi-archive-wrapper[data-view="list-small"] {
+    .tv-show {    
+        
+        &__title {
+            margin-bottom: 11px;
+        }
+
+        &__poster {
+            @include media-breakpoint-up(md) {
+                flex: 0 0 40%;
+                max-width: 40%;
+                padding-right: 24px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                flex: 0 0 35%;
+                max-width: 35%;
+            }
+
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 21.3%;
+                max-width: 21.3%;
+            }
+        }
+
+        &__body {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            @include media-breakpoint-up(md) {
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                flex: 0 0 65%;
+                max-width: 65%;
+            }
+
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 78.7%;
+                max-width: 78.7%;
+            }
+        }
+
+        &__info {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 88%;
+                max-width: 88%;
+            }
+        }
+
+        &__episode {
+            display: block;
+        }
+        
+        &__episode {
+            margin-bottom: 6px;
+        }
+
+        &__review-info {
+            display: none;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+
+            @include media-breakpoint-up(md) {
+                display: flex;
+            }
+
+            @include media-breakpoint-up(xl) { 
+                flex: 0 0 12%;
+                max-width: 12%;
+            }
+
+            .avg-rating {
+                display: flex;
+                flex-direction: column;
+
+                @include media-breakpoint-up(lg) {
+                    flex-direction: row;
+                }
+            }
+
+            .avg-rating-text {
+                padding-left: 0;
+
+                @include media-breakpoint-up(lg) {
+                    padding-left: 14px;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &:hover {
+            .tv-show__actions {
+                transition: all .3s ease 0s;
+                @include media-breakpoint-up(xl) {
+                    display: flex;
+                }
+            }
+
+            .tv-show__short-description,
+            .tv-show__short-description p {
+                display: block;
+                transition: all .3s ease 0s;
+            }
+        }
+    }
+}
+
+.vodi-archive-wrapper[data-view="list"] {
+    .tv-shows {
+        margin-bottom: 0;
+    }
+
+    .tv-shows__inner {
+        margin: 0;
+    }
+
+    .tv-show {    
+        display: flex;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &__poster {
+            @include media-breakpoint-up(md)  {
+                max-width: 43.3%;
+                flex: 0 0 43.3%;
+                padding-right: 25px;
+            }
+        }
+
+        &:first-child,
+        &:nth-child(2) {
+            @include media-breakpoint-up(lg) {
+                padding-top: 0;
+            }
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+
+            @include media-breakpoint-up(md)  {
+                flex: 0 0 56.7%;
+                max-width: 56.7%;
+            } 
+        }
+
+        &:nth-child(odd) .tv-show__body {
+            @include media-breakpoint-up(md)  {
+                padding-right: 20px;
+            }
+        }
+
+        &__episode {
+            display: block;
+        }
+
+        &__review-info {
+            display: none;
+            flex-direction: column;
+
+            @include media-breakpoint-up(md) {
+                display: flex;
+            }
+
+            @include media-breakpoint-up(xl) {
+                flex: 0 0 100%;
+                width: 100%;
+            }
+
+            .viewers-count {
+                order: 1 !important;
+            }
+        }
+
+        &__actions {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: none;
+
+            @include media-breakpoint-up(xl) {
+                margin-top: 0;
+            }
+        }
+
+        + .tv-show {
+            @include media-breakpoint-up(md) {
+                border-top: 1px solid #e8e8e8;
+            }
+        }
+    }
+}
+
+.vodi-archive-wrapper[data-view="list"],
+.vodi-archive-wrapper[data-view="list-small"],
+.vodi-archive-wrapper[data-view="list-large"] {
+    .tv-shows__inner {
+        margin: 0 -8px;
+
+        @include media-breakpoint-up(md) {
+            margin: 0;
+        }
+    }
+
+    .tv-show {
+        flex-direction: column;
+        margin: 0;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+            padding: 0 8px !important;
+            margin-bottom: 15px;
+        }
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+
+        &__body {
+            justify-content: space-between;
+        }
+    }
+}
+
+.vodi-archive-wrapper[data-view="list"],
+.vodi-archive-wrapper[data-view="list-small"],
+.vodi-archive-wrapper[data-view="list-large"],
+.vodi-archive-wrapper[data-view="grid"],
+.vodi-archive-wrapper[data-view="grid-extended"] {
+    .columns-1,
+    .columns-2,
+    .columns-3,
+    .columns-4,
+    .columns-5,
+    .columns-6,
+    .columns-7 {
+        .tv-shows__inner > .tv-show {
+            @include media-breakpoint-down(sm) {
+                @include make-col(6);
+            }
+
+            @include media-breakpoint-only(md) {
+                @include make-col(4);
+            }
+
+            @include media-breakpoint-only(lg) {
+                @include make-col(3);
+            }
+        }
+    }
+
+    .tv-show {
+        &__short-description,
+        &__actions,
+        &__episode {
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+
+        &__review-info {
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+    }
+}
+
+.vodi-archive-wrapper[data-view="list"] {
+    .columns-1,
+    .columns-2,
+    .columns-3,
+    .columns-4,
+    .columns-5,
+    .columns-6,
+    .columns-7 {
+        .tv-shows__inner > .tv-show {
+            @include make-col(6);
+        }
+    }
+}
+
+.vodi-archive-wrapper[data-view="list-small"],
+.vodi-archive-wrapper[data-view="list-large"] {
+    .columns-1,
+    .columns-2,
+    .columns-3,
+    .columns-4,
+    .columns-5,
+    .columns-6,
+    .columns-7 {
+        .tv-shows__inner > .tv-show {
+            @include media-breakpoint-up(md) {
+                @include make-col(12);
+            }
+        }
+    }
+}

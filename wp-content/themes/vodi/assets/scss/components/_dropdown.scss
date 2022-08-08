@@ -1,0 +1,14 @@
+.nav .sub-menu,
+.site-header__user-account .sub-menu,
+.dropdown-menu {
+    @include make-dropdown();
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.nav .sub-menu > li > a,
+.dropdown-menu > li > a {
+    @include make-dropdown-item();
+}

@@ -1,0 +1,255 @@
+.single-episode {
+    .site-header {
+        margin-bottom: 0;
+    }
+
+    .masvideos-breadcrumb {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .episode {
+
+        &_title {
+            font-size: 24px;
+            
+            @include media-breakpoint-up(lg) {
+                font-size: 26px;
+            }
+        }
+
+        &__meta {
+            font-size: 14px;
+            font-family: $ms;
+    
+
+            > * + * {
+                &:before {
+                    content: '|';
+                    display: inline-block;
+                    margin: 0 10px;
+               
+                }
+            }
+
+            .vodi-views-likes {
+                margin-top: 18px;
+                margin-bottom: 0;
+
+                &:before {
+                    content: none;
+                }
+            }
+        }
+
+        .episode-download-btn {
+            display: inline-flex;
+            align-items: center;
+            font-size: 14px;
+            flex-shrink: 0;
+            color: #949cb0;
+
+            > i {
+                margin-right: 5px;
+            }
+
+            &:not( :hover ) > i {
+                color: #949cb0;
+            }
+        }
+
+        &__info--head,
+        &__info--body {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            @include media-breakpoint-up(lg) {
+                flex-direction: row;
+            }
+        }
+
+        &__info--head {
+            margin-bottom: 22px;
+        }
+
+        &__avg-rating {
+            margin-bottom: 23px;
+            display: flex;
+            justify-content: flex-start;
+
+            @include media-breakpoint-up(lg) {
+                justify-content: flex-end;
+            }
+
+            .avg-rating {
+                position: relative;
+                display: flex;
+
+                &:before {
+                    content: ' ';
+                    display: inline-block;
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="32px"><path fill-rule="evenodd"  fill="rgb(44, 146, 205)" d="M16.243,-0.001 C17.796,0.029 17.813,0.963 18.340,1.981 C19.301,3.839 20.192,5.798 21.157,7.662 C21.389,8.111 21.867,9.551 22.271,9.710 C22.740,10.013 24.278,9.936 24.957,10.106 C26.616,10.523 28.534,10.552 30.198,10.965 C31.039,11.174 32.009,11.005 32.622,11.427 C32.837,11.575 32.903,11.901 33.081,12.088 C33.133,13.537 32.346,13.819 31.574,14.598 C30.176,16.007 28.778,17.417 27.381,18.826 C26.959,19.251 25.724,20.138 25.677,20.807 C25.998,21.293 25.902,22.527 26.071,23.186 C26.590,25.212 26.652,27.505 27.184,29.527 C27.420,30.423 27.315,31.377 26.726,31.773 C25.737,32.437 24.516,31.338 23.843,30.981 C22.086,30.050 20.353,29.230 18.602,28.272 C18.184,28.044 17.049,27.223 16.636,27.149 C16.338,27.096 15.027,27.985 14.736,28.140 C12.871,29.132 11.037,30.064 9.167,31.047 C8.727,31.278 7.595,32.186 6.874,31.971 C5.754,31.638 5.687,30.353 6.023,29.065 C6.384,27.678 6.368,26.158 6.743,24.705 C7.055,23.501 7.369,21.767 7.464,20.477 C6.695,19.975 5.959,18.959 5.302,18.297 C3.938,16.923 2.531,15.582 1.109,14.268 C0.535,13.737 -0.478,12.730 0.257,11.692 C0.757,10.984 1.956,11.205 2.943,10.965 C5.525,10.338 8.368,10.231 11.002,9.710 C11.737,7.997 12.663,6.327 13.492,4.690 C14.027,3.631 14.475,2.596 14.998,1.585 C15.168,1.256 15.188,0.897 15.391,0.594 C15.591,0.296 15.967,0.224 16.243,-0.001 Z"/></svg>');
+                    width: 40px;
+                    height: 39px;
+                    background-repeat: no-repeat;
+                    margin-right: 3px;
+                }
+
+                &__number {
+                    font-size: 24px;
+                    letter-spacing: -0.05em;
+                    font-weight: $os-semi-bold;
+                }
+
+                &__text {
+                    font-size: 12px;
+                    display: block;
+                    line-height: 1.5;
+                }
+
+                &__inner {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        &__short-description,
+        &__description {
+            > div,
+             p {
+                font-size: 15px;
+                line-height: 26px;
+                letter-spacing: -0.01em;
+                text-align: justify;
+            }
+        }
+
+        &__season-tabs-wrap {
+            margin-bottom: 60px;
+
+            .masvideos-tabs {
+                @include make-container();
+                @include make-container-max-widths();
+                @media ( min-width: 1486px ) {
+                    max-width: 1486px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    padding-left: 38px;
+                    padding-right: 38px;
+                }
+            }
+        }
+
+        &__summary {
+            margin-bottom: 70px;
+        }
+
+        &__tags {
+            font-size: 15px;
+            font-weight: $os-semi-bold;
+            line-height: 26px;
+
+            a {
+                font-weight: $os-regular;
+            }
+        }
+    }
+
+    .episode__meta  + .episode__rating-with-sharing,
+    .episode__short-description + .episode__tags,
+    .episode__description + .episode__tags {
+        margin-top: 20px;
+
+        @include media-breakpoint-up(lg) {
+            flex: 0 0 37%;
+            max-width: 37%;
+            padding-left: 73px;
+            margin-top: 0;
+        }
+    }
+
+    .masvideos-Reviews {
+        margin-bottom: 60px;
+
+        #review_form_wrapper {
+            margin-bottom: 60px;
+        }
+    }
+
+    .episode-tabs {
+        .masvideos-Reviews {
+            margin-bottom: 0;
+        }
+    }
+
+    &-v1,
+    &-v2 {
+        .episode_title {
+            @include media-breakpoint-only(lg) {
+                max-width: 77%;
+            }
+
+            @include media-breakpoint-up(xl) {
+                max-width: 80%;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                max-width: 84%;
+            }
+        }
+
+        .episode__meta + .episode__rating-with-sharing {
+            @include media-breakpoint-up(lg) {
+                margin-top: -21px;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .episode__player {
+                &--prev-episode,
+                &--next-episode {
+                    max-width: 150px;
+                    position: absolute;
+                    bottom: -40px;
+                    display: block;
+
+                    a {
+                        &:before,
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    &__label {
+                        min-width: 110px;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                &--prev-episode__label {
+                    left: 0;
+                }
+
+                &--next-episode__label {
+                    right: 0;
+                }
+            }
+
+            .episode__head {
+                margin-bottom: 64px;
+            }
+        }
+    }
+}
+
+.single-episode-v1 .episode__description .maxlist-more,
+.single-episode-v2 .episode__description .maxlist-more,
+.single-episode-v4 .episode__description .maxlist-more {
+    margin-top: 5px;
+}
+
+.single-episode-v3 .episode__description .maxlist-more {
+    top: 8px;
+}

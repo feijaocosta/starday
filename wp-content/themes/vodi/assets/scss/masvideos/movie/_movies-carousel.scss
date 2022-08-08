@@ -1,0 +1,60 @@
+.movies {
+    .slick-list {
+        margin: 0 -7px;
+        width: calc( 100% + 14px );
+        padding-top: 11px;
+        margin-top: -11px;
+    }
+
+    .slick-slide {
+        margin: 0 7px;
+    }
+
+    .movie {
+        &__title {
+            margin-bottom: 11px;
+        }
+    }
+}
+
+.section-movies-carousel__custom-arrows button {
+    margin-bottom: 37px;
+}
+
+.style-2 .movies {
+    &.columns-5,
+    &.columns-6 {
+        .slick-list {
+            margin: 0 -11px;
+            width: calc( 100% + 22px );
+        }
+
+        .slick-slide {
+            margin: 0 11px;
+        }
+    }
+
+    &.columns-7,
+    &.columns-8 {
+        .slick-list {
+            margin: 0 -10px;
+            width: calc( 100% + 20px );
+        }
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+    }
+
+    &.columns-9,
+    &.columns-10 {
+        .slick-list {
+            margin: 0 -5px;
+            width: calc( 100% + 10px );
+        }
+
+        .slick-slide {
+            margin: 0 5px;
+        }
+    }
+}

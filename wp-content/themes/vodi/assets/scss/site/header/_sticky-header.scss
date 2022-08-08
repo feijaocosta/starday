@@ -1,0 +1,112 @@
+.sticky-wrapper {
+    .stick-this.stuck,
+    .handheld-stick-this.stuck {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 0 8px rgba(51,51,51,.3);
+        //background: #fff;
+
+        &.header-v1 .site-header__inner {
+        	min-height: 64px;
+        }
+
+        .site_header__primary-nav .nav > li > a {
+        	padding: 23px 20px;
+        }
+
+        .site-header__user-account--link:not(.btn) {
+        	padding: 16px 0 16px 0;
+        }
+
+        &.header-v2 {
+            padding: 0;
+            background: #000;
+
+        	.site_header__primary-nav {
+                display: none;
+            }
+
+            .site-header__logo,
+            .site-header__offcanvas {
+                align-self: center;
+            }
+
+            .site-header__user-account > .sub-menu {
+                margin-top: 0;
+            }
+            .site-header__upload--link {
+                color: #fff;
+            }
+        }
+
+        &.header-v3 {
+            min-height: 67px;
+
+            .vodi-navigation-v3 {
+                display: none;
+            }
+        }
+
+        &.header-v4 {
+            .site-header__user-account--link {
+                padding: 0;
+            }
+
+            .masthead-row-2 {
+                display: none;
+            }
+        }
+    }
+
+    .stick-this.stuck,
+    .handheld-stick-this.stuck {
+
+        &.transparent {
+            background: #000;
+
+            .site_header__primary-nav {
+                display: none;
+            }
+
+            .site-header__logo,
+            .site-header__offcanvas {
+                align-self: center;
+            }
+
+            .site-header__user-account > .sub-menu {
+                margin-top: 0;
+            }
+            .site-header__upload--link {
+                color: #fff;
+            }
+        }
+    }
+
+    .handheld-stick-this.stuck {
+        padding: 0;
+    }
+}
+
+
+.admin-bar {
+    .sticky-wrapper {
+        .stick-this.stuck,
+        .handheld-stick-this.stuck {
+
+            @include media-breakpoint-only(md) {
+                top: 45px;
+            }
+
+             @include media-breakpoint-up(lg) {
+                top: 31px;
+            }
+        }
+    }
+}
+
+.faster {
+    animation-duration: .25s !important;
+}
+

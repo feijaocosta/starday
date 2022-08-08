@@ -1,0 +1,109 @@
+.post-navigation {
+    background-color: #f5f5f5;
+    padding: 30px; 
+    margin-bottom: 35px;
+    @include media-breakpoint-up(md) {
+        padding: 45px 50px; 
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-previous,
+        .nav-next {
+            flex: 0 0 100%;
+            max-width: 100%;
+            
+            @include media-breakpoint-up(md) {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            > a {
+                display: block;
+            }
+        }
+
+        .nav-previous {
+            @include media-breakpoint-up(md) {
+                padding-right: 10px;
+            }
+        }
+
+        .nav-next {
+            margin-left: auto;
+            
+            @include media-breakpoint-up(md) {
+                padding-left: 10px;
+            }
+        }
+
+        .nav-previous + .nav-next {
+            margin-top: 20px;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+            }
+        }
+
+        .nav-next {
+            span {
+                text-align: end;
+            }
+        }
+    }
+}
+
+.post-nav {
+
+    &__title {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        color: #a3a3a3;
+        display: block;
+        margin-bottom: 7px;
+        word-break: break-word;
+    }
+    
+    &__article {
+        
+        &--title {
+            font-size: 17px;
+            line-height: 21px;
+            letter-spacing: -0.025em;
+            font-family: $ms;
+            font-weight: $ms-semi-bold;
+            color: #19272e;
+            display: block;
+            margin-bottom: 5px;
+            word-break: break-word;
+        }
+
+        &--meta {
+            display: block;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.01em;
+
+            > * + * {
+                &:before {
+                    content: '・';
+                    display: inline-block;
+                    margin: 0 4px;
+                    font-weight: $os-bold;
+                }
+            }
+        }
+
+        &--categories {
+            font-weight: $os-bold;
+        }
+
+        &--date {
+            color: #949494;
+            font-style: italic;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+table {
+	&.movie-sources,
+	&.episode-sources {
+		font-size: 14px; 
+
+		thead th,
+		tbody td {
+			border: none;
+		}
+
+		tbody {
+			a.play-source {
+				display: flex;
+				align-items: center;
+
+				span {
+					svg {
+						margin-right: 14px;
+
+						@include media-breakpoint-down(sm) {
+							display: none;
+						}
+					}
+				}
+
+			}
+
+			tr {
+				& + tr {
+					border-top-style: solid;
+					border-top-width: 1px;
+				}
+			}
+		}
+	}
+}

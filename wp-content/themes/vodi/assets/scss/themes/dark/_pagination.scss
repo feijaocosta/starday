@@ -1,0 +1,22 @@
+.dark {
+    ul.page-numbers > li > a, 
+    ul.page-numbers > li > span, 
+    .nav-links > .page-numbers, 
+    .page-links-inner > a, 
+    .page-links-inner > span {
+        background-color: #373c49;
+        color: #b4bbc0;
+    }
+
+    ul.page-numbers > li > a.current, 
+    ul.page-numbers > li > span.current, 
+    .nav-links > .page-numbers.current, 
+    .page-links-inner > a.current, 
+    .page-links-inner > span.current {
+        color: #000;
+    }
+
+    .masvideos-videos-pagination {
+        border-top-color: #2a2e3c;
+    }
+}

@@ -1,0 +1,122 @@
+.sidebar-area.widget-area {
+    .masvideos-movies-tags-filter-widget,
+    .widget_vodi_tv_shows_filter > .masvideos-tv-shows-tags-filter-widget,
+    .widget_vodi_videos_filter > .masvideos-videos-tags-filter-widget {
+        @include media-breakpoint-up(xl) {
+            padding-bottom: 42px !important;
+        }
+
+        .masvideos-widget-movies-layered-nav-list,
+        .masvideos-widget-tv-shows-layered-nav-list,
+        .masvideos-widget-videos-layered-nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 5px;
+                @include make-col(3);
+
+                @include media-breakpoint-up(xl) {
+                    @include make-col(2.4);
+                }
+
+                i {
+                    margin-bottom: 5px;
+                    font-size: 20px;
+                }
+
+                a {
+                    font-size: 10px;
+                    font-weight: $os-semi-bold;
+                    letter-spacing: -0.05em;
+                    text-align: center;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    height: 12px;
+                    overflow: hidden;
+                }
+            }
+
+            li + li {
+                border-left: 5px solid #1d212d;
+            }
+        }
+    }
+}
+
+
+.masvideos-tv-shows-tags-filter-widget {
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 20px !important;
+    }
+}
+
+.sidebar-area.widget-area  {
+    .masvideos-videos-tags-filter-widget,
+    .masvideos-tv-shows-tags-filter-widget {
+        .masvideos-widget-videos-layered-nav-list,
+        .masvideos-widget-tv-shows-layered-nav-list {
+
+            &__item {
+
+                display: flex;
+                align-items: center;
+                margin-bottom: 4px;
+
+                a {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    word-break: break-all;
+
+                    &:before {
+                        content: "";
+                        padding-right: 30px;
+                        font-size: 18px;
+                        width: 18px;
+                        height: 18px;
+                        background-repeat: no-repeat;
+                        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18px" height="486px"><path fill-rule="evenodd" fill="rgb(180, 187, 192)" d="M-0.000,486.000 L-0.000,468.000 L18.000,468.000 L18.000,486.000 L-0.000,486.000 ZM16.000,470.000 L2.000,470.000 L2.000,484.000 L16.000,484.000 L16.000,470.000 ZM-0.000,442.000 L18.000,442.000 L18.000,460.000 L-0.000,460.000 L-0.000,442.000 ZM2.000,458.000 L16.000,458.000 L16.000,444.000 L2.000,444.000 L2.000,458.000 ZM-0.000,416.000 L18.000,416.000 L18.000,434.000 L-0.000,434.000 L-0.000,416.000 ZM2.000,432.000 L16.000,432.000 L16.000,418.000 L2.000,418.000 L2.000,432.000 ZM-0.000,390.000 L18.000,390.000 L18.000,408.000 L-0.000,408.000 L-0.000,390.000 ZM2.000,406.000 L16.000,406.000 L16.000,392.000 L2.000,392.000 L2.000,406.000 ZM-0.000,364.000 L18.000,364.000 L18.000,382.000 L-0.000,382.000 L-0.000,364.000 ZM2.000,380.000 L16.000,380.000 L16.000,366.000 L2.000,366.000 L2.000,380.000 ZM-0.000,338.000 L18.000,338.000 L18.000,356.000 L-0.000,356.000 L-0.000,338.000 ZM2.000,354.000 L16.000,354.000 L16.000,340.000 L2.000,340.000 L2.000,354.000 ZM-0.000,312.000 L18.000,312.000 L18.000,330.000 L-0.000,330.000 L-0.000,312.000 ZM2.000,328.000 L16.000,328.000 L16.000,314.000 L2.000,314.000 L2.000,328.000 ZM-0.000,286.000 L18.000,286.000 L18.000,304.000 L-0.000,304.000 L-0.000,286.000 ZM2.000,302.000 L16.000,302.000 L16.000,288.000 L2.000,288.000 L2.000,302.000 ZM-0.000,260.000 L18.000,260.000 L18.000,278.000 L-0.000,278.000 L-0.000,260.000 ZM2.000,276.000 L16.000,276.000 L16.000,262.000 L2.000,262.000 L2.000,276.000 ZM-0.000,234.000 L18.000,234.000 L18.000,252.000 L-0.000,252.000 L-0.000,234.000 ZM2.000,250.000 L16.000,250.000 L16.000,236.000 L2.000,236.000 L2.000,250.000 ZM-0.000,208.000 L18.000,208.000 L18.000,226.000 L-0.000,226.000 L-0.000,208.000 ZM2.000,224.000 L16.000,224.000 L16.000,210.000 L2.000,210.000 L2.000,224.000 ZM-0.000,182.000 L18.000,182.000 L18.000,200.000 L-0.000,200.000 L-0.000,182.000 ZM2.000,198.000 L16.000,198.000 L16.000,184.000 L2.000,184.000 L2.000,198.000 ZM-0.000,156.000 L18.000,156.000 L18.000,174.000 L-0.000,174.000 L-0.000,156.000 ZM2.000,172.000 L16.000,172.000 L16.000,158.000 L2.000,158.000 L2.000,172.000 ZM-0.000,130.000 L18.000,130.000 L18.000,148.000 L-0.000,148.000 L-0.000,130.000 ZM2.000,146.000 L16.000,146.000 L16.000,132.000 L2.000,132.000 L2.000,146.000 ZM-0.000,104.000 L18.000,104.000 L18.000,122.000 L-0.000,122.000 L-0.000,104.000 ZM2.000,120.000 L16.000,120.000 L16.000,106.000 L2.000,106.000 L2.000,120.000 ZM-0.000,78.000 L18.000,78.000 L18.000,96.000 L-0.000,96.000 L-0.000,78.000 ZM2.000,94.000 L16.000,94.000 L16.000,80.000 L2.000,80.000 L2.000,94.000 ZM-0.000,52.000 L18.000,52.000 L18.000,70.000 L-0.000,70.000 L-0.000,52.000 ZM2.000,68.000 L16.000,68.000 L16.000,54.000 L2.000,54.000 L2.000,68.000 ZM-0.000,26.000 L18.000,26.000 L18.000,44.000 L-0.000,44.000 L-0.000,26.000 ZM2.000,42.000 L16.000,42.000 L16.000,28.000 L2.000,28.000 L2.000,42.000 ZM-0.000,-0.000 L18.000,-0.000 L18.000,18.000 L-0.000,18.000 L-0.000,-0.000 ZM2.000,16.000 L16.000,16.000 L16.000,2.000 L2.000,2.000 L2.000,16.000 Z"/></svg>') no-repeat;
+                        background-position: left;
+                    }
+                }
+
+                a:hover,
+                &.chosen a {
+                    &:before {
+                        content: "";
+                        width: 18px;
+                        height: 18px;
+                        font-weight: 800;
+                        display: inline-block;
+                    }
+                }
+
+                .count {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .widget_vodi_videos_filter > .masvideos-videos-tags-filter-widget,
+    .widget_vodi_tv_shows_filter > .masvideos-tv-shows-tags-filter-widget {
+        .masvideos-widget-videos-layered-nav-list,
+        .masvideos-widget-tv-shows-layered-nav-list {
+            &__item {
+                a {
+                    word-break: normal;
+                    
+                    &:before {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}

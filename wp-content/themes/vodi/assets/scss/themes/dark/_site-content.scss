@@ -1,0 +1,320 @@
+.dark {
+    #page, .site-content {
+        background-color: #131722;
+        color: #949cb0;
+    }
+
+    .archive__header, .page__header,
+    .article__content blockquote,
+    pre {
+        background-color: #1c212e;
+    }
+
+    .article__content blockquote,
+    .article__content blockquote p,
+    pre {
+        color: #FFF;
+    }
+
+    .comment-text {
+        color: #949cb0;
+    }
+
+    &.home-section .section-title, .comments-title, 
+    .comment-respond .comment-reply-title,
+    .blog-sidebar .widget-title,
+    .blog-sidebar .widget-title a,
+    h1, h2, h3, h4, h5, h6 {
+        color: #FFF;
+
+        &:after {
+            background-color: #394253;
+        }
+    }
+
+    table th, table td {
+        border-top-color: #394253;
+    }
+
+    .blog-sidebar .widget_meta ul > li > a, 
+    .blog-sidebar .widget_meta .item__link, 
+    .blog-sidebar .widget_nav_menu ul > li > a, 
+    .blog-sidebar .widget_nav_menu .item__link, 
+    .blog-sidebar .widget_pages ul > li > a, 
+    .blog-sidebar .widget_pages .item__link, 
+    .blog-sidebar .widget_archive ul > li > a, 
+    .blog-sidebar .widget_archive .item__link, 
+    .blog-sidebar .widget_categories ul > li > a, 
+    .blog-sidebar .widget_categories .item__link {
+        color: #949cb0;
+    }
+
+    .comingsoon-launch-section__title,
+    .comingsoon-launch-section__desc {
+        color: #fff;
+    }
+
+    .comingsoon-launch-section .email {
+        background-color: #fff;
+        color: #a0a0a0;
+    }
+
+    .comingsoon-launch-section .btn-subscribe {
+        color: #ffffff;
+    }
+
+    .comingsoon-form-timer {
+        .textDiv {
+            &_Days,
+            &_Hours,
+            &_Minutes,
+            &_Seconds {
+                > span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .handheld-sidebar-toggle span {
+        color: #fff;
+    }
+
+    .blog-sidebar .widget select {
+        background-image: linear-gradient(45deg, transparent 50%, #FFF), linear-gradient(135deg, #FFF, transparent 50%);
+    }
+
+    .widget_rss li a, 
+    .widget_recent_entries li a,
+    .blog-sidebar .recentcomments > a,
+    .article__title a,
+    .comment-author-name a {
+        color: #FFF;
+    }
+
+    &.style-2 .video__title {
+        color: #fff;
+    }
+
+    .movie__title {
+        color: #fff;
+    }
+
+    .vodi-archive-wrapper {
+        .tv-show {
+            .tv-show-actions--link_add-to-playlist {
+                color: #fff;
+            }
+
+            &__short-description p,
+            &__short-description div {
+                color: #b4bbc0;
+            }
+        }
+    }
+
+    .vodi-control-bar .masvideos-widget-movies-layered-nav-list,
+    .vodi-control-bar .masvideos-widget-tv-shows-layered-nav-list,
+    .vodi-control-bar .masvideos-widget-videos-layered-nav-list {
+        a {
+            color: #fff;
+        }
+    }
+
+    .vodi-archive-wrapper .tv-show__hover-area {
+        background-color: #1c212e;
+        border-color: #333a4b;
+
+        &:before {
+            border-left-color: #333a4b;
+            border-top-color: #333a4b;
+            background-color: #1c212e;
+        }
+    }
+
+    .masvideos-breadcrumb {
+        color: #fff;
+    }
+
+    .vodi-archive-wrapper[data-view="list-small"],
+    .vodi-archive-wrapper[data-view="list-large"] {
+        .tv-show {
+            + .tv-show {
+                @include media-breakpoint-up(md) {
+                    border-top: 1px solid #2f2f33;
+                }
+            }
+
+            @include hover-focus() {
+                background: linear-gradient(135deg, #212635 5%, rgba(33, 38, 53, 0.57) 40%, rgba(160, 162, 168, 0) 60%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
+    }
+
+    .vodi-archive-wrapper[data-view="list"] {
+        .tv-show {
+
+            @include hover-focus() {
+                background: linear-gradient(135deg, #212635 5%, rgba(33, 38, 53, 0.57) 40%, rgba(160, 162, 168, 0) 60%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
+    }
+
+
+    .vodi-archive-wrapper .tv-show__hover-area .tv-show__season-info {
+        border-bottom: 1px solid #565a66;
+    }
+
+    .vodi-archive-wrapper[data-view="list"] .tv-show:nth-child(odd) .tv-show__body {
+        border-right-color: #2f2f33;
+    }
+
+    .vodi-archive-wrapper[data-view="list"] .tv-show + .tv-show {
+        border-top-color: #2f2f33;;
+    }
+
+    .vodi-control-bar select, .form-vodi-wc-ppp select, .page-control-bar-bottom select, .masvideos-persons-control-bar select {
+        color: #fff;
+    }
+
+    .vodi-control-bar .videos-type li a {
+        color: #fff;
+    }
+
+    .page-control-bar-bottom .masvideos-result-count,
+    .masvideos-persons-page-control-bar .masvideos-result-count {
+        color: #949cb0;
+    }
+
+    .page-control-bar-bottom,
+    .masvideos-persons-page-control-bar {
+        border-top: 1px solid #2a2e3c;
+    }
+
+    .style-2 .section_title {
+        color: $vodi-dark-title-color;
+        border-bottom: 1px solid #2a2e3c;
+    }
+
+    .vodi-archive-wrapper[data-view="list-large"],
+    .vodi-archive-wrapper[data-view="list-small"],
+    .vodi-archive-wrapper[data-view="list"] {
+        .movie, .video {
+            + .movie ,
+            + .video{
+                @include media-breakpoint-up(md) {
+                    border-top-color: #2f2f33;
+                }
+            }
+        }
+    }
+
+    .movie .avg-rating-number,
+    .widget-area .widget_categories ul li a,
+    .movie-sidebar .masvideos-movies-filter-widget .masvideos-widget-movies-layered-nav-list__item a,
+    .video-sidebar .masvideos-videos-filter-widget .masvideos-widget-videos-layered-nav-list__item a {
+        color: #b4bbc0;
+    }
+
+    .widget-area .widget-title {
+        color: #fff;
+        border-bottom-color: #2f2f33;
+    }
+
+    .movies_widget_rating_filter,
+    .videos_widget_rating_filter,
+    .tv_shows_widget_rating_filter {
+        ul li.masvideos-layered-nav-rating a {
+            color: #949cb0;
+        }
+    }
+
+    .home-recent-comments .recent-comments ul li.recentcomments>a {
+        color: #fff;
+    }
+
+    .home-recent-comments .recent-comments ul li.recentcomments+.recentcomments {
+        border-top: 1px solid #2f2f33;
+    }
+
+    &.home-archive .sidebar-area .masvideos-tv-shows-filter-widget .masvideos-widget-tv-shows-layered-nav-list__item a {
+        color: #fff;
+    }
+
+    .vodi_posts_widget .style-1 .entry-title a {
+        color: #fff;
+    }
+
+    .vodi_posts_widget .style-1 ul li + li {
+        border-top: 1px solid #2d323f;
+    }
+
+    .post-type-archive-video .sidebar-area .widget_nav_menu li.menu-with-icon:last-child,
+    .home-archive .sidebar-area .widget_nav_menu li.menu-with-icon:last-child {
+        border-bottom: 1px solid #2d323f;
+    }
+
+    .article__link,
+    .article__aside {
+        background: #1c212e;
+    }
+    .article__link p{
+        color: #fff;
+    }
+
+    &.home-section .home-section__action-link, 
+    &.home-section .home-section__footer-action--link {
+        color: #949cb0;
+    }
+
+    &.home-section .home-section__footer-view-more-action--link {
+        color: #fff;
+        border-color: #2a2d36;
+        background: #131722;
+    }
+
+    &.home-section .home-section__footer-view-more-action__inner:after {
+        background-color: #2a2d36;
+    }
+
+    &.no-redux .article{
+        border-bottom: 1px solid #2d323f;
+    }
+
+    .comment-list > li + li,
+    .comment-list .children, 
+    .comment-list .children > li {
+        border-top-color: #2d323f;
+    }
+
+    &.section-movies-carousel-aside-header ul.nav .nav-item .nav-link,
+    &.section-tv-episodes-carousel ul.nav .nav-item .nav-link {
+        color: #717f8c;
+    }
+
+    &.section-movies-carousel-aside-header ul.nav .nav-item+.nav-item:before,
+    &.section-tv-episodes-carousel ul.nav .nav-item+.nav-item:before {
+        color: #2c2c30;
+    }
+    .masvideos-tabs table tbody tr + tr {
+        border-top-color: #2e3544;
+    }
+
+    .masvideos-tabs table,
+    .masvideos-tabs table a {
+        color: #fff;
+    }
+
+    .masvideos-tabs table tbody tr:hover,
+    .masvideos-tabs table tbody tr:focus {
+        background: #2e3544;
+    }
+
+    &.video-search-results.search .page__header .search-result-tab-link,
+    &.movie-search-results.search .page__header .search-result-tab-link,
+    &.tv_show-search-results.search .page__header .search-result-tab-link,
+    &.episode-search-results.search .page__header .search-result-tab-link,
+    &.person-search-results.search .page__header .search-result-tab-link {
+        color: #fff;
+    }
+}

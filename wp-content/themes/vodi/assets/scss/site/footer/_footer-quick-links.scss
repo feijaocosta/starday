@@ -1,0 +1,8 @@
+.footer-quick-links {
+    font-size: 13px;
+    letter-spacing: -0.015em;
+
+    > li + li {
+        margin-left: 15px;
+    }
+}

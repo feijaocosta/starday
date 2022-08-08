@@ -1,0 +1,39 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.home-movie-section-aside-header {
+    padding: 45px 0 30px;
+
+    &__inner {
+        .masvideos-movies {
+            .home-section__header {
+                @include make-col-ready(25px);
+                margin-bottom: 1em;
+
+                @include media-breakpoint-up(lg) {
+                    @include make-col(4.8);
+                    align-self: center;
+                    margin-bottom: 0;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include make-col(3.42857142857);
+                    padding-right: 67.5px;
+                }
+            }
+
+            .movie {
+                @include media-breakpoint-up(xl) {
+                    @include make-col(1.71428571429);
+                }
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

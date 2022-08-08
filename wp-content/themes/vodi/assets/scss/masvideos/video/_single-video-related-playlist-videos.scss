@@ -1,0 +1,21 @@
+.single-video {
+	&__related-playlist-videos,
+	&__prev-next-videos {
+		&--flex-header {
+			display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    margin-bottom: 23px;
+		}
+
+		&--title {
+			margin-bottom: 0;
+			flex: 1;
+		}
+
+		&--count {
+			font-size: 12px;
+			display: none;
+		}
+	}
+}

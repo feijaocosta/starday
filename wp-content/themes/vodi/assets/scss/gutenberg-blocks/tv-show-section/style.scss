@@ -1,0 +1,26 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.home-tv-show-section {
+    padding: 61px 0 38px;
+
+    .tv-shows__inner {
+        @include make-row(20px);
+
+        > .tv-show {
+            @include make-col-ready(20px);
+        }
+    }
+
+    .tv-show {
+        &__badge {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/**
+ * Bootstrap variables override
+ */
+.home-video-section-aside-header {
+  padding: 45px 0 40px; }
+  .home-video-section-aside-header__inner .masvideos-videos .home-section__header {
+    position: relative;
+    width: 100%;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-bottom: 1em; }
+    @media (min-width: 992px) {
+      .home-video-section-aside-header__inner .masvideos-videos .home-section__header {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+        align-self: center;
+        margin-bottom: 0; } }
+    @media (min-width: 1200px) {
+      .home-video-section-aside-header__inner .masvideos-videos .home-section__header {
+        flex: 0 0 16.6666666667%;
+        max-width: 16.6666666667%;
+        padding-left: 51px; } }
+  .home-video-section-aside-header__inner .masvideos-videos .video {
+    margin-bottom: 26px; }

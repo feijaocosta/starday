@@ -1,0 +1,152 @@
+.masvideos-MyAccount-navigation {
+	ul {
+		@include list-unstyled();
+		font-family: $ms;
+
+		li {
+			a {
+				color: #121a21;
+				font-weight: $ms-medium;
+			    padding: 5px 0;
+			    display: block;
+			}
+
+			&.is-active {
+				a {
+					font-weight: $ms-bold;
+				}
+			}
+		}
+	}
+}
+
+.masvideos-account {
+	.masvideos {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.masvideos-notices-wrapper {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.masvideos-MyAccount-navigation {
+		@include media-breakpoint-up(lg) {
+			@include make-col(2);
+		}
+	}
+
+	.masvideos-MyAccount-content {
+		@include media-breakpoint-up(lg) {
+			@include make-col(10);
+		}
+
+		.masvideos-playlists__header {
+			display: flex;
+		}
+
+		h2 {
+			font-size: 18px;
+			color: #121a21;
+			position: relative;
+			margin-bottom: 28px;
+			font-weight: 600;
+			overflow: hidden;
+
+			&:after {
+				position: absolute;
+			    content: "";
+			    height: 1px;
+			    background-color: #e8e8e8;
+			    width: 100%;
+			    top: 50%;
+			    margin-left: 20px;
+			}
+
+		}
+
+		label {
+			margin: 0;
+		    font-size: 14px;
+		    font-weight: 600;
+		    margin-bottom: 5px;
+		}
+
+		input[type="text"], 
+		select {
+			border-radius: 0;
+		}
+
+		select {
+			height: 44px;
+		}
+
+		.masvideos-edit-playlist__form .masvideos-Button {
+			padding: 13.5px 30px;
+			line-height: 1;
+		}
+
+		.masvideos-edit-playlist + .masvideos-manage-playlists {
+			margin-top: 40px;
+		}
+
+		table thead td {
+			font-weight: 700;
+		}
+
+		table tbody td:first-child a {
+			color: #121a21;
+		}
+
+		table {
+			.masvideos-button {
+				text-transform: none;
+				padding: 0 20px 0 0;
+			}
+		}
+
+		table.masvideos-videos-table + .masvideos-pagination--without-numbers {
+			@include media-breakpoint-up(xl) {
+				margin-top: 40px;
+			}
+		}
+
+		.masvideos-pagination--without-numbers {
+			display: flex;
+			justify-content: flex-end;
+
+			a {
+				color: #949cb0;
+			    background-color: #f6f7f9;
+			    border: 0 solid #dee2e6;
+			    border-radius: 2px;
+			    text-transform: none;
+			    font-weight: $ms-semi-bold;
+
+			    &.masvideos-button--previous {
+			    	margin-right: auto;
+			    }
+
+			    &:hover {
+			    	color: #fff;
+			    }
+			}
+		}
+
+		form.masvideos-edit-playlist__form {
+			@include make-row();
+
+			> p {
+				@include make-col-ready();
+			}
+
+			.form-row-wide {
+				@include media-breakpoint-up(md) {
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+			}
+		}
+	}
+}

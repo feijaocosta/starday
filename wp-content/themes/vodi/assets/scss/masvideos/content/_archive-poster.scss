@@ -1,0 +1,86 @@
+.movie,
+.tv-show,
+.video,
+.episode {
+    &__poster {
+        .movie__link,
+        .tv-show__link,
+        .video__link,
+        .episode__link {
+            display: block;
+            width: 100%;
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+            height: 0;
+
+            .movie__poster--image,
+            .tv-show__poster--image,
+            .video__poster--image,
+            .episode__poster--image,
+            .masvideos-placeholder {
+                position: relative;
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                object-fit: cover;
+                position: absolute;
+                
+            }
+
+            .masvideos-placeholder {
+                height: 100%;
+            }
+        }
+
+        .movie__link:after,
+        .tv-show__link:after,
+        .video__link:after,
+        .episode__link:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            transition: all .3s ease-in-out;
+            background: transparent none repeat scroll 0 0;
+            content: "";
+            opacity: 0;
+        }
+
+        .movie__link:hover:after,
+        .tv-show__link:hover:after,
+        .video__link:hover:after,
+        .episode__link:hover:after {
+            opacity: 1;
+        }
+    }
+}
+
+.movie {
+    &__poster {
+        .movie__link {
+            padding: 150% 0 0 0;
+        }
+    }
+}
+
+.tv-show,
+.video,
+.episode {
+    &__poster {
+        .tv-show__link,
+        .video__link,
+        .episode__link {
+            padding: 56.25% 0 0 0;
+        }
+    }
+}

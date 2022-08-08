@@ -1,0 +1,74 @@
+.movie-playlist,
+.video-playlist,
+.tv-show-playlist {
+    &__link {
+        position: relative;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+        margin-bottom: 90px;
+        border-radius: 5px;
+        min-height: 285px;
+        padding: 0 22%;
+        background-color: #949cb0;
+    }
+
+    &__title {
+        font-family: $os;
+        color: $white;
+        font-size: 15px;
+        font-weight: $os-bold;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    &__info {
+        position: absolute;
+        top: 100%;
+        transform: translateY(-23px);
+        text-align: center;
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 0 15px;
+
+    }
+
+    &__author {
+        &--name {
+            font-family: $os;
+            font-size: 12px;
+            color: $vodi-title-color;
+            margin-bottom: 0;
+        }
+
+        &--image {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            padding: 5px;
+            overflow: hidden;
+            margin: 0 auto 5px;
+            background-color: $white;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__meta {
+        line-height: 1.2;
+
+        span {
+            font-size: 12px;
+            color: #949cb0;
+
+            &+ span::before {
+                content: ', ';
+            }
+        }
+    }
+}

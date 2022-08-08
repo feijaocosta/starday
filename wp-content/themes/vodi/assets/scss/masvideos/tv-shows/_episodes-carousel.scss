@@ -1,0 +1,49 @@
+.episodes {
+    .slick-slide {
+        margin: 0 7px;
+    }
+
+    .slick-list {
+        margin: 0 -7px;
+        width: calc( 100% + 14px );
+        padding-top: 11px;
+        margin-top: -11px;
+    }
+
+    .episode {
+        &__title {
+            margin-bottom: 11px;
+        }
+    }
+}
+
+
+.tv-show-carousel {
+    .slick-slide {
+        margin: 0 7px;
+    }
+
+    .slick-list {
+        margin: 0 -7px;
+        width: calc( 100% + 14px );
+        padding-top: 11px;
+        margin-top: -11px;
+    }
+
+    .tv-shows__inner {
+        margin: 0;
+    }
+
+    .tv-show {
+        margin-bottom: 0;
+        position: relative;
+    }
+    
+    .tv-show__title {
+        color: #19272e;
+    }
+}
+
+.tv-episodes-carousel__inner .episodes__inner {
+	margin: 0;
+}

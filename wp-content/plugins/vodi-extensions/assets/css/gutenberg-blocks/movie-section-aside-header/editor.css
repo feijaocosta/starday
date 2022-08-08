@@ -1,0 +1,38 @@
+@media (max-width: 767.98px) {
+  .editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (min-width: 768px) {
+  .editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] {
+    max-width: none;
+    margin-left: -44px;
+    margin-right: -44px;
+    width: auto; }
+    .editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] .container {
+      padding-left: 44px;
+      padding-right: 44px; }
+    .editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] .editor-block-list__block-edit {
+      margin-left: -44px;
+      margin-right: -44px; } }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] .editor-block-contextual-toolbar {
+  left: 60px; }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] > .editor-block-mover {
+  left: 20px;
+  top: -64px; }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"]::before,
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] .editor-block-list__block-edit::before {
+  left: 0;
+  right: 0; }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] .editor-block-drop-zone,
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] .editor-block-contextual-toolbar {
+  margin-left: 0;
+  margin-right: 0; }
+
+.editor-block-list__layout .editor-block-list__block[data-type="vodi/movie-section-aside-header"] .editor-block-list__breadcrumb {
+  right: 0; }

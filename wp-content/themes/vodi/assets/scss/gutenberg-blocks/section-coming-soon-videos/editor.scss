@@ -1,0 +1,31 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.section-videos-live-coming-soon {
+    a {
+        text-decoration: none;
+    }
+
+    .video {
+        &__title {
+            font-family: $os;
+            font-weight: $os-bold;
+            color: #000;
+        }
+
+        &__link {
+            display: block;
+        }
+
+        &__actions,
+        &__review-info {
+            display: none;
+        }
+    }
+}

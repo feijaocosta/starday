@@ -1,0 +1,23 @@
+.light {
+    .masvideos_widget_search {
+        .search-field {
+            background-color: #efefef;
+            color: #495057;
+            border-color: #e2e2e2;
+
+            &:focus {
+                border-color: #e2e2e2;
+                border-width: 1px;
+                background-color: #fff;
+            }
+
+            &::placeholder {
+                color: #a7a8a9;
+            }
+        }
+
+        button:after {
+            color: #a7a8a9;
+        }
+    }
+}

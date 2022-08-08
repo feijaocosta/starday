@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.vodi-landing-hero-banner {
+    margin-top: 0;
+    display: flex !important;
+
+    &__btn-action {
+        color: #fff !important;
+    }
+
+    &__caption--title {
+        color: #fff !important;
+    }
+
+    &__caption--desc {
+        font-size: 26px !important;
+    }
+}

@@ -1,0 +1,111 @@
+.movie-playlists,
+.video-playlists,
+.tv-show-playlists {
+    &__inner:not(.slick-slider) {
+        @include make-row(15px);
+
+        .movie-playlist,
+        .video-playlist,
+        .tv-show-playlist {
+            @include make-col-ready(15px);
+        }
+    }
+
+    &.columns-2,
+    &.columns-3,
+    &.columns-4,
+    &.columns-5,
+    &.columns-6,
+    &.columns-7,
+    &.columns-8 {
+        .movie-playlist,
+        .video-playlist,
+        .tv-show-playlist {
+            @include make-col(6);
+        }
+
+        .slick-slider {
+            .movie-playlist,
+            .video-playlist,
+            .tv-show-playlist {
+                @include make-col(12);
+            }
+        }
+    }
+
+    &.columns-3 {
+        .movie-playlist,
+        .video-playlist,
+        .tv-show-playlist {
+            @include media-breakpoint-up(md) {
+                @include make-col(4);
+            }
+        }
+    }
+
+    &.columns-4 {
+        .movie-playlist,
+        .video-playlist,
+        .tv-show-playlist {
+            @include media-breakpoint-up(md) {
+                @include make-col(3);
+            }
+        }
+    }
+
+    &.columns-5 {
+        .movie-playlist,
+        .video-playlist,
+        .tv-show-playlist {
+            @include media-breakpoint-up(md) {
+                @include make-col(3);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include make-col(2.4);
+            }
+        }
+    }
+
+    &.columns-6 {
+        .movie-playlist,
+        .video-playlist,
+        .tv-show-playlist {
+            @include media-breakpoint-up(md) {
+                @include make-col(3);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include make-col(2);
+            }
+        }
+    }
+
+    &.columns-7 {
+        .movie-playlist,
+        .video-playlist,
+        .tv-show-playlist {
+            @include media-breakpoint-up(md) {
+                @include make-col(3);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include make-col(1.71428571429);
+            }
+        }
+    }
+
+    &.columns-8 {
+        .movie-playlist,
+        .video-playlist,
+        .tv-show-playlist {
+            @include media-breakpoint-up(md) {
+                @include make-col(3);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include make-col(1.5);
+            }
+        }
+    }
+}

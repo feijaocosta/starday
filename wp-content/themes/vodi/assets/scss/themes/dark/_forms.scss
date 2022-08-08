@@ -1,0 +1,118 @@
+.dark {
+    input[type="text"], 
+    input[type="password"], 
+    input[type="color"], 
+    input[type="date"], 
+    input[type="datetime-local"], 
+    input[type="email"], 
+    input[type="month"], 
+    input[type="number"], 
+    input[type="range"], 
+    input[type="search"], 
+    input[type="tel"], 
+    input[type="time"], 
+    input[type="url"], 
+    input[type="week"], 
+    .search-field, 
+    select, 
+    textarea {
+        background-color: #131722;
+        border-color: #949cb0;
+
+        &:focus {
+            color: #b4bbc0;
+            background-color: #252a37;
+            border-color: $input-focus-border-color;
+        }
+    }
+
+    select {
+        background-image: linear-gradient(45deg, transparent 50%, #FFF), linear-gradient(135deg, #FFF, transparent 50%);
+        background-color: $vodi-dark-search-form-color;
+        color: #b4bbc0;
+    }
+
+    .search-form .search-field {
+        border-color: $vodi-dark-search-form-color;
+        background-color: $vodi-dark-search-form-color;
+
+        &:focus {
+            border-color: $input-focus-border-color;
+        }
+    }
+
+    .search-form .search-submit svg {
+        fill: $vodi-dark-theme-link-color;
+    }
+
+    .masvideos_widget_search {
+        .search-field {
+            background-color: #373c49;
+            color: #b4bbc0;
+            border-color: #373c49;
+
+            &::placeholder {
+                color: #b4bbc0;
+            }
+        }
+
+        button:after {
+            color: #b4bbc0;
+        }
+    }
+}
+
+.dark {
+    .item__count {
+        color: #7c8b92;
+    }
+
+    .footer-widgets,
+    .recentcomments + .recentcomments,
+    .widget_recent_entries ul > li + li,
+    .widget_rss ul > li + li  {
+        border-top: 1px solid #2d323f;
+    }
+
+    li > a,
+    .item__link {
+        color: $vodi-dark-footer-v1-link-color;
+
+        &:hover {
+            color: $vodi-dark-footer-title-color;
+        }
+    }
+
+    i {
+        color: $vodi-dark-footer-title-color;
+    }
+
+    .widget_rss .rss-date,
+    .widget_rss cite,
+    .widget_rss .post-date,
+    .widget_recent_entries .rss-date,
+    .widget_recent_entries cite,
+    .widget_recent_entries .post-date,
+    .recentcomments .comment-author-link > a,
+    .wp-caption .wp-caption-text,
+    .widget_rss .rss-date:before, .widget_recent_entries .rss-date:before {
+        color: $vodi-dark-footer-v1-link-color;
+    }
+
+    .calendar_wrap table th,
+    .calendar_wrap table td {
+        border: 1px solid #2d323f;
+    }
+
+    .vodi-gr {
+        fill: #FFF;
+    }
+
+    .site-info a {
+        color: #494d58;
+
+        @include hover-focus() {
+            color: #949cb0;
+        }
+    }
+}

@@ -1,0 +1,264 @@
+body.sidebar-right .content-area,
+body.sidebar-left .content-area {
+    @include make-col(12);
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(8);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        @include make-col(8.5);
+    }
+}
+
+body.sidebar-right .sidebar-area,
+body.sidebar-left .sidebar-area {
+    @include make-col(12);
+    @include media-breakpoint-up(xl) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        @include make-col(3.5);
+    }
+}
+
+body.sidebar-right.archive .content-area,
+body.sidebar-left.archive .content-area {
+    @include media-breakpoint-up(xxl) {
+        @include make-col(9.06666666667);
+    }
+}
+
+body.sidebar-right.archive .sidebar-area,
+body.sidebar-left.archive .sidebar-area {
+    @include media-breakpoint-up(xxl) {
+        @include make-col(2.93333333333);
+    }
+}
+
+.site-content__inner > .page__header {
+    @include make-col(12);
+}
+
+.page-template-template-homepage-v6,
+.page-template-template-homepage-v7 {
+
+    .content-area {
+
+        .site-main-inner {
+            padding: 20px 10px 0px 10px;
+
+            @include media-breakpoint-up(xl) {
+                padding-top: 40px;
+                padding-left: 40px;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            right: -230px;
+            top: 0;
+            bottom: 0;
+            content: "";
+            left: 0;
+            z-index: -1;
+        }
+
+        padding: 0;
+        position: relative;
+    }
+}
+
+.page-template-template-homepage-v6,
+.page-template-template-homepage-v7 {
+    .content-area {
+        @include media-breakpoint-up(xl) {
+            @include make-col(10);
+            order: 2;
+        }
+    }
+
+    .home-sidebar-area {
+        @include media-breakpoint-up(xl) {
+            @include make-col(2);
+        }
+    }
+}
+
+.page-template-category-template,
+.page-template-category-video-template {
+    .content-area {
+        @include media-breakpoint-up(xl) {
+            @include make-col(9);
+            order: 2;
+        }
+    }
+
+    .widget-area {
+        @include media-breakpoint-up(xl) {
+            @include make-col(2.93);
+        }
+    }
+}
+
+.page-template-template-homepage-v5,
+.page-template-template-homepage-v9,
+.page-template-template-homepage-v6,
+.page-template-template-homepage-v7,
+.page-template-category-template,
+.page-template-category-tvshows-template {
+    .site-header {
+        margin-bottom: 0;
+    }
+}
+
+.page-template-category-tvshows-template {
+    .content-area {
+        @include media-breakpoint-up(xl) {
+            @include make-col(9.07);
+            order: 2;
+        }
+    }
+
+    .widget-area {
+        @include media-breakpoint-up(xl) {
+            @include make-col(2.93);
+        }
+    }
+}
+
+.has-2-columns {
+    @include make-row();
+    
+    .wp-block-column {
+        @include make-col-ready();
+        @include make-col(12);
+        margin-left: 0;
+        margin-right: 0;
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(6);
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        $i: 1;
+        @while $i < 12 {
+            $j: 12-$i;
+            &.vodi-#{$i}-#{$j} {
+                .wp-block-column {
+                    &:first-child {
+                        @include make-col($i);
+                    }
+
+                    &:last-child {
+                        @include make-col($j);
+                    }
+                }
+            }
+
+            $i: $i + 1;
+        }
+
+        &.vodi-blog-section-2-columns {
+            > .wp-block-column {
+                @include make-col(8.3);
+
+                & +  .wp-block-column {
+                    @include make-col(3.7);
+
+                    > * {
+                        padding-left: 40px;
+                    }
+                }
+            }
+
+            &__reverse {
+                > .wp-block-column {
+                    @include make-col(3.7);
+
+                    > * {
+                        padding-right: 40px;
+                    }
+
+                    & +  .wp-block-column {
+                        @include make-col(8.3);
+                    }
+                }
+            }
+        }
+
+        &.section-videos-live-coming-soon {
+            margin: 0 -8px;
+            padding-top: 30px;
+
+            .coming-soon-videos,
+            .live-videos {
+                padding: 0 0 20px;
+            }
+
+            > .wp-block-column {
+                padding-right: 8px;
+                padding-left: 8px;
+                @include make-col(12);
+
+                @include media-breakpoint-up(xl) {
+                    @include make-col(7.9);
+                }
+
+                & +  .wp-block-column {
+                    @include media-breakpoint-up(xl) {
+                        @include make-col(4.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wp-block-column {
+    .home-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.sidebar-left {
+    .sidebar-area {
+        order: 1;
+
+        &.blog-sidebar {
+            .widget-area-inner {
+                @include media-breakpoint-up(xl) {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+
+    .content-area {
+        order: 2;
+    }
+}
+
+.sidebar-right {
+    .sidebar-area {
+        &.blog-sidebar {
+            .widget-area-inner {
+                @include media-breakpoint-up(xl) {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+.full-width {
+    .sidebar-area { display: none; }
+}

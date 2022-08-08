@@ -1,0 +1,157 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.section-featured-tv-show {
+    &__inner {
+        padding-top: 100px;
+    }
+
+    .featured-tv-show {
+        &__header {
+            color: $white;
+            text-align: center;
+            margin-bottom: 40px;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 67px;
+            }
+
+            &-pretitle {
+                font-size: 14px;
+                line-height: 1.625;
+                opacity: 0.21;
+                margin-bottom: 20px;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 16px;
+                    margin-bottom: 28px;
+                }
+            }
+
+            &-title {
+                font-size: 30px;
+                line-height: 1.2;
+                font-weight: $ms-bold;
+                margin-bottom: 20px;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 50px;
+                    margin-bottom: 28px;
+                }
+
+                > a {
+                    color: $white;
+                }
+            }
+
+            &-subtitle {
+                font-family: $ms;
+                font-size: 18px;
+                line-height: 1.625;
+                color: $white;
+                display: block;
+                margin: auto;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 26px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    width: 343px;
+                    overflow: hidden;
+                    height: 72px;
+                }
+            }
+        }
+
+        &__content {
+            .nav {
+                @include list-unstyled();
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
+                align-items: baseline;
+                margin-bottom: 30px;
+
+                &-item {
+                    &+ .nav-item {
+                        margin-left: 30px;
+
+                    }
+                }
+
+                &-link {
+                    font-family: $ms;
+                    font-size: 16px;
+                    letter-spacing: 0.8px;
+                    line-height: 18px;
+                    font-weight: $ms-semi-bold;
+                    color: $white;
+
+                    &.active {
+                        font-size: 20px;
+                        line-height: 1;
+                        font-weight: 700;
+                    }
+                }
+
+                @include media-breakpoint-up(md) {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    overflow-x: initial;
+                    overflow-y: initial;
+                }
+
+                .nav-item {
+                    flex-shrink: 0;
+                }
+            }
+
+            .episodes__inner {
+                @include make-row(15px);
+
+                .episode {
+                    @include make-col-ready(15px);
+
+                    &:first-child {
+                        @include media-breakpoint-down(xl) {
+                            @include make-col(12);
+                        }
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        @include make-col(6);
+                    }
+
+                    @include media-breakpoint-up(xl) {
+                        @include make-col(2.4);
+                    }
+
+                    &__title {
+                        font-size: 14px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    &.light {
+        .featured-tv-show {
+            &__header-pretitle,
+            &__header-title > a,
+            &__header-subtitle,
+            &__content .nav-link,
+            &__content .episode__title {
+                color: $vodi-title-color;
+            }
+        }
+    }
+}

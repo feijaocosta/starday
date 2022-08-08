@@ -1,0 +1,31 @@
+.desktop-footer {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+        display: block;
+    }
+}
+
+.handheld-footer {
+    
+    &.dark {
+        background-color: #0a0d14;
+        color: #fff;
+    }
+
+    .footer-bottom-bar-inner {
+        flex-direction: column;
+
+        @include media-breakpoint-up(sm) {
+            flex-direction: row;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        display: none;
+    }
+
+    .site-info {
+        padding: 15px;
+    }
+}

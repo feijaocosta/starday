@@ -1,0 +1,30 @@
+.movie{
+	&__streaming-medias {
+		@include list-unstyled();
+		padding: 0;
+		background: #1c212e;
+
+		span {
+			font-size: 13px;
+			color: #808b90;
+		}
+
+		h3 {
+			margin-bottom: 0;
+		}
+
+		li {
+			padding: 27px 30px 22px 22px;
+	
+			a {
+				display: block;
+			}
+
+			& + li {
+				border-top-width: 1px;
+				border-top-style: solid;
+				border-top-color: #333846;
+			}
+		}
+	}
+}

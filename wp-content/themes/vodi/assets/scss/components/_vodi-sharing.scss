@@ -1,0 +1,59 @@
+.vodi-sharing {
+	div.sharedaddy {
+		.sd-sharing {
+            display: flex;
+            align-items: center;
+        }
+
+		h3.sd-title {
+		    margin-bottom: 0;
+		    font-size: 12px;
+		    line-height: 18px;
+		    letter-spacing: -0.01em;
+		    margin-right: 20px;
+		    font-weight: 400;
+		    color: #949cb0;
+
+		    &:before {
+                content: none;
+            }
+		}
+
+		.sd-content { 
+			flex: 1;
+			
+			ul {
+				margin-bottom: 0 !important;
+
+				li {
+					margin: 10px 9px 0 0;
+					padding: 0;
+
+					@include media-breakpoint-up(md) {
+						margin: 0 9px 0 0;
+					}
+
+					&:last-child{
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.sd-social-icon {
+	        .sd-content ul {
+	            li {
+	                a.sd-button {
+	                    &,
+	                    &:hover,
+	                    &:focus {
+	                        padding: 7px 32.5px;
+	                        border-radius: 3px;
+	                        margin-top: 0;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}
+}

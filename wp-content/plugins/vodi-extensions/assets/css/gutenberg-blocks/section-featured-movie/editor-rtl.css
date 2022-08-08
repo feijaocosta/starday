@@ -1,0 +1,52 @@
+.editor-styles-wrapper .section-featured-video a {
+  text-decoration: none; }
+
+.editor-styles-wrapper .section-featured-video .video__title {
+  margin-top: 0; }
+
+.editor-styles-wrapper .section-featured-video .video__short-description p {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #b4bbc0;
+  margin-bottom: 23px;
+  margin-top: 0; }
+
+@media (max-width: 767.98px) {
+  .editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] {
+    width: 100vw;
+    padding-right: 0;
+    padding-left: 0; } }
+
+@media (min-width: 768px) {
+  .editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] {
+    max-width: none;
+    margin-right: -44px;
+    margin-left: -44px;
+    width: auto; }
+    .editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] .container {
+      padding-right: 44px;
+      padding-left: 44px; }
+    .editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] .editor-block-list__block-edit {
+      margin-right: -44px;
+      margin-left: -44px; } }
+
+.editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] .editor-block-contextual-toolbar {
+  right: 60px; }
+
+.editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] > .editor-block-mover {
+  right: 20px;
+  top: -64px; }
+
+.editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"]::before,
+.editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] .editor-block-list__block-edit::before {
+  right: 0;
+  left: 0; }
+
+.editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] .editor-block-drop-zone,
+.editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] .editor-block-contextual-toolbar {
+  margin-right: 0;
+  margin-left: 0; }
+
+.editor-styles-wrapper .editor-block-list__block[data-type="vodi/section-featured-movie"] .editor-block-list__breadcrumb {
+  left: 0; }

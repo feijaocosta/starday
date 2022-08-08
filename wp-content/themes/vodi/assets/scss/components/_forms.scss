@@ -1,0 +1,60 @@
+select {
+    max-width: 100%;
+    @include make-select-form-control();
+    background-color: transparent;
+    border: 1px solid #cdcdcd;
+    background-image: linear-gradient(45deg, transparent 50%, #000), linear-gradient(135deg, #000, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 5px), calc(100% - 15px) calc(1em + 5px);
+    background-size: 6px 6px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+@media (max-width: 1199.98px) {
+    .select2-container--open {
+        z-index: 999999999;
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+.search-field,
+select,
+textarea {
+    @include make-form-control();
+}
+
+.button,
+.btn,
+.search-submit,
+button,
+input[type="submit"],
+input[type="reset"] {
+    @include make-button();
+}
+
+.button,
+.btn,
+button,
+input[type="submit"],
+input[type="reset"] {
+    @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+}
+
+.comment-form-cookies-consent label {
+    margin-left: 0.5rem;
+}

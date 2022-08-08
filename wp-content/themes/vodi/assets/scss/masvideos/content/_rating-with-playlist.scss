@@ -1,0 +1,145 @@
+.single-movie,
+.single-tv_show {
+    .movie,
+    .tv-show {
+        &__rating-with-playlist {
+            display: flex;
+            flex-wrap: wrap;
+            @include media-breakpoint-up(lg) {
+                flex-direction: row;
+            }
+        }
+
+        &__rating {
+            display: flex;
+            justify-content: flex-start;
+
+            @include media-breakpoint-up(lg) {
+                justify-content: flex-end;
+            }
+
+            .avg-rating {
+                position: relative;
+                display: flex;
+                margin-bottom: 0;
+
+                &:before {
+                    content: ' ';
+                    display: inline-block;
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="32px"><path fill-rule="evenodd"  fill="rgb(44, 146, 205)" d="M16.243,-0.001 C17.796,0.029 17.813,0.963 18.340,1.981 C19.301,3.839 20.192,5.798 21.157,7.662 C21.389,8.111 21.867,9.551 22.271,9.710 C22.740,10.013 24.278,9.936 24.957,10.106 C26.616,10.523 28.534,10.552 30.198,10.965 C31.039,11.174 32.009,11.005 32.622,11.427 C32.837,11.575 32.903,11.901 33.081,12.088 C33.133,13.537 32.346,13.819 31.574,14.598 C30.176,16.007 28.778,17.417 27.381,18.826 C26.959,19.251 25.724,20.138 25.677,20.807 C25.998,21.293 25.902,22.527 26.071,23.186 C26.590,25.212 26.652,27.505 27.184,29.527 C27.420,30.423 27.315,31.377 26.726,31.773 C25.737,32.437 24.516,31.338 23.843,30.981 C22.086,30.050 20.353,29.230 18.602,28.272 C18.184,28.044 17.049,27.223 16.636,27.149 C16.338,27.096 15.027,27.985 14.736,28.140 C12.871,29.132 11.037,30.064 9.167,31.047 C8.727,31.278 7.595,32.186 6.874,31.971 C5.754,31.638 5.687,30.353 6.023,29.065 C6.384,27.678 6.368,26.158 6.743,24.705 C7.055,23.501 7.369,21.767 7.464,20.477 C6.695,19.975 5.959,18.959 5.302,18.297 C3.938,16.923 2.531,15.582 1.109,14.268 C0.535,13.737 -0.478,12.730 0.257,11.692 C0.757,10.984 1.956,11.205 2.943,10.965 C5.525,10.338 8.368,10.231 11.002,9.710 C11.737,7.997 12.663,6.327 13.492,4.690 C14.027,3.631 14.475,2.596 14.998,1.585 C15.168,1.256 15.188,0.897 15.391,0.594 C15.591,0.296 15.967,0.224 16.243,-0.001 Z"/></svg>');
+                    width: 40px;
+                    height: 39px;
+                    background-repeat: no-repeat;
+                    margin-right: 3px;
+                }
+
+                &__number {
+                    font-size: 24px;
+                    letter-spacing: -0.05em;
+                    font-weight: $os-semi-bold;
+                }
+
+                &__text {
+                    font-size: 12px;
+                    display: block;
+                    line-height: 1.5;
+                }
+
+                &__inner {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        &__rating-with-playlist {
+            align-items: center;
+
+            .avg-rating {
+                order: 0;
+                display: flex;
+                margin-bottom: 0;
+            }
+
+            .rating-with-count {
+                .avg-rating-number {
+                    display: none;
+                }
+            }
+
+            .rating-number-with-text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 5px;
+
+                .avg-rating-number {
+                    display: block;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                .avg-rating-text {
+                    line-height: 1.5;
+                    font-size: 12px;
+                    color: #949cb0;
+                }
+            }
+        }
+
+        &-actions--link_add-to-playlist {
+            > a {
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                color: #949cb0;
+
+                &:before {
+                    content: ' ';
+                    display: inline-block;
+                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="29px"><path fill-rule="evenodd"  fill="rgb(128, 139, 144)" d="M8.653,0.252 C11.501,0.192 14.629,1.524 15.666,3.158 C15.738,3.098 15.672,3.164 15.732,3.091 C16.108,2.846 16.366,2.428 16.724,2.167 C17.797,1.385 19.024,0.769 20.495,0.384 C21.728,0.061 23.793,0.282 24.796,0.648 C27.738,1.723 29.471,3.571 30.551,6.526 C30.938,7.583 31.190,9.648 30.816,11.017 C29.903,14.360 28.243,16.709 26.450,19.140 C26.011,19.734 25.448,20.252 24.994,20.857 C24.796,21.034 24.597,21.210 24.399,21.386 C23.508,22.571 22.211,23.933 21.025,24.820 C19.536,25.934 18.454,27.854 16.394,28.386 C15.535,28.608 14.629,28.281 14.078,27.990 C12.990,27.417 12.252,26.523 11.300,25.811 C11.035,25.524 10.770,25.238 10.506,24.952 C9.901,24.499 9.444,23.959 8.918,23.433 C8.230,22.746 7.523,22.106 6.933,21.320 C6.441,20.663 5.706,20.133 5.213,19.471 C3.726,17.470 2.360,15.612 1.310,13.130 C0.690,11.666 0.008,9.297 0.582,7.252 C1.378,4.422 3.031,2.136 5.544,1.044 C6.205,0.756 6.933,0.571 7.661,0.384 C7.979,0.302 8.413,0.410 8.653,0.252 ZM8.587,2.629 C8.382,2.761 8.065,2.683 7.793,2.761 C7.396,2.894 6.999,3.025 6.602,3.158 C4.938,3.883 3.618,5.386 3.030,7.186 C2.307,9.403 3.206,11.382 3.890,12.932 C5.631,16.877 8.630,19.799 11.498,22.641 C12.289,23.423 13.043,24.212 13.946,24.886 C14.568,25.350 14.839,26.061 15.931,26.075 C16.166,25.879 16.481,25.793 16.724,25.613 C17.010,25.401 17.234,25.032 17.518,24.820 C18.669,23.961 19.625,22.920 20.628,21.914 C23.361,19.173 26.189,16.192 27.839,12.404 C28.059,11.743 28.280,11.083 28.501,10.422 C29.404,7.082 26.854,4.048 24.796,3.158 C22.076,1.982 19.611,2.968 17.849,4.281 C16.815,5.050 16.890,6.405 15.004,5.998 C13.727,4.011 11.880,2.633 8.587,2.629 Z"/></svg>');
+                    width: 31px;
+                    height: 29px;
+                    background-repeat: no-repeat;
+                    margin-right: 8px;
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        * + .movie-actions--link_add-to-playlist,
+        * + .tv-show-actions--link_add-to-playlist {
+            margin-left: 15px;
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 20px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-left: 35px;
+            }
+        }
+
+        .movie-download-btn {
+            display: flex;
+            align-items: center;
+            font-size: 0;
+            margin-left: 15px;
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 20px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-left: 35px;
+            }
+
+            > i {
+                font-size: 31px;
+                &:not( :hover ) {
+                    color: #808b90;
+                }
+            }
+        }
+    }
+}

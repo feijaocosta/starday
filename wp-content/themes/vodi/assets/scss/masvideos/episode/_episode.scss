@@ -1,0 +1,104 @@
+.episode {
+    position: relative;
+    margin-bottom: 23px;
+
+    &__link {
+        display: block;
+    }
+
+    &__poster {
+        margin-bottom: 8px;
+        position: relative;
+    }
+
+    &__title,
+    &__meta {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__title {
+        font-family: $os;
+        font-weight: $os-bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000;
+    }
+
+    &__tv-show-name,
+    &__number {
+        font-size: 12px;
+        line-height: 18px;
+        color: #949cb0;
+
+        a {
+            color: #949cb0;
+        }
+    }
+
+    &__number {
+        display: block;
+    }
+
+    &__tv-show-name {
+        display: inline-block;
+
+        & + .episode__number {
+            display: inline-block;
+
+            &:before {
+                content: "-";
+                padding: 0 2px;
+            }
+        }
+    }
+}
+
+.style-2 {
+    .episode {
+        margin-bottom: 20px;
+
+        &__link {
+            position: relative;
+        }
+
+        &__body {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0 25px 5px;
+            z-index: 1;
+        }
+
+        .episode__poster {
+            margin-bottom: 0;
+
+            &:before {
+                background: linear-gradient(to bottom, rgba(240, 47, 23, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+                content: " ";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
+            img {
+                height: auto;
+            }
+        }
+
+        &__title  {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        &__episode  {
+            font-size: 13px;
+            color: #fff;
+        }
+    }
+}

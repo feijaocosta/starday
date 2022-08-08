@@ -1,0 +1,68 @@
+.site__footer--v1.light {
+    background-color: $vodi-light-footer-bg;
+    color: #949cb0;
+
+    .item__count {
+        color: $vodi-light-footer-text-color;           
+    }
+
+    .site-info,
+    .policy-info a {
+        color: #a6a6a6;
+    }
+
+    .footer-widgets,
+    .recentcomments + .recentcomments,
+    .widget_recent_entries ul > li + li,
+    .widget_rss ul > li + li {
+        border-top: 1px solid #cdcdcd;
+    }
+
+    .footer-bottom-bar {
+        background-color: $vodi-light-header-bg-color;
+    }
+
+    li > a,
+    .item__link,
+    .recentcomments .comment-author-link > a {
+        color: #949cb0;
+
+        &:hover {
+            color: $vodi-light-footer-title-color;
+        }
+    }
+
+    i, th, strong,
+    .recentcomments > a,
+    .widget_rss ul .rsswidget, .widget_rss li a,
+    .calendar_wrap td a, .calendar_wrap th a {
+        color: #555f64;
+    }
+
+    .footer-widgets .widget-title,
+    .footer-widgets .widget-title .rsswidget {
+        color: $vodi-light-footer-title-color;
+    }
+
+    .footer-widgets-inner.col-3 .footer-widget-3{
+        box-shadow: -7px -1px 0px -6px #cdcdcd;
+    }
+
+    .calendar_wrap table th,
+    .calendar_wrap table td {
+        border: 1px solid #cdcdcd;
+    }
+
+    .search-form .search-field:focus {
+        background-color: transparent;
+    }
+
+    p,
+    .rssSummary {
+        color: $vodi-light-footer-v1-text-color;
+    }
+
+    .vodi-gr {
+        fill: url(#vodi-gr-f);
+    }
+}

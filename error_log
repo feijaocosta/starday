@@ -1,0 +1,29 @@
+[06-Jul-2022 21:01:42 UTC] PHP Warning:  ZipArchive::extractTo(): Invalid or uninitialized Zip object in /home2/starda45/public_html/wp-content/plugins/envato-elements/vendor/template-kit-import/inc/class-importer.php on line 79
+[06-Jul-2022 21:01:42 UTC] PHP Warning:  ZipArchive::close(): Invalid or uninitialized Zip object in /home2/starda45/public_html/wp-content/plugins/envato-elements/vendor/template-kit-import/inc/class-importer.php on line 81
+[09-Jul-2022 06:09:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function date() on null in /home2/starda45/public_html/wp-content/plugins/masvideos/includes/class-masvideos-structured-data.php:193
+Stack trace:
+#0 /home2/starda45/public_html/wp-includes/class-wp-hook.php(307): MasVideos_Structured_Data->generate_episode_data(Object(MasVideos_Episode))
+#1 /home2/starda45/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/starda45/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home2/starda45/public_html/wp-content/plugins/masvideos/templates/content-single-episode.php(57): do_action('masvideos_singl...')
+#4 /home2/starda45/public_html/wp-includes/template.php(772): require('/home2/starda45...')
+#5 /home2/starda45/public_html/wp-content/plugins/masvideos/includes/masvideos-core-functions.php(84): load_template('/home2/starda45...', false)
+#6 /home2/starda45/public_html/wp-content/plugins/masvideos/templates/single-episode.php(31): masvideos_get_template_part('content', 'single- in /home2/starda45/public_html/wp-content/plugins/masvideos/includes/class-masvideos-structured-data.php on line 193
+[09-Jul-2022 06:09:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function date() on null in /home2/starda45/public_html/wp-content/plugins/masvideos/includes/class-masvideos-structured-data.php:193
+Stack trace:
+#0 /home2/starda45/public_html/wp-includes/class-wp-hook.php(307): MasVideos_Structured_Data->generate_episode_data(Object(MasVideos_Episode))
+#1 /home2/starda45/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/starda45/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home2/starda45/public_html/wp-content/plugins/masvideos/templates/content-single-episode.php(57): do_action('masvideos_singl...')
+#4 /home2/starda45/public_html/wp-includes/template.php(772): require('/home2/starda45...')
+#5 /home2/starda45/public_html/wp-content/plugins/masvideos/includes/masvideos-core-functions.php(84): load_template('/home2/starda45...', false)
+#6 /home2/starda45/public_html/wp-content/plugins/masvideos/templates/single-episode.php(31): masvideos_get_template_part('content', 'single- in /home2/starda45/public_html/wp-content/plugins/masvideos/includes/class-masvideos-structured-data.php on line 193
+[14-Jul-2022 04:50:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function date() on null in /home2/starda45/public_html/wp-content/plugins/masvideos/includes/class-masvideos-structured-data.php:193
+Stack trace:
+#0 /home2/starda45/public_html/wp-includes/class-wp-hook.php(307): MasVideos_Structured_Data->generate_episode_data(Object(MasVideos_Episode))
+#1 /home2/starda45/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 /home2/starda45/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home2/starda45/public_html/wp-content/plugins/masvideos/templates/content-single-episode.php(57): do_action('masvideos_singl...')
+#4 /home2/starda45/public_html/wp-includes/template.php(772): require('/home2/starda45...')
+#5 /home2/starda45/public_html/wp-content/plugins/masvideos/includes/masvideos-core-functions.php(84): load_template('/home2/starda45...', false)
+#6 /home2/starda45/public_html/wp-content/plugins/masvideos/templates/single-episode.php(31): masvideos_get_template_part('content', 'single- in /home2/starda45/public_html/wp-content/plugins/masvideos/includes/class-masvideos-structured-data.php on line 193

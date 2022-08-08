@@ -1,0 +1,150 @@
+/**
+ * Bootstrap variables override
+ */
+.section-playlist-carousel {
+  background-color: #f2f3f5;
+  padding: 56px 0 30px; }
+  .section-playlist-carousel__inner {
+    align-items: center; }
+  .section-playlist-carousel .movie-playlists,
+  .section-playlist-carousel .video-playlists,
+  .section-playlist-carousel .tv-show-playlists {
+    position: relative; }
+    .section-playlist-carousel .movie-playlists .slick-slide,
+    .section-playlist-carousel .video-playlists .slick-slide,
+    .section-playlist-carousel .tv-show-playlists .slick-slide {
+      margin: 0 7.5px; }
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+1) .movie-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+1) .video-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+1) .tv-show-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+1) .movie-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+1) .video-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+1) .tv-show-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+1) .movie-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+1) .video-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+1) .tv-show-playlist__link {
+        background-color: #696969; }
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+2) .movie-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+2) .video-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+2) .tv-show-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+2) .movie-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+2) .video-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+2) .tv-show-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+2) .movie-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+2) .video-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+2) .tv-show-playlist__link {
+        background-color: #b9c0c8; }
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+3) .movie-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+3) .video-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+3) .tv-show-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+3) .movie-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+3) .video-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+3) .tv-show-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+3) .movie-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+3) .video-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+3) .tv-show-playlist__link {
+        background-color: #c0ae9f; }
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+4) .movie-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+4) .video-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n+4) .tv-show-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+4) .movie-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+4) .video-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n+4) .tv-show-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+4) .movie-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+4) .video-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n+4) .tv-show-playlist__link {
+        background-color: #7285ab; }
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n) .movie-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n) .video-playlist__link,
+      .section-playlist-carousel .movie-playlists .slick-slide:nth-child(5n) .tv-show-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n) .movie-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n) .video-playlist__link,
+      .section-playlist-carousel .video-playlists .slick-slide:nth-child(5n) .tv-show-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n) .movie-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n) .video-playlist__link,
+      .section-playlist-carousel .tv-show-playlists .slick-slide:nth-child(5n) .tv-show-playlist__link {
+        background-color: #a48997; }
+    .section-playlist-carousel .movie-playlists .slick-list,
+    .section-playlist-carousel .video-playlists .slick-list,
+    .section-playlist-carousel .tv-show-playlists .slick-list {
+      margin: 0 -7.5px; }
+    .section-playlist-carousel .movie-playlists .slick-arrow,
+    .section-playlist-carousel .video-playlists .slick-arrow,
+    .section-playlist-carousel .tv-show-playlists .slick-arrow {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #d2d2d8;
+      border-radius: 50%;
+      transform: none;
+      top: 34%;
+      z-index: 1; }
+      .section-playlist-carousel .movie-playlists .slick-arrow::before,
+      .section-playlist-carousel .video-playlists .slick-arrow::before,
+      .section-playlist-carousel .tv-show-playlists .slick-arrow::before {
+        display: inline-block; }
+      .section-playlist-carousel .movie-playlists .slick-arrow:hover, .section-playlist-carousel .movie-playlists .slick-arrow:focus,
+      .section-playlist-carousel .video-playlists .slick-arrow:hover,
+      .section-playlist-carousel .video-playlists .slick-arrow:focus,
+      .section-playlist-carousel .tv-show-playlists .slick-arrow:hover,
+      .section-playlist-carousel .tv-show-playlists .slick-arrow:focus {
+        border-color: #9f9fa4; }
+    .section-playlist-carousel .movie-playlists .slick-prev,
+    .section-playlist-carousel .video-playlists .slick-prev,
+    .section-playlist-carousel .tv-show-playlists .slick-prev {
+      left: 0; }
+      .section-playlist-carousel .movie-playlists .slick-prev:before,
+      .section-playlist-carousel .video-playlists .slick-prev:before,
+      .section-playlist-carousel .tv-show-playlists .slick-prev:before {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"><path d="M7.8 13.1L6.8 14 0 7.1 0.7 6.5 6.7 0 7.6 0.9 1.9 7.2 7.8 13.1Z" fill="rgb(189, 189, 195)"/></svg>'); }
+        [dir="rtl"] .section-playlist-carousel .movie-playlists .slick-prev:before, [dir="rtl"]
+        .section-playlist-carousel .video-playlists .slick-prev:before, [dir="rtl"]
+        .section-playlist-carousel .tv-show-playlists .slick-prev:before {
+          transform: rotate(-180deg); }
+      @media (min-width: 768px) {
+        .section-playlist-carousel .movie-playlists .slick-prev,
+        .section-playlist-carousel .video-playlists .slick-prev,
+        .section-playlist-carousel .tv-show-playlists .slick-prev {
+          left: -30px; } }
+      @media (min-width: 1440px) {
+        .section-playlist-carousel .movie-playlists .slick-prev,
+        .section-playlist-carousel .video-playlists .slick-prev,
+        .section-playlist-carousel .tv-show-playlists .slick-prev {
+          left: -60px; } }
+    .section-playlist-carousel .movie-playlists .slick-prev:hover::before,
+    .section-playlist-carousel .video-playlists .slick-prev:hover::before,
+    .section-playlist-carousel .tv-show-playlists .slick-prev:hover::before {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"><path d="M7.8 13.1L6.8 14 0 7.1 0.7 6.5 6.7 0 7.6 0.9 1.9 7.2 7.8 13.1Z" fill="rgb(129, 129, 133)"/></svg>'); }
+      [dir="rtl"] .section-playlist-carousel .movie-playlists .slick-prev:hover::before, [dir="rtl"]
+      .section-playlist-carousel .video-playlists .slick-prev:hover::before, [dir="rtl"]
+      .section-playlist-carousel .tv-show-playlists .slick-prev:hover::before {
+        transform: rotate(-180deg); }
+    .section-playlist-carousel .movie-playlists .slick-next,
+    .section-playlist-carousel .video-playlists .slick-next,
+    .section-playlist-carousel .tv-show-playlists .slick-next {
+      right: 0; }
+      .section-playlist-carousel .movie-playlists .slick-next:before,
+      .section-playlist-carousel .video-playlists .slick-next:before,
+      .section-playlist-carousel .tv-show-playlists .slick-next:before {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"><path d="M8 7.1L1.2 14 0.2 13.1 6.1 7.2 0.4 0.9 1.3 0 7.3 6.5 8 7.1Z" fill="rgb(189, 189, 195)" /></svg>'); }
+        [dir="rtl"] .section-playlist-carousel .movie-playlists .slick-next:before, [dir="rtl"]
+        .section-playlist-carousel .video-playlists .slick-next:before, [dir="rtl"]
+        .section-playlist-carousel .tv-show-playlists .slick-next:before {
+          transform: rotate(-180deg); }
+      @media (min-width: 768px) {
+        .section-playlist-carousel .movie-playlists .slick-next,
+        .section-playlist-carousel .video-playlists .slick-next,
+        .section-playlist-carousel .tv-show-playlists .slick-next {
+          right: -30px; } }
+      @media (min-width: 1440px) {
+        .section-playlist-carousel .movie-playlists .slick-next,
+        .section-playlist-carousel .video-playlists .slick-next,
+        .section-playlist-carousel .tv-show-playlists .slick-next {
+          right: -60px; } }
+    .section-playlist-carousel .movie-playlists .slick-next:hover::before,
+    .section-playlist-carousel .video-playlists .slick-next:hover::before,
+    .section-playlist-carousel .tv-show-playlists .slick-next:hover::before {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"><path d="M8 7.1L1.2 14 0.2 13.1 6.1 7.2 0.4 0.9 1.3 0 7.3 6.5 8 7.1Z" fill="rgb(129, 129, 133)" /></svg>'); }
+      [dir="rtl"] .section-playlist-carousel .movie-playlists .slick-next:hover::before, [dir="rtl"]
+      .section-playlist-carousel .video-playlists .slick-next:hover::before, [dir="rtl"]
+      .section-playlist-carousel .tv-show-playlists .slick-next:hover::before {
+        transform: rotate(-180deg); }

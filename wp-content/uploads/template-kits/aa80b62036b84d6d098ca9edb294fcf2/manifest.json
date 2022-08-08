@@ -1,0 +1,1299 @@
+{
+    "manifest_version": "1.0.21",
+    "title": "iZPAY - Mobile App & Fintech Startup Elementor Template Kit",
+    "page_builder": "elementor",
+    "kit_version": "1.0.2",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Home",
+            "screenshot": "screenshots\/home.jpg",
+            "source": "templates\/home.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/home\/",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-home",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About Us",
+            "screenshot": "screenshots\/about-us.jpg",
+            "source": "templates\/about-us.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/about-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact Us 1",
+            "screenshot": "screenshots\/contact-us-1.jpg",
+            "source": "templates\/contact-us-1.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/contact-us-1\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact Us 2",
+            "screenshot": "screenshots\/contact-us-2.jpg",
+            "source": "templates\/contact-us-2.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/contact-us-2\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Pricing Plan",
+            "screenshot": "screenshots\/pricing-plan.jpg",
+            "source": "templates\/pricing-plan.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/pricing-plan\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Partner",
+            "screenshot": "screenshots\/partner.jpg",
+            "source": "templates\/partner.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/partner\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Team",
+            "screenshot": "screenshots\/team.jpg",
+            "source": "templates\/team.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/team\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Career",
+            "screenshot": "screenshots\/career.jpg",
+            "source": "templates\/career.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/career\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Service",
+            "screenshot": "screenshots\/service.jpg",
+            "source": "templates\/service.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/service\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Media",
+            "screenshot": "screenshots\/media.jpg",
+            "source": "templates\/media.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/media\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Blog",
+            "screenshot": "screenshots\/single-blog.jpg",
+            "source": "templates\/single-blog.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/single-blog\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/footer\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/header\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Metform Contact Us",
+            "screenshot": "screenshots\/metform-contact-us.jpg",
+            "source": "templates\/metform-contact-us.json",
+            "preview_url": "https:\/\/templatekit.jegtheme.com\/izpay\/template-kit\/metform-contact\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "ElementsKit Lite",
+            "version": "2.6.1",
+            "file": "elementskit-lite\/elementskit-lite.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "Gutenverse",
+            "version": "1.1.6",
+            "file": "gutenverse\/gutenverse.php",
+            "author": "Jegstudio"
+        },
+        {
+            "name": "Jeg Elementor Kit",
+            "version": "2.4.3-dev-2",
+            "file": "jeg-elementor-kit\/jeg-elementor-kit.php",
+            "author": "Jegstudio"
+        },
+        {
+            "name": "MetForm",
+            "version": "2.1.6",
+            "file": "metform\/metform.php",
+            "author": "Wpmet"
+        },
+        {
+            "name": "Elementor",
+            "version": "3.6.5",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        }
+    ],
+    "images": [
+        {
+            "filename": "Efficiencydark-1.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/Efficiencydark-1-600x472.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 55608,
+            "dimensions": [
+                712,
+                560
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/fidas-finance-dashboard-ui-dark-p-M6KJCBT"
+        },
+        {
+            "filename": "home-img-big@2x-e1609121743866.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/home-img-big@2x-e1609121743866-600x690.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 318844,
+            "dimensions": [
+                911,
+                1047
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/banking-wallet-app-ui-kit-dark-mode-3R3EUJ7"
+        },
+        {
+            "filename": "global-trade-logo@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/global-trade-logo@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 13239,
+            "dimensions": [
+                555,
+                156
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/modern-globe-and-arrow-global-trading-logo-DJXZ7KJ"
+        },
+        {
+            "filename": "marketup-logo@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/marketup-logo@2x-600x139.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 8819,
+            "dimensions": [
+                628,
+                146
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/market-up-letter-m-invest-stock-logo-template-7R56GTM"
+        },
+        {
+            "filename": "okfinance-logo@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/okfinance-logo@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 7546,
+            "dimensions": [
+                561,
+                155
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/ok-hand-gesture-and-money-bag-negative-space-logo-A4ULXXC"
+        },
+        {
+            "filename": "marketchat-logo@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/marketchat-logo@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 6394,
+            "dimensions": [
+                555,
+                156
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/market-chat-logo-template-7FZMD5"
+        },
+        {
+            "filename": "starbank-logo@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/starbank-logo@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 6518,
+            "dimensions": [
+                568,
+                154
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/star-app-logo-template-LNRTU3"
+        },
+        {
+            "filename": "app-mockup-2-a@2x-e1610431074808.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/app-mockup-2-a@2x-e1610431074808.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 380839,
+            "dimensions": [
+                980,
+                1056
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/credit-card-mockup-with-shadow-overlay-3C78BV9"
+        },
+        {
+            "filename": "user-friendly@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/user-friendly@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 133858,
+            "dimensions": [
+                557,
+                557
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/online-shopping-line-icons-SYRC9VS"
+        },
+        {
+            "filename": "shape-1@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/shape-1@2x-800x706.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 30186,
+            "dimensions": [
+                901,
+                795
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/templatekit.jegtheme.com\/izpay\/"
+        },
+        {
+            "filename": "shopping-icon-home@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/shopping-icon-home@2x-800x1616.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 65658,
+            "dimensions": [
+                860,
+                1737
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/online-shopping-line-icons-SYRC9VS"
+        },
+        {
+            "filename": "Last-Costslast-cost.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/Last-Costslast-cost-600x472.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 40581,
+            "dimensions": [
+                712,
+                560
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/fidas-finance-dashboard-ui-dark-p-M6KJCBT"
+        },
+        {
+            "filename": "bg-halftone@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/bg-halftone@2x-600x343.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-plan.json",
+                    "name": "Pricing Plan"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 101812,
+            "dimensions": [
+                1917,
+                1096
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.freepik.com\/free-vector\/halftone-dots-vector-abstract-backgrounds-set-dot-pattern-element-design-dots-gradation-wave-dot-illustration_11059473.htm"
+        },
+        {
+            "filename": "bg-black@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/bg-black@2x-800x492.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 10887,
+            "dimensions": [
+                939,
+                577
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/templatekit.jegtheme.com\/izpay\/"
+        },
+        {
+            "filename": "testi-bg@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/testi-bg@2x-800x236.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-plan.json",
+                    "name": "Pricing Plan"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 184838,
+            "dimensions": [
+                1734,
+                512
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/templatekit.jegtheme.com\/izpay\/"
+        },
+        {
+            "filename": "quote-bg-mobile2@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/quote-bg-mobile2@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-plan.json",
+                    "name": "Pricing Plan"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 135383,
+            "dimensions": [
+                670,
+                672
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/templatekit.jegtheme.com\/izpay\/"
+        },
+        {
+            "filename": "quoite-left-black@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/quoite-left-black@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-plan.json",
+                    "name": "Pricing Plan"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 20730,
+            "dimensions": [
+                356,
+                356
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/templatekit.jegtheme.com\/izpay\/"
+        },
+        {
+            "filename": "testi-foto@2x@2x-e1610431253715.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/testi-foto@2x@2x-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-plan.json",
+                    "name": "Pricing Plan"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 51272,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-GHAFYZ8"
+        },
+        {
+            "filename": "shape-img2@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/shape-img2@2x-800x697.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 31152,
+            "dimensions": [
+                1000,
+                871
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/templatekit.jegtheme.com\/izpay\/"
+        },
+        {
+            "filename": "Last-Operation1.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/Last-Operation1-600x705.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                }
+            ],
+            "filesize": 97317,
+            "dimensions": [
+                926,
+                1088
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/fidas-finance-dashboard-ui-dark-p-M6KJCBT"
+        },
+        {
+            "filename": "payment-icon-home@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/payment-icon-home@2x-800x1439.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                }
+            ],
+            "filesize": 80749,
+            "dimensions": [
+                996,
+                1792
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/online-shopping-line-icons-SYRC9VS"
+        },
+        {
+            "filename": "halftone-subs-white@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/halftone-subs-white@2x-800x177.png",
+            "templates": [
+                {
+                    "source": "templates\/home.json",
+                    "name": "Home"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us-1.json",
+                    "name": "Contact Us 1"
+                },
+                {
+                    "source": "templates\/contact-us-2.json",
+                    "name": "Contact Us 2"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-plan.json",
+                    "name": "Pricing Plan"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                },
+                {
+                    "source": "templates\/media.json",
+                    "name": "Media"
+                }
+            ],
+            "filesize": 33047,
+            "dimensions": [
+                1133,
+                251
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.freepik.com\/free-vector\/wave-style-halftone-design-background-vector_10221223.htm"
+        },
+        {
+            "filename": "hjalftone-header-1@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/hjalftone-header-1@2x-600x210.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us-1.json",
+                    "name": "Contact Us 1"
+                },
+                {
+                    "source": "templates\/contact-us-2.json",
+                    "name": "Contact Us 2"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                },
+                {
+                    "source": "templates\/pricing-plan.json",
+                    "name": "Pricing Plan"
+                },
+                {
+                    "source": "templates\/partner.json",
+                    "name": "Partner"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                },
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                },
+                {
+                    "source": "templates\/media.json",
+                    "name": "Media"
+                },
+                {
+                    "source": "templates\/single-blog.json",
+                    "name": "Single Blog"
+                }
+            ],
+            "filesize": 114533,
+            "dimensions": [
+                1920,
+                671
+            ],
+            "image_source": "cc0",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/www.freepik.com\/free-vector\/halftone-dots-vector-abstract-backgrounds-set-dot-pattern-element-design-dots-gradation-wave-dot-illustration_11059473.htm"
+        },
+        {
+            "filename": "bossportrait@2x-e1610431485623.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/bossportrait@2x-600x770.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 55354,
+            "dimensions": [
+                600,
+                770
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-WP83MBZ"
+        },
+        {
+            "filename": "delivery-icon@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/delivery-icon@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 128937,
+            "dimensions": [
+                557,
+                557
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/online-shopping-line-icons-SYRC9VS"
+        },
+        {
+            "filename": "img-about-new1.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/img-about-new1-800x986.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 95260,
+            "dimensions": [
+                888,
+                1094
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/clay-iphone-11-pro-mockup-clay-mockup-scenes-7UJVSVM"
+        },
+        {
+            "filename": "adult-bald-bearded-man-in-blue-suit-with-mobile-on-bicycle-e1610520205760.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/adult-bald-bearded-man-in-blue-suit-with-mobile-on-bicycle-600x400.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 91383,
+            "dimensions": [
+                1140,
+                760
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-EPTGAHZ"
+        },
+        {
+            "filename": "team-1@2x-e1610520273848.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/team-1@2x-600x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 42812,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-KJGWB7Q"
+        },
+        {
+            "filename": "team-2@2x-e1610431604411.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/team-2@2x-600x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 79601,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-2LM487X"
+        },
+        {
+            "filename": "team-3@2x-e1610431628926.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/team-3@2x-600x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 92521,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-Q375YLM"
+        },
+        {
+            "filename": "img-team-2-1@2x-e1610430962374.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/img-team-2-1@2x-600x509.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 144372,
+            "dimensions": [
+                1000,
+                848
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-6UCYD7B"
+        },
+        {
+            "filename": "img-team-1@2x-e1610431789652.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/img-team-1@2x-600x466.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 96808,
+            "dimensions": [
+                1000,
+                776
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-EPHLY53"
+        },
+        {
+            "filename": "team-icon@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/team-icon@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/career.json",
+                    "name": "Career"
+                }
+            ],
+            "filesize": 132482,
+            "dimensions": [
+                557,
+                557
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/online-shopping-line-icons-SYRC9VS"
+        },
+        {
+            "filename": "team-5@2x-e1610431755679.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/team-5@2x-600x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 58883,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-HTDA7D6"
+        },
+        {
+            "filename": "team-6@2x-e1610431735484.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/team-6@2x-600x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 62292,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-26P2ZAB"
+        },
+        {
+            "filename": "team-4@2x-e1610431746802.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/team-4@2x-600x600.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 67491,
+            "dimensions": [
+                800,
+                800
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-WP83MBZ"
+        },
+        {
+            "filename": "support1@2x-e1610520318455.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/support1@2x-600x509.jpg",
+            "templates": [
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 56330,
+            "dimensions": [
+                681,
+                578
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-NYG2WZ5"
+        },
+        {
+            "filename": "team-place@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/team-place@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 134621,
+            "dimensions": [
+                557,
+                557
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/elements.envato.com\/online-shopping-line-icons-SYRC9VS"
+        },
+        {
+            "filename": "support2@2x-e1610520346129.jpg",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2021\/01\/support2@2x-600x509.jpg",
+            "templates": [
+                {
+                    "source": "templates\/service.json",
+                    "name": "Service"
+                }
+            ],
+            "filesize": 40270,
+            "dimensions": [
+                681,
+                578
+            ],
+            "image_source": "envato_elements",
+            "person_or_place": "yes",
+            "image_urls": "https:\/\/elements.envato.com\/image-8TK3NA4"
+        },
+        {
+            "filename": "logo-new@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/logo-new@2x-600x240.png",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                },
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 80009,
+            "dimensions": [
+                990,
+                396
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/templatekit.jegtheme.com\/izpay\/"
+        },
+        {
+            "filename": "logo-square1@2x.png",
+            "thumbnail_url": "https:\/\/templatekit.jegtheme.com\/izpay\/wp-content\/uploads\/sites\/30\/2020\/12\/logo-square1@2x.png",
+            "templates": [
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 91181,
+            "dimensions": [
+                477,
+                477
+            ],
+            "image_source": "self_created",
+            "person_or_place": "no",
+            "image_urls": "https:\/\/templatekit.jegtheme.com\/izpay\/"
+        }
+    ]
+}

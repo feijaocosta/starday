@@ -1,0 +1,95 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+
+.home-tv-show-section-aside-header {
+    padding: 45px 0 40px;
+
+    &__inner {
+        .masvideos-tv-shows {
+            .home-section__header {
+                @include make-col-ready(18px);
+                margin-bottom: 1em;
+
+                @include media-breakpoint-up(lg) {
+                    @include make-col(6);
+                    align-self: center;
+                    margin-bottom: 0;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include make-col(4);
+                    padding-right: 51px;
+                }
+            }
+
+            .tv-show {
+                margin-bottom: 26px;
+            }
+        }
+    }
+
+    ul.nav {
+        margin-bottom: 27px;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+        }
+
+
+        @include media-breakpoint-up(xl) {
+            flex-wrap: wrap;
+            overflow-x: initial;
+            overflow-y: initial;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+
+            .nav-link {
+                font-family: $ms;
+                font-weight: $ms-medium;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: -0.025em;
+                color: #949494;
+
+                &.active {
+                    font-weight: $ms-bold;
+                }
+            }
+
+            & + .nav-item {
+                &:before {
+                    content: "/";
+                    margin: 0 15px;
+                    color: #949494;
+                }
+            }
+        }
+    }
+
+    &.has-section-header {
+        ul.nav {
+            @include media-breakpoint-up(lg) {
+                @include make-col-offset(6.1);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include make-col-offset(4.06);
+            }
+        }
+    }
+}

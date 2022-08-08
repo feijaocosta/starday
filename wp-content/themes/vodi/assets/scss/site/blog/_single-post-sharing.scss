@@ -1,0 +1,11 @@
+.single-post-sharing {
+    margin-bottom: 44px;
+}
+
+.single-article {
+    .article__header {
+        & + .single-post-sharing {
+            margin-bottom: 34px;
+        }
+    }
+}

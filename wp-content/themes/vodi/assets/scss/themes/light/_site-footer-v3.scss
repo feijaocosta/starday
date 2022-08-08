@@ -1,0 +1,24 @@
+.site__footer--v3.light {
+    background-color: #eeeff0;
+    color: #B0B0B0;
+
+    .footer-v3-menu a {
+        color: $vodi-dark-theme-link-color;
+    }
+
+    .footer-social-icon {
+        color: $vodi-light-social-icon;
+    }
+
+    .footer-menu > li + li:before {
+        color: #bdbdbd;
+    }    
+
+    .vodi-gr {
+        fill: url(#vodi-gr);
+    }
+
+    .fa-inverse {
+        color: #929293;
+    }
+}

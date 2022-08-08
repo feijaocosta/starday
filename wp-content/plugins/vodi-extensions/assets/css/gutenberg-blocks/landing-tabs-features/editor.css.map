@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "editor.css",
+	"sources": [
+		"../../../../../../themes/vodi/assets/scss/gutenberg-blocks/landing-tabs-features/editor.scss",
+		"../../../../../../themes/vodi/assets/scss/_variables.scss",
+		"../../../../../../themes/vodi/assets/scss/vendors/bootstrap/_functions.scss",
+		"../../../../../../themes/vodi/assets/scss/vendors/bootstrap/_variables.scss"
+	],
+	"names": [],
+	"mappings": "ACkBA;;GAEG;ADlBH,AAAA,sBAAsB,CAAC,kCAAkC,CAAC;EACtD,KAAK,EAAE,IAAI,GACd"
+}

@@ -1,0 +1,174 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.vodi-live-videos {
+    position: relative;
+    z-index: 1;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    
+    &__inner {
+        @include media-breakpoint-up(sm) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &.home-section {
+        .home-section {
+            &__header {
+                margin-bottom: 20px;
+
+                @include media-breakpoint-up(md) {
+                    @include make-col(3);
+                    padding-right: 15px;
+                    margin-bottom: 0;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    flex: 0 0 7.8%;
+                    max-width: 7.8%;
+                }
+
+                &:before {
+                    content: none;
+                }
+            }
+
+            &__title {
+                text-transform: uppercase;
+                font-size: 13px;
+                line-height: 16px;
+                font-weight: $ms-medium;
+                padding-bottom: 9px;
+                border-width: 1px;
+                border-bottom-style: solid;
+                margin-bottom: 0;
+
+                svg {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .masvideos-videos {
+        @include media-breakpoint-up(md) {
+            display: flex;
+            align-items: center;
+            @include make-col(9);
+        }
+
+        @include media-breakpoint-up(xl) {
+            @include make-col(8.25);
+        }
+
+        .videos {
+            width: 100%;
+
+            &__inner {
+                margin-right: -3.5px;
+                margin-left: -3.5px;
+            }
+        }
+
+        .video {
+            padding-left: 3.5px;
+            padding-right: 3.5px;
+            display: flex;
+
+            @include media-breakpoint-up(md) {
+                min-height: 70px;
+            }
+            
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 0;
+            }
+
+            &__poster {
+                margin-bottom: 0;
+            }
+
+            &__body {
+                color: #fff;
+                flex: 0 0 53.5%;
+                max-width: 53.5%;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                align-items: center;
+            }
+
+            &__badge {
+                display: none;
+            }
+
+            &__title {
+                font-size: 13px;
+                font-family: $os;
+                font-weight: $os-semi-bold;
+                margin-bottom: 0;
+                white-space: normal;
+
+                @include hover-focus() {
+                    color: #fff;
+                }
+            }
+
+            &__meta {
+                color: #fff;
+                margin-bottom: 0;
+            }
+
+            .vodi-jetpack-views, 
+            .wpulike .wp_ulike_general_class {
+                color: #fff;
+            }
+
+            &__container{
+                flex: 0 0 46.5%;
+                max-width: 46.5%;
+
+                &:after {
+                    background: linear-gradient(to bottom,rgba(240,47,23,0) 0%,rgba(0,0,0,.7) 90%);
+                    height: 100%;
+                    content: " ";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.dark {
+    .vodi-live-videos.home-section .home-section__title {
+        color: #fff;
+        border-bottom-color: #3c3e45;
+    }
+}
+
+.light {
+    .vodi-live-videos.home-section .home-section__title {
+        color: #121a21;
+        border-bottom-color: #e8e8e8;
+    }
+}
+
+.header-static-content {
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}

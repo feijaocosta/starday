@@ -1,0 +1,31 @@
+.movies-ordering,
+.tv-shows-ordering,
+.videos-ordering {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-up(xl) {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .handheld-sidebar-toggle {
+        margin-bottom: 0;
+    }
+    
+    .orderby {
+        padding-left: 35px;
+        padding-right: 13px;
+    }
+
+    .svg-icon {
+        position: relative;
+        right: -23px;
+    }
+}
+
+.dark .movies-ordering .svg-icon path,
+.dark .tv-shows-ordering .svg-icon path,
+.dark .videos-ordering .svg-icon path  {
+    fill: #FFF;
+}

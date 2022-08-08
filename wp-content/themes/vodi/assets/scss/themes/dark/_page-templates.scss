@@ -1,0 +1,43 @@
+.page-template-template-homepage-v6,
+.page-template-template-homepage-v7 {
+    .content-area.dark {
+        &:before {
+            background: #131621;
+        }
+
+        .page-control-bar-bottom {
+
+            ul.page-numbers{
+                > li {
+
+                    > span.current {
+                        color: #000;
+                    }
+
+                    > a {
+                        color: #b4bbc0;
+                        background-color: #373c49;
+                    }
+                }
+
+                > li:last-child a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .vodi-control-bar select, .form-vodi-wc-ppp select, .page-control-bar-bottom select, .masvideos-persons-control-bar select {
+            color: #949cb0;
+        }
+
+        .vodi-control-bar .videos-type li a {
+            color: #e8e7e7;
+        }
+    }
+
+    .home-sidebar-area.dark {
+        &:before {
+            background: #1c212e;
+        }
+    }
+}

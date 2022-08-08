@@ -1,0 +1,57 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+//Stretch Full Width on Gutenberg Editor
+.editor-block-list__layout {
+    .editor-block-list__block[data-type="vodi/banner-with-section-tv-shows"] {
+        @include media-breakpoint-down(sm) {
+            width: 100vw;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        @include media-breakpoint-up(md) {
+            max-width: none;
+            margin-left: -44px;
+            margin-right: -44px;
+            width: auto;
+
+            .container {
+                padding-left: 44px;
+                padding-right: 44px;
+            }
+
+            .editor-block-list__block-edit {
+                margin-left: -44px;
+                margin-right: -44px;
+            }
+        }
+
+        .editor-block-contextual-toolbar {
+            left: 60px;
+        }
+
+        > .editor-block-mover {
+            left: 20px;
+            top: -64px;
+        }
+
+        &::before,
+        .editor-block-list__block-edit::before {
+            left: 0;
+            right: 0;
+        }
+
+        .editor-block-drop-zone,
+        .editor-block-contextual-toolbar {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .editor-block-list__breadcrumb {
+            right: 0;
+        }
+    }
+}

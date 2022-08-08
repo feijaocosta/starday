@@ -1,0 +1,313 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+@import "../../components/grid";
+
+.home-section-videos-with-featured-video {
+    padding: 55px 0 15px;
+
+    .videos-with-featured-video {
+        &__1-1-block,
+        &__1-4-block,
+        &__1-6-block,
+        &__1-8-block {
+            .masvideos-videos {
+                .video {
+                    margin-bottom: 24px;
+
+                    &__poster {
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &__1-1-block,
+        &__1-4-block {
+            @include make-row(18px);
+
+            .masvideos-videos {
+                @include make-col-ready(18px);
+            }
+        }
+
+        &__1-6-block,
+        &__1-8-block {
+            @include make-row(15px);
+
+            .masvideos-videos,
+            .video {
+                @include make-col-ready(15px);
+            }
+
+            .videos__inner {
+                @include make-row(15px);
+            }
+        }
+
+        &__1-1-block {
+            .masvideos-videos {
+                @include make-col(6);
+            }
+        }
+
+        &__1-4-block {
+            .masvideos-videos {
+                @include media-breakpoint-up(xl) {
+                    @include make-col(6);
+                }
+
+                .columns-1 .video {
+                    &__poster{
+                        .video__link {
+                            @include media-breakpoint-up(xl) {
+                                height: 386px;
+                                padding: 0;
+                            }
+
+                            @include media-breakpoint-up(xxl) {
+                                height: 462px;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+
+                & + .masvideos-videos {
+                    .columns-2 .video {
+                        &__poster {
+                            .video__link {
+                                @include media-breakpoint-up(xl) {
+                                    height: 154px;
+                                    padding: 0;
+                                }
+
+                                @include media-breakpoint-up(xxl) {
+                                    height: 192px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__1-6-block {
+            .masvideos-videos {
+                .video {
+                    margin-bottom: 15px;
+
+                    @include media-breakpoint-up(xxl) {
+                        margin-bottom: 24px;
+                    }
+                }
+
+                @include media-breakpoint-up(xl) {
+                    @include make-col(4.81);
+                }
+
+                .columns-1 .video {
+                    &__poster {
+                        .video__link {
+                            @include media-breakpoint-up(xl) {
+                                height: 299px;
+                                padding: 0;
+                            }
+
+                            @include media-breakpoint-up(xxl) {
+                                height: 371px;
+                            }
+                        }
+                    }
+                }
+
+                & + .masvideos-videos {
+                    @include media-breakpoint-up(xl) {
+                        @include make-col(7.19);
+                    }
+
+                    .columns-3 .video {
+                        &__poster {
+                            .video__link {
+                                @include media-breakpoint-up(xl) {
+                                    height: 115px;
+                                    padding: 0;
+                                }
+
+                                @include media-breakpoint-up(xxl) {
+                                    height: 145px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__1-8-block {
+            .masvideos-videos {
+                @include media-breakpoint-up(xl) {
+                    @include make-col(4.1);
+                }
+
+                .columns-1 .video {
+                    &__poster {
+                        .video__link {
+                            @include media-breakpoint-up(xl) {
+                                height: 277px;
+                                padding: 0;
+                            }
+
+                            @include media-breakpoint-up(xxl) {
+                                height: 310px;
+                            }
+                        }
+                    }
+                }
+
+                & + .masvideos-videos {
+                    @include media-breakpoint-up(xl) {
+                        @include make-col(7.9);
+                    }
+
+                    .columns-4 .video {
+                        &__poster {
+                            .video__link {
+                                @include media-breakpoint-up(xl) {
+                                    height: 100px;
+                                    padding: 0;
+                                }
+
+                                @include media-breakpoint-up(xxl) {
+                                    height: 116px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.style-2 {
+        .videos-with-featured-video {
+            &__1-1-block,
+            &__1-4-block,
+            &__1-6-block {
+                @include make-row(20px);
+
+                .masvideos-videos,
+                .video {
+                    @include make-col-ready(20px);
+                }
+
+                .videos__inner {
+                    @include make-row(20px);
+                }
+
+                .masvideos-videos {
+                    .video {
+                        margin-bottom: 20px;
+
+                        &__poster{
+                            margin-bottom: 0;
+                        }
+
+                        &__info {
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+
+            &__1-4-block {
+                .masvideos-videos {
+                    .columns-1 .video {
+                        &__poster{
+                            .video__link {
+                                @include media-breakpoint-up(xl) {
+                                    height: 328px;
+                                }
+
+                                @include media-breakpoint-up(xxl) {
+                                    height: 405px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__1-6-block {
+                .masvideos-videos {
+                    .columns-1 .video {
+                        &__poster{
+                            .video__link {
+                                @include media-breakpoint-up(xl) {
+                                    height: 388px;
+                                }
+                            }
+                        }
+                    }
+
+                    & + .masvideos-videos {
+                        .columns-3 .video {
+                            &__poster {
+                                .video__link {
+                                    @include media-breakpoint-up(xl) {
+                                        height: 184px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__1-8-block {
+                .masvideos-videos {
+                    .video {
+                        margin-bottom: 18px;
+
+                        &__poster{
+                            margin-bottom: 0;
+                        }
+
+                        &__info {
+                            padding-bottom: 5px;
+                        }
+                    }
+
+                    .columns-1 .video {
+                        &__poster{
+                            .video__link {
+                                @include media-breakpoint-up(xl) {
+                                    height: 295px;
+                                }
+                            }
+                        }
+                    }
+
+                    & + .masvideos-videos {
+                        .columns-4 .video {
+                            &__poster {
+                                .video__link {
+                                    @include media-breakpoint-up(xl) {
+                                        height: 139px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

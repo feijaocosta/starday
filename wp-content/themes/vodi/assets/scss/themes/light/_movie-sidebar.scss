@@ -1,0 +1,29 @@
+.light {
+    .movie-sidebar,
+    .video-sidebar,
+    .tv-show-sidebar {
+        .widget-area-inner .widget {
+            background-color: $light-bg-color;
+        }
+    }
+
+    .masvideos_movies_widget,
+    .masvideos_videos_widget,
+    .masvideos_tv_shows_widget {
+        .movie,
+        .video,
+        .tv-show {
+            border-bottom: 1px solid #d0d0d2;
+
+            &:before,
+            &__title {
+                color: #303030;
+            }
+
+            &__meta--release-year {
+                color: #707070;
+            }
+        }
+    }
+}
+

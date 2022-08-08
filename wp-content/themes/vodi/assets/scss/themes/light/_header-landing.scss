@@ -1,0 +1,80 @@
+.header-landing-v1.light {
+    border-bottom: 1px solid #dedede;
+
+    .landing-nav > .menu-item,
+    .site-header__user-account {
+        a {
+            color: #292929;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    .site-header__logo {
+        .vodi-gr {
+            fill: url(#vodi-gr);
+        }
+    }
+
+    .site-header__landing-nav,
+    .site-header__user-account {
+
+        .menu-item-has-children a:after {
+            color: #292929;
+        }
+
+        .landing-nav > .menu-item-has-children > .sub-menu,
+        .dropdown-menu {
+            border-top: 3px solid #000;
+
+            &:before{
+                border-bottom-color: #000;
+            }
+        }
+    }
+
+    .site-header__user-account .sub-menu:after {
+        border-bottom: 9px solid #000;
+    }
+}
+
+.header-landing-v2.light {
+    .st0 {
+        fill: #000;
+    }
+}
+
+.coming-soon-header.light {
+    .site-header__logo {
+        .vodi-gr {
+            fill: url(#vodi-gr);
+        }
+    }
+
+    .site-header__btn-link i {
+        color: #000;
+    }
+
+    .show, 
+    .collapsing,
+    .sub-menu {
+        background-color: #ffff;
+    } 
+
+    .site-header__btn-link i {
+        color: #000;
+    }
+
+    .menu-item {
+
+        a {
+            color: #000;
+        }
+    }
+
+    .menu-item-has-children:after {
+        color: #000;
+    }
+}

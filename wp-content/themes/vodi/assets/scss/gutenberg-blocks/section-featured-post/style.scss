@@ -1,0 +1,104 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.section-featured-post {
+    display: flex;
+    align-items: flex-end;
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+
+    @include media-breakpoint-up(md) {
+        min-height: 400px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        min-height: 500px;
+    }
+
+    .featured-post {
+        margin: 20px 0 30px;
+        
+        @include media-breakpoint-up(lg) {
+            width: 60%;
+            margin: 40px 0 50px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 50%;
+        }
+
+        .article {
+            &__title {
+                font-size: 32px;
+                margin-left: -2px;
+                margin-bottom: 0;
+                font-weight: $ms-bold;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 44px;
+                }
+
+                a {
+                    color: $white;
+                }
+            }
+
+            &__meta {
+                margin-bottom: 11px;
+                color: $white;
+
+                a {
+                    color: $white;
+                }
+            }
+
+            &__date {
+                display: none;
+            }
+        }
+
+        &__action {
+            font-size: 14px;
+            font-weight: $ms-bold;
+            line-height: 18px;
+            letter-spacing: -0.01em;
+            font-family: $ms;
+            margin: 17px 0;
+            display: inline-block;
+
+            @include media-breakpoint-up(md) {
+                margin: 17px 0 28px;
+            }
+
+            a {
+                color: $white;
+                display: flex;
+                align-items: center;
+
+                .play-trailer-txt {
+                    font-size: 14px;
+                }
+            }
+
+            i {
+                margin-right: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.page__content {
+    .section-featured-post:first-child {
+        @include media-breakpoint-up(xl) {
+            min-height: 600px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+@import "../../landing-v1/components/button";
+
+
+.vodi-landing-hero-banner {
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 30px;
+    font-family: $ms;
+
+    &:before {
+        background: linear-gradient(to bottom,rgba(0,0,0,.45) 100%,rgba(0,0,0,.7) 100%);
+        content: " ";
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 600px;
+        padding-bottom: 100px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        height: 845px;
+        padding-bottom: 145px;
+    }
+
+    &__inner {
+        z-index: 1;
+        position: relative;
+    }
+
+    *:focus{outline: none;}
+    
+    &__caption {
+        text-align: center;
+        line-height: 1.25;
+        color: #ffffff;
+        padding-top: 20px;
+
+        @include media-breakpoint-up(md) {
+            padding: 0;
+        }
+
+        &--title {
+            font-size: 30px;
+            font-weight: $ms-bold;
+            letter-spacing: -0.01em;
+
+            @include media-breakpoint-up(md) {
+                font-size: 40px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 50px;
+            }
+        }
+
+        &--desc {
+            font-size: 18px;
+            font-weight: $ms-medium;
+            margin-bottom: 20px;
+
+            @include media-breakpoint-up(md) {
+                font-size: 21px;
+                margin-bottom: 40px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 26px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

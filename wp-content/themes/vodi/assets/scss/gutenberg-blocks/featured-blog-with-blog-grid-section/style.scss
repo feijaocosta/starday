@@ -1,0 +1,120 @@
+// Vendors
+@import "../../vendors/bootstrap/functions";
+@import "../../vendors/bootstrap/variables";
+@import "../../vendors/bootstrap/mixins";
+
+// Utilities
+@import "../../variables";
+@import "../../mixins";
+
+.home-featured-blog-with-blog-grid-section {
+    padding: 61px 0 38px;
+    
+    .featured-blog-with-blog-grid-section {
+        @include make-row(18px);
+
+        &__feature-article,
+        &__grid-section {
+            @include make-col-ready(18px);
+
+            @include media-breakpoint-up(xl) {
+                @include make-col(6);
+            }
+        }
+
+        &__feature-article {
+            .articles .article .article__attachment {
+                @include media-breakpoint-up(xl) {
+                    height: 560px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    .articles {
+        @include make-row(18px);
+
+        .article {
+            @include make-col-ready(18px);
+            display: block;
+            position: relative;
+            margin-bottom: 20px;
+
+            .article__attachment {
+                margin-bottom: 0;
+                margin-right: 0;
+                max-width: 100%;
+
+                &--thumbnail {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.4) 40%, rgba(0,0,0,.1) 70%, rgba(0,0,0,0) 90%);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    display: block;
+                    top: 0;
+                    bottom: 0;
+                    left: 9px;
+                    right: 9px;
+                }
+            }
+
+            &__summary {
+                position: absolute;
+                bottom: 15px;
+                left: 24px;
+                right: 24px;
+            }
+
+            &__excerpt {
+                color: $white !important;
+
+                p {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            &__header {
+                margin-bottom: 15px;
+            }
+
+            .article__title {
+                font-size: 18px;
+                line-height: 21px;
+                letter-spacing: -0.01em;
+                @include media-breakpoint-up(xl) {
+                    height: 23px;
+                    overflow: hidden;
+                }
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            .article__comments {
+                display: none;
+            }
+        }
+
+        &.columns-2 .article {
+            @include media-breakpoint-up(md) {
+                @include make-col(6);
+            }
+        }
+
+        &.columns-3 .article {
+            @include media-breakpoint-up(md) {
+                @include make-col(4);
+            }
+        }
+    }
+}
